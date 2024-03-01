@@ -12,4 +12,8 @@ import type { IGame }  from '@models/Game';
 export class GameCardComponent {
   @Input()
   game!: IGame;
+
+  goto() {
+    window.open(this.game.url, '_blank');
+  }
 }

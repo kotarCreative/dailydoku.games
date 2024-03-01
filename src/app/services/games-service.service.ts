@@ -22,7 +22,7 @@ export class GamesService {
       type: 'doku',
       description: 'This game is for the best franchise ever made',
       url: 'https://pokedoku.com/',
-      backgroundImage: 'https://pokedoku.com/logo_right_dark.svg'
+      logo: 'https://pokedoku.com/logo_right_dark.svg'
     },
       {
         uuid: '5678',
@@ -30,7 +30,7 @@ export class GamesService {
         type: 'doku',
         description: 'Who likes hockey anyways?',
         url: 'https://puckdoku.com',
-        backgroundImage: 'https://www.puckdoku.com/puckdoku-logo-white.svg'
+        logo: 'https://www.puckdoku.com/puckdoku-logo-white.svg'
       }
     ];
   }

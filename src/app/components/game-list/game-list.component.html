@@ -1,7 +1,5 @@
-<div class="flex flex-wrap">
+<div class="grid grid-cols-4 gap-4 p-6">
   @for (game of games; track game) {
-    <div class="w-1/4">
-      <app-game-card [game]="game" />
-    </div>
+    <app-game-card [game]="game" />
   }
 </div>

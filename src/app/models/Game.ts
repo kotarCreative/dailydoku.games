@@ -5,7 +5,7 @@ const Game = z.object({
   name: z.string(),
   type: z.string(),
   url: z.string(),
-  backgroundImage: z.string(),
+  logo: z.string(),
   description: z.string()
 })
 
