@@ -36,20 +36,25 @@
   >
     <div class="text-sm md:flex-grow">
       <a
-        href="#responsive-header"
-        class="block md:h-12 sm:h-10 md:inline-block text-teal-200 hover:text-white mr-2 md:pt-4 sm:pt-2 px-2"
+        class="block md:h-12 sm:h-10 md:inline-block cursor-pointer text-teal-200 hover:text-white mr-2 md:pt-4 sm:pt-2 px-2"
+        (click)="openSuggestDialog()"
       >
         Suggest a game
       </a>
-      <a
+      <!-- <a
         href="#responsive-header"
         class="block md:h-12 sm:h-10 md:inline-block text-teal-200 hover:text-white mr-2 md:pt-4 sm:pt-2 px-2"
       >
         Give feedback
-      </a>
+      </a> -->
     </div>
     <div>
-        <a href="https://www.buymeacoffee.com/kotarcreative" target="_blank"><img alt="Buy Me A Coffee" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" class="h-12 object-fit"></a>
+      <a href="https://www.buymeacoffee.com/kotarcreative" target="_blank"
+        ><img
+          alt="Buy Me A Coffee"
+          src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+          class="h-12 object-fit"
+      /></a>
     </div>
   </div>
 </nav>
