@@ -31,8 +31,9 @@
   </div>
   <div
     data-collapse="collapse-1"
-    class="sm:h-0 md:h-12 w-full block flex-grow overflow-hidden sm:transition-all md:transition-none duration-300 ease-out md:flex md:items-center md:w-auto"
-    [class.sm:h-32]="menuOpen()"
+    class="h-0 md:h-12 w-full block flex-grow overflow-hidden sm:transition-all md:transition-none duration-300 ease-out md:flex md:items-center md:w-auto"
+    [class.h-24]="menuOpen()"
+    [class.md:h-12]="!menuOpen()"
   >
     <div class="text-sm md:flex-grow">
       <a
