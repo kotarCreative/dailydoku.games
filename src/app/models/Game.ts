@@ -1,7 +1,6 @@
 import { z } from "zod";
 
 const Game = z.object({
-  uuid: z.string(),
   name: z.string(),
   type: z.string(),
   url: z.string(),
