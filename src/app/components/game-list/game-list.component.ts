@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { GameCardComponent } from '@components/game-card/game-card.component';
-import { GamesService } from '@services/games-service.service';
+import { GamesService } from '@services/games.service';
 
 @Component({
   selector: 'app-game-list',
