@@ -1,6 +1,12 @@
 import { DialogRef } from '@angular/cdk/dialog';
-import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { Component, signal } from '@angular/core';
+import {
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
+import { SuggestionsService } from '@services/suggestions.service';
 
 @Component({
   selector: 'app-suggest-dialog',
@@ -10,15 +16,56 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './suggest-dialog.component.scss',
 })
 export class SuggestDialogComponent {
-  suggestionForm = new FormGroup({
-    name: new FormControl(''),
-    url: new FormControl(''),
-  });
+  suggestionForm!: FormGroup;
+  loading = signal(false);
+  showThankYou = signal(false);
 
-  constructor(public dialogRef: DialogRef<string>) {}
+  get name() {
+    return this.suggestionForm.get('name')!;
+  }
+
+  get url() {
+    return this.suggestionForm.get('url')!;
+  }
+
+  constructor(
+    public dialogRef: DialogRef<string>,
+    private _suggestionsService: SuggestionsService
+  ) {}
+
+  ngOnInit() {
+    this.suggestionForm = new FormGroup({
+      name: new FormControl('', [Validators.required, Validators.minLength(3)]),
+      url: new FormControl('', [
+        Validators.required,
+        Validators.pattern('https?://.+'),
+      ]),
+    });
+  }
+
+  close() {
+    this.dialogRef.close();
+  }
 
   onSubmit() {
-    console.log('Thanks for the suggestion!');
-    this.dialogRef.close('Thanks for the suggestion!');
+    if (this.loading() || this.suggestionForm.invalid) {
+      return;
+    }
+
+    this.loading.set(true);
+    this._suggestionsService
+      .addSuggestion({
+        name: this.name.value,
+        url: this.url.value,
+      })
+      .then(() => {
+        this.showThankYou.set(true);
+        setTimeout(() => {
+          this.dialogRef.close();
+        }, 2000);
+      })
+      .finally(() => {
+        this.loading.set(false);
+      });
   }
 }
