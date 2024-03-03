@@ -1,4 +1,5 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, inject } from '@angular/core';
+import { Analytics, logEvent } from '@angular/fire/analytics';
 import type { IGame }  from '@models/Game';
 
 @Component({
@@ -13,7 +14,11 @@ export class GameCardComponent {
   @Input()
   game!: IGame;
 
+  private _analytics: Analytics = inject(Analytics);
+
+  
   goto() {
+    logEvent(this._analytics, 'game_clicked', { game: this.game.name });
     window.open(this.game.url, '_blank');
   }
 }

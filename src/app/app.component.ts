@@ -14,6 +14,6 @@ import { GameListComponent } from '@components/game-list/game-list.component';
 })
 export class AppComponent {
   constructor(@Optional() private auth: Auth) {
-    signInAnonymously(this.auth)
+    signInAnonymously(this.auth);
   }
 }
