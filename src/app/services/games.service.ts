@@ -33,7 +33,6 @@ export class GamesService {
         const typedGames = games as IGame[];
         const validatedGames: IGame[] = [];
         typedGames.forEach((game) => {
-          console.log(game);
           const validatedGame = Game.safeParse(game);
           if (validatedGame.success) {
             validatedGames.push(validatedGame.data);
