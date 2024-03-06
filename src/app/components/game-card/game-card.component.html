@@ -1,4 +1,4 @@
-<div
+<section
   class="max-w-sm h-full rounded overflow-hidden shadow-lg bg-white flex flex-col hover:cursor-pointer"
 >
   <img
@@ -8,7 +8,7 @@
     (click)="goto()"
   />
   <div class="px-6 py-4 flex-1" (click)="goto()">
-    <div class="font-bold text-xl mb-2 capitalize">{{ game.name }}</div>
+    <h2 class="font-bold text-xl mb-2 capitalize">{{ game.name }}</h2>
     <p class="text-gray-700 text-base">
       {{ game.description }}
     </p>
@@ -39,4 +39,4 @@
       </svg>
     </button>
   </div>
-</div>
+</section>
