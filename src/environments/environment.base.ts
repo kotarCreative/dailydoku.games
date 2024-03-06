@@ -1,13 +1,14 @@
 type Environment = {
   firebaseConfig: {
-      projectId: string;
-      appId: string | undefined;
-      storageBucket: string;
-      apiKey: string;
-      authDomain: string;
-      messagingSenderId: string;
-      measurementId: string;
+    projectId: string;
+    appId: string | undefined;
+    storageBucket: string;
+    apiKey: string;
+    authDomain: string;
+    messagingSenderId: string;
+    measurementId: string;
   };
+  production?: boolean;
 };
 
 export const environment: Environment = {

@@ -2,6 +2,7 @@ import {
   effect,
   inject,
   Injectable,
+  Optional,
   signal,
   WritableSignal,
 } from '@angular/core';
@@ -16,8 +17,6 @@ import Game, { IGame } from '@models/Game';
   providedIn: 'root',
 })
 export class GamesService {
-  firestore: Firestore = inject(Firestore);
-
   get games(): IGame[] {
     return this._games().filter((game) => {
       if (this._filterFavourites()) {
@@ -31,13 +30,14 @@ export class GamesService {
     return this._filterFavourites();
   }
 
-  private _analytics = inject(Analytics);
+  firestore: Firestore = inject(Firestore);
+
   private gamesCollection = collection(this.firestore, 'games');
   private _games: WritableSignal<IGame[]> = signal([]);
   private _favouriteGames: WritableSignal<string[]> = signal([]);
   private _filterFavourites: WritableSignal<boolean> = signal(false);
 
-  constructor() {
+  constructor(@Optional() private _analytics: Analytics) {
     this._getGames();
     effect(() => {
       this._saveSettings(this._favouriteGames(), this._filterFavourites());
@@ -54,10 +54,14 @@ export class GamesService {
   favouriteGame(game: IGame, isFavourite: boolean) {
     // Save the favourite state to the local storage
     if (isFavourite) {
-      logEvent(this._analytics, 'game_favourited', { game: game.name });
+      if (this._analytics !== null) {
+        logEvent(this._analytics, 'game_favourited', { game: game.name });
+      }
       this._favouriteGames.set([...this._favouriteGames(), game.name]);
     } else {
-      logEvent(this._analytics, 'game_unfavourited', { game: game.name });
+      if (this._analytics !== null) {
+        logEvent(this._analytics, 'game_unfavourited', { game: game.name });
+      }
       const nextFavourites = this._favouriteGames().filter(
         (favouriteGame) => favouriteGame !== game.name
       );

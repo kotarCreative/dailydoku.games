@@ -5,24 +5,27 @@ import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
-import {
-  getAnalytics,
-  provideAnalytics,
-} from '@angular/fire/analytics';
+import { getAnalytics, provideAnalytics } from '@angular/fire/analytics';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { environment } from 'environments/environment';
 
+const baseProviders = [
+  provideRouter(routes),
+  provideClientHydration(),
+  importProvidersFrom(
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig))
+  ),
+  importProvidersFrom(provideFirestore(() => getFirestore())),
+];
+
+const devProviders = [...baseProviders];
+
+const prodProviders = [
+  ...baseProviders,
+  importProvidersFrom(provideAnalytics(() => getAnalytics())),
+  importProvidersFrom(provideAuth(() => getAuth())),
+];
+
 export const appConfig: ApplicationConfig = {
-  providers: [
-    provideRouter(routes),
-    provideClientHydration(),
-    importProvidersFrom(
-      provideFirebaseApp(() =>
-        initializeApp(environment.firebaseConfig)
-      )
-    ),
-    importProvidersFrom(provideAnalytics(() => getAnalytics())),
-    importProvidersFrom(provideAuth(() => getAuth())),
-    importProvidersFrom(provideFirestore(() => getFirestore())),
-  ],
+  providers: environment.production ? prodProviders : devProviders,
 };

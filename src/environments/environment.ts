@@ -1,7 +1,8 @@
-import { environment as baseEnv } from "./environment.base";
+import { environment as baseEnv } from './environment.base';
 
 type Environment = {} & typeof baseEnv;
 
 export const environment: Environment = {
-    ...baseEnv
+  ...baseEnv,
+  production: true,
 };

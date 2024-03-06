@@ -2,9 +2,9 @@ import {
   Component,
   ChangeDetectionStrategy,
   Input,
-  inject,
   Output,
   EventEmitter,
+  Optional,
 } from '@angular/core';
 import { Analytics, logEvent } from '@angular/fire/analytics';
 
@@ -28,7 +28,7 @@ export class GameCardComponent {
   @Output()
   favouriteGame = new EventEmitter<boolean>();
 
-  private _analytics: Analytics = inject(Analytics);
+  constructor(@Optional() private _analytics: Analytics) {}
 
   goto() {
     logEvent(this._analytics, 'game_clicked', { game: this.game.name });
