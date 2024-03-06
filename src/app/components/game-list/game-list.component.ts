@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { GameCardComponent } from '@components/game-card/game-card.component';
+import { IGame } from '@models/Game';
 import { GamesService } from '@services/games.service';
 
 @Component({
@@ -16,4 +17,12 @@ export class GameListComponent {
   }
 
   constructor(private _gamesService: GamesService) {}
+
+  onFavouriteGame(game: IGame, isFavourite: boolean) { 
+    this._gamesService.favouriteGame(game, isFavourite);
+  }
+
+  isFavourite(game: IGame) {
+    return this._gamesService.isFavourite(game);
+  }
 }

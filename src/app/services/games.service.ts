@@ -1,8 +1,15 @@
-import { inject, Injectable, signal, WritableSignal } from '@angular/core';
+import {
+  effect,
+  inject,
+  Injectable,
+  signal,
+  WritableSignal,
+} from '@angular/core';
+import { Analytics, logEvent } from '@angular/fire/analytics';
 import { collection, collectionData, Firestore } from '@angular/fire/firestore';
-import type { IGame } from '@models/Game';
-import Game from '@models/Game';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+
+import Game, { IGame } from '@models/Game';
 
 @UntilDestroy()
 @Injectable({
@@ -15,11 +22,44 @@ export class GamesService {
     return this._games();
   }
 
+  private _analytics = inject(Analytics);
   private gamesCollection = collection(this.firestore, 'games');
   private _games: WritableSignal<IGame[]> = signal([]);
+  private _favouriteGames: WritableSignal<string[]> = signal([]);
 
   constructor() {
     this._getGames();
+    effect(() => {
+      localStorage.setItem(
+        'dailyDoku-favouriteGames',
+        JSON.stringify(this._favouriteGames())
+      );
+    });
+
+    const savedFavouriteGames = localStorage.getItem(
+      'dailyDoku-favouriteGames'
+    );
+    if (savedFavouriteGames) {
+      this._favouriteGames.set(JSON.parse(savedFavouriteGames));
+    }
+  }
+
+  favouriteGame(game: IGame, isFavourite: boolean) {
+    // Save the favourite state to the local storage
+    if (isFavourite) {
+      logEvent(this._analytics, 'game_favourited', { game: game.name });
+      this._favouriteGames.set([...this._favouriteGames(), game.name]);
+    } else {
+      logEvent(this._analytics, 'game_unfavourited', { game: game.name });
+      const nextFavourites = this._favouriteGames().filter(
+        (favouriteGame) => favouriteGame !== game.name
+      );
+      this._favouriteGames.set(nextFavourites);
+    }
+  }
+
+  isFavourite(game: IGame) {
+    return this._favouriteGames().includes(game.name);
   }
 
   private _getGames() {
@@ -38,7 +78,9 @@ export class GamesService {
             validatedGames.push(validatedGame.data);
           }
         });
-        this._games.set(validatedGames.sort((a, b) => a.name.localeCompare(b.name)));
+        this._games.set(
+          validatedGames.sort((a, b) => a.name.localeCompare(b.name))
+        );
       });
   }
 }

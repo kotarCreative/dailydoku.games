@@ -1,5 +1,9 @@
 <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 p-6">
   @for (game of games; track game) {
-    <app-game-card [game]="game" />
+  <app-game-card
+    [game]="game"
+    [isFavourite]="isFavourite(game)"
+    (favouriteGame)="onFavouriteGame(game, $event)"
+  />
   }
 </div>
