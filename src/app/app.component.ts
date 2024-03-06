@@ -1,6 +1,6 @@
 import { Component, Optional } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Auth, signInAnonymously } from '@angular/fire/auth';
+import { Auth } from '@angular/fire/auth';
 
 import { HeaderComponent } from '@components/header/header.component';
 import { GameListComponent } from '@components/game-list/game-list.component';
@@ -13,7 +13,5 @@ import { GameListComponent } from '@components/game-list/game-list.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  constructor(@Optional() private auth: Auth) {
-    signInAnonymously(this.auth);
-  }
+  constructor(@Optional() private auth: Auth) {}
 }
