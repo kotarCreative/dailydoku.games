@@ -38,7 +38,7 @@ export class GamesService {
             validatedGames.push(validatedGame.data);
           }
         });
-        this._games.set(validatedGames);
+        this._games.set(validatedGames.sort((a, b) => a.name.localeCompare(b.name)));
       });
   }
 }
