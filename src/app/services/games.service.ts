@@ -19,28 +19,35 @@ export class GamesService {
   firestore: Firestore = inject(Firestore);
 
   get games(): IGame[] {
-    return this._games();
+    return this._games().filter((game) => {
+      if (this._filterFavourites()) {
+        return this._favouriteGames().includes(game.name);
+      }
+      return true;
+    });
+  }
+
+  get filterFavourites(): boolean {
+    return this._filterFavourites();
   }
 
   private _analytics = inject(Analytics);
   private gamesCollection = collection(this.firestore, 'games');
   private _games: WritableSignal<IGame[]> = signal([]);
   private _favouriteGames: WritableSignal<string[]> = signal([]);
+  private _filterFavourites: WritableSignal<boolean> = signal(false);
 
   constructor() {
     this._getGames();
     effect(() => {
-      localStorage.setItem(
-        'dailyDoku-favouriteGames',
-        JSON.stringify(this._favouriteGames())
-      );
+      this._saveSettings(this._favouriteGames(), this._filterFavourites());
     });
 
-    const savedFavouriteGames = localStorage.getItem(
-      'dailyDoku-favouriteGames'
-    );
-    if (savedFavouriteGames) {
-      this._favouriteGames.set(JSON.parse(savedFavouriteGames));
+    const savedSettings = localStorage.getItem('dailyDoku-settings');
+    if (savedSettings) {
+      const nextSettings = JSON.parse(savedSettings);
+      this._favouriteGames.set(nextSettings.favouriteGames);
+      this._filterFavourites.set(nextSettings.filterFavourites);
     }
   }
 
@@ -60,6 +67,10 @@ export class GamesService {
 
   isFavourite(game: IGame) {
     return this._favouriteGames().includes(game.name);
+  }
+
+  setFilterFavourites(filterFavourites: boolean) {
+    this._filterFavourites.set(filterFavourites);
   }
 
   private _getGames() {
@@ -82,5 +93,13 @@ export class GamesService {
           validatedGames.sort((a, b) => a.name.localeCompare(b.name))
         );
       });
+  }
+
+  private _saveSettings(favouriteGames: string[], filterFavourites: boolean) {
+    const nextSettings = {
+      favouriteGames,
+      filterFavourites,
+    };
+    localStorage.setItem('dailyDoku-settings', JSON.stringify(nextSettings));
   }
 }
