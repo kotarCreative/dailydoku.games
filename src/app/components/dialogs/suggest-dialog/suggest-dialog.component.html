@@ -1,87 +1,89 @@
 <form
-  class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-  [formGroup]="suggestionForm"
-  (ngSubmit)="onSubmit()"
+    class="mb-4 rounded bg-slate-600 p-6 shadow-md"
+    [formGroup]="suggestionForm"
+    (ngSubmit)="onSubmit()"
 >
-  <div class="mb-4 flex">
-    <h4 class="flex text-2xl font-bold">Suggest a game</h4>
-    <button
-      (click)="close()"
-      type="button"
-      class="ml-auto bg-transparent hover:bg-grey-400 text-grey-700 font-semibold px-2 rounded border-none"
-    >
-      <svg
-        height="16px"
-        width="16px"
-        version="1.1"
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-        <path
-          d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"
+    <div class="mb-4 flex">
+        <h4 class="flex text-2xl font-bold text-slate-200">Suggest a game</h4>
+        <button
+            (click)="close()"
+            type="button"
+            class="ml-8 rounded border-none bg-transparent px-2 font-semibold text-slate-200 hover:bg-slate-400"
+        >
+            <svg
+                height="16px"
+                width="16px"
+                color="currentColor"
+                class="fill-current"
+                version="1.1"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+                <path
+                    d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"
+                />
+            </svg>
+        </button>
+    </div>
+    <div class="mb-4">
+        <label class="mb-2 block text-sm font-bold text-slate-200" for="name">
+            Name
+        </label>
+        <input
+            class="focus:shadow-outline w-full appearance-none rounded border bg-transparent px-3 py-2 leading-tight text-slate-200 shadow focus:outline-none"
+            id="name"
+            type="text"
+            required
+            placeholder="Name of game"
+            formControlName="name"
         />
-      </svg>
-    </button>
-  </div>
-  <div class="mb-4">
-    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
-      Name
-    </label>
-    <input
-      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-      id="name"
-      type="text"
-      required
-      placeholder="Name of game"
-      formControlName="name"
-    />
-    @if (name.invalid && (name.dirty || name.touched)) {
-    <div class="my-2">
-      @if (name.errors?.['required']) {
-      <p class="text-red-600 text-sm">Required.</p>
-      } @if (name.errors?.['minlength']) {
-      <p class="text-red-600 text-sm">Must be at least 3 characters.</p>
-      }
+        @if (name.invalid && (name.dirty || name.touched)) {
+        <div class="my-2">
+            @if (name.errors?.['required']) {
+            <p class="text-sm text-red-300">Required.</p>
+            } @if (name.errors?.['minlength']) {
+            <p class="text-sm text-red-300">Must be at least 3 characters.</p>
+            }
+        </div>
+        }
     </div>
-    }
-  </div>
-  <div class="mb-6">
-    <label class="block text-gray-700 text-sm font-bold mb-2" for="url">
-      Website
-    </label>
-    <input
-      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-      id="url"
-      type="text"
-      required
-      placeholder="Url of website"
-      formControlName="url"
-    />
-    @if (url.invalid && (url.dirty || url.touched)) {
-    <div class="mb-2">
-      @if (url.errors?.['required']) {
-      <p class="text-red-600 text-sm">Required.</p>
-      } @if (url.errors?.['pattern']) {
-      <p class="text-red-600 text-sm">Must start with `https://`</p>
-      }
+    <div class="mb-6">
+        <label class="mb-2 block text-sm font-bold text-slate-200" for="url">
+            Website
+        </label>
+        <input
+            class="focus:shadow-outline mb-3 w-full appearance-none rounded border bg-transparent px-3 py-2 leading-tight text-slate-200 shadow focus:outline-none"
+            id="url"
+            type="text"
+            required
+            placeholder="Url of website"
+            formControlName="url"
+        />
+        @if (url.invalid && (url.dirty || url.touched)) {
+        <div class="mb-2">
+            @if (url.errors?.['required']) {
+            <p class="text-sm text-red-300">Required.</p>
+            } @if (url.errors?.['pattern']) {
+            <p class="text-sm text-red-300">Must start with `https://`</p>
+            }
+        </div>
+        }
     </div>
-    }
-  </div>
-  <div class="flex items-center justify-between">
-    @if (showThankYou()) {
-    <p class="bg-green-300 text-green-600 rounded text-sm p-2">
-      Thank you for your suggestion!
-    </p>
-    } @else {
-    <button
-      class="bg-cyan-500 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-      [class.opacity-50]="suggestionForm.invalid || loading()"
-      [disabled]="suggestionForm.invalid || loading()"
-      type="submit"
-    >
-      Suggest
-    </button>
-    }
-  </div>
+    <div class="flex items-center justify-between">
+        @if (showThankYou()) {
+        <p class="width-full rounded bg-green-300 p-2 text-sm text-green-600">
+            Thank you for your suggestion!
+        </p>
+        } @else {
+        <button
+            class="ml-auto rounded border border-slate-300 bg-slate-300 px-4 py-2 font-semibold text-slate-600 hover:border-slate-400 hover:bg-slate-400 hover:text-slate-700"
+            [class.opacity-50]="suggestionForm.invalid || loading()"
+            [disabled]="suggestionForm.invalid || loading()"
+            type="submit"
+        >
+            Suggest
+        </button>
+        }
+    </div>
 </form>

@@ -1,15 +1,15 @@
-import { Component, effect, inject, signal } from '@angular/core';
-import { Dialog, DialogModule } from '@angular/cdk/dialog';
-import { SuggestDialogComponent } from '@components/dialogs/suggest-dialog/suggest-dialog.component';
+import { Component, effect, inject, signal } from "@angular/core";
+import { Dialog, DialogModule } from "@angular/cdk/dialog";
+import { SuggestDialogComponent } from "@components/dialogs/suggest-dialog/suggest-dialog.component";
 
-import { GamesService } from '@services/games.service';
+import { GamesService } from "@services/games.service";
 
 @Component({
-  selector: 'app-header',
+  selector: "app-header",
   standalone: true,
   imports: [DialogModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  templateUrl: "./header.component.html",
+  styleUrl: "./header.component.scss",
 })
 export class HeaderComponent {
   menuOpen = signal(false);
@@ -24,7 +24,6 @@ export class HeaderComponent {
 
   openSuggestDialog() {
     this._dialog.open(SuggestDialogComponent, {
-      width: '40%',
       ariaModal: true,
       hasBackdrop: true,
       disableClose: false,

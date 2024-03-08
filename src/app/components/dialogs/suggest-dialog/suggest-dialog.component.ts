@@ -1,44 +1,44 @@
-import { DialogRef } from '@angular/cdk/dialog';
-import { Component, signal } from '@angular/core';
+import { DialogRef } from "@angular/cdk/dialog";
+import { Component, signal } from "@angular/core";
 import {
   FormControl,
   FormGroup,
   ReactiveFormsModule,
   Validators,
-} from '@angular/forms';
-import { SuggestionsService } from '@services/suggestions.service';
+} from "@angular/forms";
+import { SuggestionsService } from "@services/suggestions.service";
 
 @Component({
-  selector: 'app-suggest-dialog',
+  selector: "app-suggest-dialog",
   standalone: true,
   imports: [ReactiveFormsModule],
-  templateUrl: './suggest-dialog.component.html',
-  styleUrl: './suggest-dialog.component.scss',
+  templateUrl: "./suggest-dialog.component.html",
+  styleUrl: "./suggest-dialog.component.scss",
 })
 export class SuggestDialogComponent {
   suggestionForm!: FormGroup;
   loading = signal(false);
-  showThankYou = signal(false);
+  showThankYou = signal(true);
 
   get name() {
-    return this.suggestionForm.get('name')!;
+    return this.suggestionForm.get("name")!;
   }
 
   get url() {
-    return this.suggestionForm.get('url')!;
+    return this.suggestionForm.get("url")!;
   }
 
   constructor(
     public dialogRef: DialogRef<string>,
-    private _suggestionsService: SuggestionsService
+    private _suggestionsService: SuggestionsService,
   ) {}
 
   ngOnInit() {
     this.suggestionForm = new FormGroup({
-      name: new FormControl('', [Validators.required, Validators.minLength(3)]),
-      url: new FormControl('', [
+      name: new FormControl("", [Validators.required, Validators.minLength(3)]),
+      url: new FormControl("", [
         Validators.required,
-        Validators.pattern('https?://.+'),
+        Validators.pattern("https?://.+"),
       ]),
     });
   }
