@@ -96,7 +96,8 @@
         </div>
         <div class="mb-2 md:mb-0">
             <button
-                class="mr-4 flex rounded border border-slate-300 bg-transparent px-4 py-2 font-semibold text-slate-300 hover:border-slate-100 hover:text-slate-100"
+                class="mr-4 flex rounded border border-slate-300 px-4 py-2 font-semibold text-slate-300 hover:border-slate-100 hover:text-slate-100"
+                [class.bg-transparent]="!filterFavourites()"
                 [class.bg-slate-300]="filterFavourites()"
                 [class.text-slate-700]="filterFavourites()"
                 [class.hover:border-slate-600]="filterFavourites()"
