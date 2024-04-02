@@ -18,7 +18,7 @@ import { SuggestionsService } from "@services/suggestions.service";
 export class SuggestDialogComponent {
   suggestionForm!: FormGroup;
   loading = signal(false);
-  showThankYou = signal(true);
+  showThankYou = signal(false);
 
   get name() {
     return this.suggestionForm.get("name")!;
