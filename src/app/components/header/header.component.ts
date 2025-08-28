@@ -1,4 +1,4 @@
-import { Component, effect, inject, signal } from "@angular/core";
+import { Component, inject, signal } from "@angular/core";
 import { Dialog, DialogModule } from "@angular/cdk/dialog";
 import { SuggestDialogComponent } from "@components/dialogs/suggest-dialog/suggest-dialog.component";
 
@@ -13,12 +13,14 @@ import { GamesService } from "@services/games.service";
 export class HeaderComponent {
   menuOpen = signal(false);
   filterFavourites = signal(false);
+  searchTerm = signal('');
 
   private _gamesService: GamesService = inject(GamesService);
   private _dialog: Dialog = inject(Dialog);
 
   constructor() {
     this.filterFavourites.set(this._gamesService.filterFavourites);
+    this.searchTerm.set(this._gamesService.searchTerm);
   }
 
   openSuggestDialog() {
@@ -32,5 +34,11 @@ export class HeaderComponent {
   onFilterFavourites() {
     this.filterFavourites.set(!this.filterFavourites());
     this._gamesService.setFilterFavourites(this.filterFavourites());
+  }
+
+  onSearchChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.searchTerm.set(target.value);
+    this._gamesService.setSearchTerm(target.value);
   }
 }

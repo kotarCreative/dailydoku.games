@@ -20,8 +20,16 @@ export class GamesService {
   get games(): IGame[] {
     return this._games().filter((game) => {
       if (this._filterFavourites()) {
-        return this._favouriteGames().includes(game.name);
+        if (!this._favouriteGames().includes(game.name)) {
+          return false;
+        }
       }
+      
+      if (this._searchTerm()) {
+        const searchTerm = this._searchTerm().toLowerCase();
+        return game.name.toLowerCase().includes(searchTerm);
+      }
+      
       return true;
     });
   }
@@ -30,12 +38,17 @@ export class GamesService {
     return this._filterFavourites();
   }
 
+  get searchTerm(): string {
+    return this._searchTerm();
+  }
+
   firestore: Firestore = inject(Firestore);
 
   private gamesCollection = collection(this.firestore, 'games');
   private _games: WritableSignal<IGame[]> = signal([]);
   private _favouriteGames: WritableSignal<string[]> = signal([]);
   private _filterFavourites: WritableSignal<boolean> = signal(false);
+  private _searchTerm: WritableSignal<string> = signal('');
 
   constructor(@Optional() private _analytics: Analytics) {
     this._getGames();
@@ -75,6 +88,10 @@ export class GamesService {
 
   setFilterFavourites(filterFavourites: boolean) {
     this._filterFavourites.set(filterFavourites);
+  }
+
+  setSearchTerm(searchTerm: string) {
+    this._searchTerm.set(searchTerm);
   }
 
   private _getGames() {
