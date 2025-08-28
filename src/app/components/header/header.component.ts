@@ -5,11 +5,10 @@ import { SuggestDialogComponent } from "@components/dialogs/suggest-dialog/sugge
 import { GamesService } from "@services/games.service";
 
 @Component({
-  selector: "app-header",
-  standalone: true,
-  imports: [DialogModule],
-  templateUrl: "./header.component.html",
-  styleUrl: "./header.component.scss",
+    selector: "app-header",
+    imports: [DialogModule],
+    templateUrl: "./header.component.html",
+    styleUrl: "./header.component.scss"
 })
 export class HeaderComponent {
   menuOpen = signal(false);

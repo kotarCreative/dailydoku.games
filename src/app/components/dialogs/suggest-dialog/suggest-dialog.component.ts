@@ -9,11 +9,10 @@ import {
 import { SuggestionsService } from "@services/suggestions.service";
 
 @Component({
-  selector: "app-suggest-dialog",
-  standalone: true,
-  imports: [ReactiveFormsModule],
-  templateUrl: "./suggest-dialog.component.html",
-  styleUrl: "./suggest-dialog.component.scss",
+    selector: "app-suggest-dialog",
+    imports: [ReactiveFormsModule],
+    templateUrl: "./suggest-dialog.component.html",
+    styleUrl: "./suggest-dialog.component.scss"
 })
 export class SuggestDialogComponent {
   suggestionForm!: FormGroup;

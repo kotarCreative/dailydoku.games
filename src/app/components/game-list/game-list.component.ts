@@ -5,11 +5,10 @@ import { IGame } from '@models/Game';
 import { GamesService } from '@services/games.service';
 
 @Component({
-  selector: 'app-game-list',
-  standalone: true,
-  imports: [GameCardComponent],
-  templateUrl: './game-list.component.html',
-  styleUrl: './game-list.component.scss'
+    selector: 'app-game-list',
+    imports: [GameCardComponent],
+    templateUrl: './game-list.component.html',
+    styleUrl: './game-list.component.scss'
 })
 export class GameListComponent {
   get games() {
