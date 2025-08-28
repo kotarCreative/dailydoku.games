@@ -12,18 +12,16 @@ import { environment } from 'environments/environment';
 const baseProviders = [
   provideRouter(routes),
   provideClientHydration(),
-  importProvidersFrom(
-    provideFirebaseApp(() => initializeApp(environment.firebaseConfig))
-  ),
-  importProvidersFrom(provideFirestore(() => getFirestore())),
+  provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+  provideFirestore(() => getFirestore()),
 ];
 
 const devProviders = [...baseProviders];
 
 const prodProviders = [
   ...baseProviders,
-  importProvidersFrom(provideAnalytics(() => getAnalytics())),
-  importProvidersFrom(provideAuth(() => getAuth())),
+  provideAnalytics(() => getAnalytics()),
+  provideAuth(() => getAuth()),
 ];
 
 export const appConfig: ApplicationConfig = {
