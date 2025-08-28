@@ -14,11 +14,11 @@ type Environment = {
 export const environment: Environment = {
   firebaseConfig: {
     projectId: 'dailydoku-31cec',
-    appId: import.meta.env.DAILY_DOKU_FIREBASE_APP_ID,
+    appId: import.meta.env.NG_APP_FIREBASE_APP_ID,
     storageBucket: 'dailydoku-31cec.appspot.com',
-    apiKey: import.meta.env.DAILY_DOKU_FIREBASE_API_KEY,
+    apiKey: import.meta.env.NG_APP_FIREBASE_API_KEY,
     authDomain: 'dailydoku-31cec.firebaseapp.com',
-    messagingSenderId: import.meta.env.DAILY_DOKU_FIREBASE_MESSENGING_SENDER_ID,
-    measurementId: import.meta.env.DAILY_DOKU_FIREBASE_MEASUREMENT_ID,
+    messagingSenderId: import.meta.env.NG_APP_FIREBASE_MESSENGING_SENDER_ID,
+    measurementId: import.meta.env.NG_APP_FIREBASE_MEASUREMENT_ID,
   },
 };
