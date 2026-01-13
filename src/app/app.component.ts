@@ -1,15 +1,9 @@
-import { Component, Optional } from '@angular/core';
-import { Auth } from '@angular/fire/auth';
-
-import { HeaderComponent } from '@components/header/header.component';
-import { GameListComponent } from '@components/game-list/game-list.component';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-    selector: 'app-root',
-    imports: [HeaderComponent, GameListComponent],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss'
+  selector: 'app-root',
+  imports: [RouterOutlet],
+  template: '<router-outlet></router-outlet>'
 })
-export class AppComponent {
-  constructor(@Optional() private auth: Auth) {}
-}
+export class AppComponent {}

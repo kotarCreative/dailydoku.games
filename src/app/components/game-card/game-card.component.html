@@ -19,6 +19,12 @@
             class="inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
             >{{ game.type }}</span
         >
+        <a
+            [routerLink]="['/games', game.slug]"
+            class="ml-2 inline-block rounded-full bg-slate-500 px-3 py-1 text-sm font-semibold text-white hover:bg-slate-400"
+        >
+            Details
+        </a>
         <button
             class="ml-auto text-red-500 hover:animate-pulse hover:text-red-700"
             (click)="onFavouriteGame()"

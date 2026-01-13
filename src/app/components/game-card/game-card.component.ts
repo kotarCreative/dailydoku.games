@@ -5,19 +5,25 @@ import {
   Output,
   EventEmitter,
   Optional,
+  inject,
+  PLATFORM_ID,
 } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { Analytics, logEvent } from '@angular/fire/analytics';
 
 import type { IGame } from '@models/Game';
 
 @Component({
     selector: 'app-game-card',
-    imports: [],
+    imports: [RouterLink],
     templateUrl: './game-card.component.html',
     styleUrl: './game-card.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GameCardComponent {
+  private platformId = inject(PLATFORM_ID);
+
   @Input()
   game!: IGame;
 
@@ -30,8 +36,12 @@ export class GameCardComponent {
   constructor(@Optional() private _analytics: Analytics) {}
 
   goto() {
-    logEvent(this._analytics, 'game_clicked', { game: this.game.name });
-    window.open(this.game.url, '_blank');
+    if (isPlatformBrowser(this.platformId)) {
+      if (this._analytics) {
+        logEvent(this._analytics, 'game_clicked', { game: this.game.name });
+      }
+      window.open(this.game.url, '_blank');
+    }
   }
 
   onFavouriteGame() {

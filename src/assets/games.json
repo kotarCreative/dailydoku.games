@@ -1,0 +1,298 @@
+[
+  {
+    "name": "Actorle",
+    "slug": "actorle",
+    "type": "doku",
+    "url": "https://actorle.com/fill-the-grid/",
+    "logo": "https://actorle.com/favicon.ico",
+    "description": "Guess the actors using the clues in the grid"
+  },
+  {
+    "name": "Bandle",
+    "slug": "bandle",
+    "type": "Trivia",
+    "url": "https://bandle.app/",
+    "logo": "https://bandle.app/favicon.ico",
+    "description": "Guess the song with the least musicians playing"
+  },
+  {
+    "name": "Box Office Game",
+    "slug": "box-office-game",
+    "type": "trivia",
+    "url": "https://boxofficega.me/",
+    "logo": "https://boxofficega.me/_next/image?url=%2Fbox_office_game.png&w=640&q=75",
+    "description": "Guess the movies that were in theatres on a specific weekend"
+  },
+  {
+    "name": "Canuckle",
+    "slug": "canuckle",
+    "type": "oodle",
+    "url": "https://www.canucklegame.ca/",
+    "logo": "https://www.canucklegame.ca/images/canuckle_logo_144x144.png",
+    "description": "Guess the Canada themed word"
+  },
+  {
+    "name": "cine2nerdle",
+    "slug": "cine2nerdle",
+    "type": "doku",
+    "url": "https://www.cinenerdle2.app/",
+    "logo": "https://www.cinenerdle2.app/icon.png",
+    "description": "Try to solve what topics match a specific movie"
+  },
+  {
+    "name": "Costcodle",
+    "slug": "costcodle",
+    "type": "oodle",
+    "url": "https://costcodle.com/",
+    "logo": "https://costcodle.com/public/favicon.ico",
+    "description": "Guess the price of the costco item using clues given from other guesses"
+  },
+  {
+    "name": "Dotadle",
+    "slug": "dotadle",
+    "type": "oodle",
+    "url": "https://dotadle.net/",
+    "logo": "https://dotadle.net/img/Logo.5b0230f6.png",
+    "description": "Guess the Dota 2 champion from clues given when guessing other champions"
+  },
+  {
+    "name": "Filmdle",
+    "slug": "filmdle",
+    "type": "oodle",
+    "url": "https://heardlewordle.io/filmdle",
+    "logo": "https://heardlewordle.io/cache/data/image/game/filmdle-m228x151.png",
+    "description": "Guess the movie from the tagline and other hints"
+  },
+  {
+    "name": "Flagle",
+    "slug": "flagle",
+    "type": "oodle",
+    "url": "https://flagle.io",
+    "logo": "https://www.flagle.io/favicon.ico",
+    "description": "Guess the country based on seeing parts of their flag"
+  },
+  {
+    "name": "FoodGuessr",
+    "slug": "foodguessr",
+    "type": "oodle",
+    "url": "https://www.foodguessr.com/daily",
+    "logo": "https://www.foodguessr.com/favicon-32x32.png",
+    "description": "Guess what country the food comes from"
+  },
+  {
+    "name": "Framed",
+    "slug": "framed",
+    "type": "oodle",
+    "url": "https://framedgame.io/",
+    "logo": "https://framedgame.io/upload/cache/upload/imgs/options/frame-game-logo2-s120x50.png",
+    "description": "Guess the movie from still shots taken from the movie"
+  },
+  {
+    "name": "Gamedle",
+    "slug": "gamedle",
+    "type": "oodle",
+    "url": "https://www.gamedle.wtf/classic",
+    "logo": "https://www.gamedle.wtf/favicon.ico",
+    "description": "Guess the game from partial images of the box art"
+  },
+  {
+    "name": "Globle",
+    "slug": "globle",
+    "type": "trivia",
+    "url": "https://globle-game.com/game",
+    "logo": "https://globle-game.com/favicon.ico",
+    "description": "Guess the country from a picture of its silhouette"
+  },
+  {
+    "name": "Heardle",
+    "slug": "heardle",
+    "type": "oodle",
+    "url": "https://heardlewordle.io/",
+    "logo": "https://heardlewordle.io/cache/data/image/options/heardle-game2-m60x60.png",
+    "description": "Guess the song from a small snippet of the song"
+  },
+  {
+    "name": "Heardle 80s",
+    "slug": "heardle-80s",
+    "type": "oodle",
+    "url": "https://heardlewordle.io/heardle-80s",
+    "logo": "https://heardlewordle.io/cache/data/image/options/heardle-game2-m60x60.png",
+    "description": "Guess the 80s song by listening to small clips of the game"
+  },
+  {
+    "name": "Immaculate Footy",
+    "slug": "immaculate-footy",
+    "type": "doku",
+    "url": "https://www.immaculatefooty.com/",
+    "logo": "https://www.immaculatefooty.com/favicon.ico",
+    "description": "Guess the soccer players that match the clues in the grid."
+  },
+  {
+    "name": "Immaculate Grid (Baseball)",
+    "slug": "immaculate-grid-baseball",
+    "type": "doku",
+    "url": "https://www.immaculategrid.com/",
+    "logo": "https://www.immaculategrid.com/favicon.ico",
+    "description": "Guess the baseball players that match the clues in the grid."
+  },
+  {
+    "name": "Immaculate Grid (Football)",
+    "slug": "immaculate-grid-football",
+    "type": "doku",
+    "url": "https://www.immaculategrid.com/football",
+    "logo": "https://www.immaculategrid.com/favicon.ico",
+    "description": "Guess the football players that match the clues in the grid."
+  },
+  {
+    "name": "Immaculate Grid (Hockey)",
+    "slug": "immaculate-grid-hockey",
+    "type": "doku",
+    "url": "https://www.immaculategrid.com/hockey",
+    "logo": "https://www.immaculategrid.com/favicon.ico",
+    "description": "Guess the hockey players that match the clues in the grid."
+  },
+  {
+    "name": "Immaculate Grid (Mens Basketball)",
+    "slug": "immaculate-grid-mens-basketball",
+    "type": "doku",
+    "url": "https://www.immaculategrid.com/basketball/mens",
+    "logo": "https://www.immaculategrid.com/favicon.ico",
+    "description": "Guess the basketball players that match the clues in the grid."
+  },
+  {
+    "name": "Immaculate Grid (Womens Basketball)",
+    "slug": "immaculate-grid-womens-basketball",
+    "type": "doku",
+    "url": "https://www.immaculategrid.com/basketball/womens",
+    "logo": "https://www.immaculategrid.com/favicon.ico",
+    "description": "Guess the basketball players that match the clues in the grid."
+  },
+  {
+    "name": "Isaacle",
+    "slug": "isaacle",
+    "type": "oodle",
+    "url": "https://isaacle.net/",
+    "logo": "https://isaacle.net/favicon.ico",
+    "description": "Guess the item from the Binding of Isaac games using clues given from other guesses"
+  },
+  {
+    "name": "Loldle",
+    "slug": "loldle",
+    "type": "oodle",
+    "url": "https://loldle.net/classic",
+    "logo": "https://loldle.net/img/Logo.f04e5476.webp",
+    "description": "Guess the League of Legends champion name from clues given when guessing other pokemon"
+  },
+  {
+    "name": "MapleWordle",
+    "slug": "maplewordle",
+    "type": "oodle",
+    "url": "https://www.maplewordle.com/",
+    "logo": "https://www.maplewordle.com/_next/image?url=%2Flogo.png&w=48&q=75",
+    "description": "Guess the MapleStory character from clues given by guessing other characters"
+  },
+  {
+    "name": "Movie Grid",
+    "slug": "movie-grid",
+    "type": "doku",
+    "url": "https://moviegrid.io/",
+    "logo": "https://moviegrid.io/favicon.ico",
+    "description": "Guess the movies that fit the clues on the edge of the grid"
+  },
+  {
+    "name": "Narutodle",
+    "slug": "narutodle",
+    "type": "oodle",
+    "url": "https://narutodle.net",
+    "logo": "https://narutodle.net/favicon.ico",
+    "description": "Guess the Naruto character from clues about them"
+  },
+  {
+    "name": "Phoodle",
+    "slug": "phoodle",
+    "type": "oodle",
+    "url": "https://www.phoodle.net/",
+    "logo": "https://www.phoodle.net/favicon.ico",
+    "description": "Guess the food related word"
+  },
+  {
+    "name": "Pokedle",
+    "slug": "pokedle",
+    "type": "oodle",
+    "url": "https://pokedle.com/classic",
+    "logo": "https://pokedle.com/favicon-32x32.png",
+    "description": "Guess the pokemons name from clues given when guessing other pokemon"
+  },
+  {
+    "name": "Pokedoku",
+    "slug": "pokedoku",
+    "type": "doku",
+    "url": "https://pokedoku.com/",
+    "logo": "https://pokedoku.com/favicon.ico",
+    "description": "Fill the doku with pokemon that match types and other stats"
+  },
+  {
+    "name": "puckdoku",
+    "slug": "puckdoku",
+    "type": "doku",
+    "url": "https://puckdoku.com",
+    "logo": "https://www.puckdoku.com/favicon.ico",
+    "description": "Fill the doku with hockey players that match teams and other stats"
+  },
+  {
+    "name": "Smashdle",
+    "slug": "smashdle",
+    "type": "oodle",
+    "url": "https://smashdle.net/",
+    "logo": "https://smashdle.net/img/Logo.d1a12095.png",
+    "description": "Guess the Super Smash Bros champion when guessing other champions"
+  },
+  {
+    "name": "The Dozen",
+    "slug": "the-dozen",
+    "type": "trivia",
+    "url": "https://dailydozentrivia.com/",
+    "logo": "https://dailydozentrivia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.85d8936d.png&w=828&q=75",
+    "description": "A grid of 12 trivia questions from multiple topics"
+  },
+  {
+    "name": "Time Guessr",
+    "slug": "time-guessr",
+    "type": "trivia",
+    "url": "https://timeguessr.com/roundonedaily",
+    "logo": "https://timeguessr.com/favicon-32x32.png",
+    "description": "Guess the year and location of different photos"
+  },
+  {
+    "name": "Tradle",
+    "slug": "tradle",
+    "type": "oodle",
+    "url": "https://tradle.net/",
+    "logo": "https://tradle.net/images/oec-tradle-logo.png",
+    "description": ""
+  },
+  {
+    "name": "Travle",
+    "slug": "travle",
+    "type": "oodle",
+    "url": "https://travle.earth/",
+    "logo": "https://travle.earth/images/logo/teuteuf.svg",
+    "description": "Find the route between 2 countries"
+  },
+  {
+    "name": "Wordle",
+    "slug": "wordle",
+    "type": "oodle",
+    "url": "https://www.nytimes.com/games/wordle/index.html",
+    "logo": "https://www.nytimes.com/games-assets/v2/assets/wordle/page-icons/wordle-icon.svg",
+    "description": "Guess the 5 letter word from letter clues given when guessing other words"
+  },
+  {
+    "name": "Worldle",
+    "slug": "worldle",
+    "type": "oodle",
+    "url": "https://worldle.teuteuf.fr/",
+    "logo": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f30e.png",
+    "description": "Guess the country from a picture of its silhouette"
+  }
+]
