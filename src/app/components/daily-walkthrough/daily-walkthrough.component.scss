@@ -1,0 +1,77 @@
+.walkthrough-container {
+  @apply fixed inset-0 z-50 bg-slate-900 overflow-y-auto p-4 md:p-8;
+  animation: slideIn 0.3s ease-out;
+}
+
+.header {
+  @apply flex justify-between items-center mb-6 max-w-7xl mx-auto w-full;
+}
+
+.title-section {
+  @apply flex items-center gap-4;
+}
+
+h2 {
+  @apply text-2xl md:text-3xl font-bold text-white;
+}
+
+.streak-badge {
+  @apply flex items-center bg-yellow-500 text-slate-900 px-3 py-1 rounded-full gap-2 font-bold;
+}
+
+.close-btn {
+  @apply p-2 rounded-full hover:bg-slate-700 text-white text-2xl transition-colors;
+}
+
+.progress-section {
+  @apply max-w-3xl mx-auto mb-8 text-center;
+}
+
+.progress-bar-bg {
+  @apply w-full h-4 bg-slate-700 rounded-full overflow-hidden mb-2;
+}
+
+.progress-bar-fill {
+  @apply h-full bg-yellow-500 transition-all duration-500 ease-out;
+}
+
+.progress-text {
+  @apply text-slate-300 font-medium;
+}
+
+.games-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto;
+}
+
+.game-wrapper {
+  @apply relative transition-all duration-300;
+}
+
+.game-wrapper.completed {
+  @apply opacity-60 grayscale-[0.5];
+}
+
+.overlay {
+  @apply absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity flex justify-center items-end h-1/2 rounded-b-xl;
+}
+
+.game-wrapper:hover .overlay {
+  @apply opacity-100;
+}
+
+.mark-done-btn {
+  @apply bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow-lg font-semibold transition-colors;
+}
+
+.completed-badge {
+  @apply absolute top-2 right-2 text-2xl bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10;
+}
+
+.empty-state {
+  @apply col-span-full text-center py-20 text-lg opacity-60 text-white;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

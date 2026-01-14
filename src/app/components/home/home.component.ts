@@ -2,11 +2,12 @@ import { Component, inject, OnInit } from '@angular/core';
 
 import { HeaderComponent } from '@components/header/header.component';
 import { GameListComponent } from '@components/game-list/game-list.component';
+import { DailyBannerComponent } from '@components/daily-banner/daily-banner.component';
 import { SeoService } from '@services/seo.service';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, GameListComponent],
+  imports: [HeaderComponent, GameListComponent, DailyBannerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

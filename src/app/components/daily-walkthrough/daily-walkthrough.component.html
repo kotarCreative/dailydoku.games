@@ -1,0 +1,51 @@
+<div class="walkthrough-container">
+  <div class="header">
+    <div class="title-section">
+      <h2>Play all your favourites</h2>
+      <div class="streak-badge" *ngIf="streak() > 0">
+        🔥 {{ streak() }} Day Streak
+      </div>
+    </div>
+    <button class="close-btn" (click)="exitWalkthrough()">×</button>
+  </div>
+
+  <div class="progress-section">
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" [style.width.%]="progress()"></div>
+    </div>
+    <p class="progress-text">
+      <span *ngIf="remainingGamesCount() > 0"
+        >{{ remainingGamesCount() }} games left to keep your streak!</span
+      >
+      <span *ngIf="remainingGamesCount() === 0">🎉 All done for today!</span>
+    </p>
+  </div>
+
+  <div class="games-grid">
+    @for (game of sortedGames(); track game.name) {
+      <div
+        class="game-wrapper"
+        [class.completed]="isCompleted(game.name)"
+        (click)="playGame(game)"
+      >
+        <app-game-card [game]="game"></app-game-card>
+        <div class="overlay" *ngIf="!isCompleted(game.name)">
+          <button
+            class="mark-done-btn"
+            (click)="toggleComplete(game.name, $event)"
+          >
+            Mark Done
+          </button>
+        </div>
+        <div class="completed-badge" *ngIf="isCompleted(game.name)">✅</div>
+      </div>
+    } @empty {
+      <div class="empty-state">
+        <p>
+          No favorite games yet! Add some games to your favorites to be able to
+          track your daily streaks
+        </p>
+      </div>
+    }
+  </div>
+</div>
