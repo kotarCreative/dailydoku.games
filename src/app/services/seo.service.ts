@@ -24,8 +24,8 @@ export class SeoService {
   private platformId = inject(PLATFORM_ID);
 
   private readonly siteName = 'Dailydoku';
-  private readonly siteUrl = 'https://dailydoku.games';
-  private readonly defaultImage = 'https://dailydoku.games/assets/og-image.png';
+  private readonly siteUrl = 'https://daily-doku.com';
+  private readonly defaultImage = 'https://daily-doku.com/assets/og-image.png';
   private readonly twitterHandle = '@dailydoku';
 
   setMeta(config: SeoConfig): void {
@@ -76,13 +76,13 @@ export class SeoService {
   private updateCanonicalUrl(url: string): void {
     // Find existing canonical link or create new one
     let link: HTMLLinkElement | null = this.document.querySelector('link[rel="canonical"]');
-    
+
     if (!link) {
       link = this.document.createElement('link');
       link.setAttribute('rel', 'canonical');
       this.document.head.appendChild(link);
     }
-    
+
     link.setAttribute('href', url);
   }
 }

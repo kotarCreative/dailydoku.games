@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const FIRESTORE_URL = 'https://firestore.googleapis.com/v1/projects/dailydoku-31cec/databases/(default)/documents/games?pageSize=200';
-const SITE_URL = 'https://dailydoku.games';
+const SITE_URL = 'https://daily-doku.com';
 
 function slugify(name) {
   return name
