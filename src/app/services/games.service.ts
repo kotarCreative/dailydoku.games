@@ -30,7 +30,10 @@ export class GamesService {
 
       if (this._searchTerm()) {
         const searchTerm = this._searchTerm().toLowerCase();
-        return game.name.toLowerCase().includes(searchTerm);
+        return (
+          game.name.toLowerCase().includes(searchTerm) ||
+          game.type.toLowerCase().includes(searchTerm)
+        );
       }
 
       return true;
