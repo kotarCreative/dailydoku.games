@@ -29,15 +29,21 @@
         (click)="playGame(game)"
       >
         <app-game-card [game]="game"></app-game-card>
-        <div class="overlay" *ngIf="!isCompleted(game.name)">
-          <button
-            class="mark-done-btn"
-            (click)="toggleComplete(game.name, $event)"
+        <div class="completed-badge" *ngIf="isCompleted(game.name)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="3"
+            stroke="currentColor"
           >
-            Mark Done
-          </button>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            />
+          </svg>
         </div>
-        <div class="completed-badge" *ngIf="isCompleted(game.name)">✅</div>
       </div>
     } @empty {
       <div class="empty-state">

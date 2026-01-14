@@ -64,7 +64,12 @@ h2 {
 }
 
 .completed-badge {
-  @apply absolute top-2 right-2 text-2xl bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md z-10;
+  @apply absolute top-2 right-2 bg-green-500 rounded-full w-8 h-8 flex items-center justify-center shadow-lg z-10 transition-transform duration-300;
+
+  svg {
+    @apply w-5 h-5 text-white;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+  }
 }
 
 .empty-state {

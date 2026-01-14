@@ -53,9 +53,6 @@ export class DailyWalkthroughComponent {
     // Mark as complete immediately when playing
     this._walkthroughService.completeGame(game.name);
     
-    // Stop the walkthrough overlay so the user can see the game page
-    this._walkthroughService.stopDailySession();
-
     // Navigate to the game page directly
     window.open(game.url, '_blank');
   }
