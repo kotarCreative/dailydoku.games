@@ -32,6 +32,14 @@
     "description": "Guess the Canada themed word"
   },
   {
+    "name": "Centumth",
+    "slug": "centumth",
+    "type": "trivia",
+    "url": "https://www.centumth.com/",
+    "logo": "https://www.centumth.com/centumth%20logo%20white.png",
+    "description": "Guess the items ranked closest to #100 in today's category"
+  },
+  {
     "name": "cine2nerdle",
     "slug": "cine2nerdle",
     "type": "doku",
@@ -182,6 +190,14 @@
     "url": "https://loldle.net/classic",
     "logo": "https://loldle.net/img/Logo.f04e5476.webp",
     "description": "Guess the League of Legends champion name from clues given when guessing other pokemon"
+  },
+  {
+    "name": "Love Me Doku",
+    "slug": "love-me-doku",
+    "type": "doku",
+    "url": "https://lovemedoku.com/",
+    "logo": "https://lovemedoku.com/preview-image.png",
+    "description": "Fill the grid with Beatles songs that match the given clues"
   },
   {
     "name": "MapleWordle",
