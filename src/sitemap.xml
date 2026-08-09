@@ -26,12 +26,27 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/centumth</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/cine2nerdle</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.daily-doku.com/games/costcodle</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/country-draw</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/dailyjig</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -117,6 +132,11 @@
   </url>
   <url>
     <loc>https://www.daily-doku.com/games/loldle</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/love-me-doku</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>

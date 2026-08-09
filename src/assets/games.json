@@ -56,6 +56,22 @@
     "description": "Guess the price of the costco item using clues given from other guesses"
   },
   {
+    "name": "Country Draw",
+    "slug": "country-draw",
+    "type": "trivia",
+    "url": "https://countrydraw.games/?ref=daily-doku",
+    "logo": "https://countrydraw.games/assets/og-country-draw.png",
+    "description": "Draw the hidden country from memory on a real map and compare your sketch with the actual border"
+  },
+  {
+    "name": "DailyJig",
+    "slug": "dailyjig",
+    "type": "puzzle",
+    "url": "https://dailyjig.com/",
+    "logo": "https://dailyjig.com/static/favicon/favicon.png",
+    "description": "Play free daily games and puzzles including Jigsaw, Memory, and Capybas, with fresh challenges every day"
+  },
+  {
     "name": "Dotadle",
     "slug": "dotadle",
     "type": "oodle",

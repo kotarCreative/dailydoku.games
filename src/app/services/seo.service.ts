@@ -24,8 +24,8 @@ export class SeoService {
   private platformId = inject(PLATFORM_ID);
 
   private readonly siteName = 'Dailydoku';
-  private readonly siteUrl = 'https://daily-doku.com';
-  private readonly defaultImage = 'https://daily-doku.com/assets/og-image.png';
+  private readonly siteUrl = 'https://www.daily-doku.com';
+  private readonly defaultImage = 'https://www.daily-doku.com/assets/og-image.png';
   private readonly twitterHandle = '@dailydoku';
 
   setMeta(config: SeoConfig): void {
@@ -84,5 +84,20 @@ export class SeoService {
     }
 
     link.setAttribute('href', url);
+  }
+
+  setJsonLd(key: string, data: object): void {
+    let script = this.document.querySelector<HTMLScriptElement>(
+      `script[type="application/ld+json"][data-seo-key="${key}"]`
+    );
+
+    if (!script) {
+      script = this.document.createElement('script');
+      script.setAttribute('type', 'application/ld+json');
+      script.setAttribute('data-seo-key', key);
+      this.document.head.appendChild(script);
+    }
+
+    script.textContent = JSON.stringify(data);
   }
 }

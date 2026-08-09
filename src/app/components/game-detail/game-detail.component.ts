@@ -42,6 +42,25 @@ export class GameDetailComponent implements OnInit {
         keywords: `${game.name}, ${gameType} game, daily puzzle, ${game.name} game, play ${game.name}`,
         type: 'website'
       });
+
+      this.seoService.setJsonLd('breadcrumb', {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://www.daily-doku.com/'
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: game.name,
+            item: `https://www.daily-doku.com/games/${game.slug}`
+          }
+        ]
+      });
     }
   }
 

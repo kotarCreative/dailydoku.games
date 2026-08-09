@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const FIRESTORE_URL = 'https://firestore.googleapis.com/v1/projects/dailydoku-31cec/databases/(default)/documents/games?pageSize=200';
-const SITE_URL = 'https://daily-doku.com';
+const SITE_URL = 'https://www.daily-doku.com';
 
 function slugify(name) {
   return name
@@ -66,15 +66,28 @@ async function main() {
       .filter(game => game.name && game.slug)
       .sort((a, b) => a.name.localeCompare(b.name));
 
-    console.log(`Fetched ${games.length} games`);
+    console.log(`Fetched ${games.length} games from Firestore`);
+
+    // Merge with existing local games so games not yet in Firestore survive
+    const gamesJsonPath = path.join(__dirname, '..', 'src', 'assets', 'games.json');
+    const existingGames = fs.existsSync(gamesJsonPath)
+      ? JSON.parse(fs.readFileSync(gamesJsonPath, 'utf8'))
+      : [];
+    const merged = new Map();
+    games.forEach(game => merged.set(game.slug, game));
+    existingGames.forEach(game => {
+      if (game.slug && !merged.has(game.slug)) {
+        merged.set(game.slug, game);
+      }
+    });
+    const allGames = [...merged.values()].sort((a, b) => a.name.localeCompare(b.name));
 
     // Write games.json
-    const gamesJsonPath = path.join(__dirname, '..', 'src', 'assets', 'games.json');
-    fs.writeFileSync(gamesJsonPath, JSON.stringify(games, null, 2));
-    console.log(`Written ${gamesJsonPath}`);
+    fs.writeFileSync(gamesJsonPath, JSON.stringify(allGames, null, 2));
+    console.log(`Written ${gamesJsonPath} (${allGames.length} games)`);
 
     // Generate and write sitemap.xml
-    const sitemap = generateSitemap(games);
+    const sitemap = generateSitemap(allGames);
     const sitemapPath = path.join(__dirname, '..', 'src', 'sitemap.xml');
     fs.writeFileSync(sitemapPath, sitemap);
     console.log(`Written ${sitemapPath}`);
