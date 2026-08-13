@@ -1,0 +1,202 @@
+{
+  "actorle": {
+    "source": "https://actorle.com/favicon.ico",
+    "file": "actorle.webp",
+    "bytes": 1544
+  },
+  "bandle": {
+    "source": "https://bandle.app/favicon.ico",
+    "file": "bandle.webp",
+    "bytes": 7332
+  },
+  "box-office-game": {
+    "source": "https://boxofficega.me/_next/image?url=%2Fbox_office_game.png&w=640&q=75",
+    "file": "box-office-game.webp",
+    "bytes": 5036
+  },
+  "canuckle": {
+    "source": "https://www.canucklegame.ca/images/canuckle_logo_144x144.png",
+    "file": "canuckle.png",
+    "bytes": 1491
+  },
+  "centumth": {
+    "source": "https://www.centumth.com/centumth%20logo%20white.png",
+    "file": "centumth.webp",
+    "bytes": 4214
+  },
+  "cine2nerdle": {
+    "source": "https://www.cinenerdle2.app/icon.png",
+    "file": "cine2nerdle.webp",
+    "bytes": 1132
+  },
+  "costcodle": {
+    "source": "https://costcodle.com/public/favicon.ico",
+    "file": "costcodle.webp",
+    "bytes": 852
+  },
+  "country-draw": {
+    "source": "https://countrydraw.games/assets/og-country-draw.png",
+    "file": "country-draw.webp",
+    "bytes": 3484
+  },
+  "dailyjig": {
+    "source": "https://dailyjig.com/static/favicon/favicon.png",
+    "file": "dailyjig.webp",
+    "bytes": 328
+  },
+  "dotadle": {
+    "source": "https://dotadle.net/img/Logo.5b0230f6.png",
+    "file": "dotadle.webp",
+    "bytes": 7674
+  },
+  "filmdle": {
+    "source": "https://heardlewordle.io/cache/data/image/game/filmdle-m228x151.png",
+    "file": "filmdle.png",
+    "bytes": 1909
+  },
+  "flagle": {
+    "source": "https://www.flagle.io/favicon.ico",
+    "file": "flagle.webp",
+    "bytes": 5812
+  },
+  "foodguessr": {
+    "source": "https://www.foodguessr.com/favicon-32x32.png",
+    "file": "foodguessr.webp",
+    "bytes": 796
+  },
+  "framed": {
+    "source": "https://framedgame.io/upload/cache/upload/imgs/options/frame-game-logo2-s120x50.png",
+    "file": "framed.webp",
+    "bytes": 1504
+  },
+  "gamedle": {
+    "source": "https://www.gamedle.wtf/favicon.ico",
+    "file": "gamedle.webp",
+    "bytes": 984
+  },
+  "globle": {
+    "source": "https://globle-game.com/favicon.ico",
+    "file": "globle.webp",
+    "bytes": 1446
+  },
+  "heardle": {
+    "source": "https://heardlewordle.io/cache/data/image/options/heardle-game2-m60x60.png",
+    "file": "heardle.webp",
+    "bytes": 1192
+  },
+  "heardle-80s": {
+    "source": "https://heardlewordle.io/cache/data/image/options/heardle-game2-m60x60.png",
+    "file": "heardle-80s.webp",
+    "bytes": 1192
+  },
+  "immaculate-grid-baseball": {
+    "source": "https://www.immaculategrid.com/favicon.ico",
+    "file": "immaculate-grid-baseball.webp",
+    "bytes": 440
+  },
+  "immaculate-grid-football": {
+    "source": "https://www.immaculategrid.com/favicon.ico",
+    "file": "immaculate-grid-football.webp",
+    "bytes": 440
+  },
+  "immaculate-grid-hockey": {
+    "source": "https://www.immaculategrid.com/favicon.ico",
+    "file": "immaculate-grid-hockey.webp",
+    "bytes": 440
+  },
+  "immaculate-grid-mens-basketball": {
+    "source": "https://www.immaculategrid.com/favicon.ico",
+    "file": "immaculate-grid-mens-basketball.webp",
+    "bytes": 440
+  },
+  "immaculate-grid-womens-basketball": {
+    "source": "https://www.immaculategrid.com/favicon.ico",
+    "file": "immaculate-grid-womens-basketball.webp",
+    "bytes": 440
+  },
+  "isaacle": {
+    "source": "https://isaacle.net/favicon.ico",
+    "file": "isaacle.webp",
+    "bytes": 342
+  },
+  "loldle": {
+    "source": "https://loldle.net/img/Logo.f04e5476.webp",
+    "file": "loldle.webp",
+    "bytes": 9484
+  },
+  "love-me-doku": {
+    "source": "https://lovemedoku.com/preview-image.png",
+    "file": "love-me-doku.webp",
+    "bytes": 11268
+  },
+  "maplewordle": {
+    "source": "https://www.maplewordle.com/_next/image?url=%2Flogo.png&w=48&q=75",
+    "file": "maplewordle.webp",
+    "bytes": 1566
+  },
+  "movie-grid": {
+    "source": "https://moviegrid.io/favicon.ico",
+    "file": "movie-grid.webp",
+    "bytes": 1548
+  },
+  "narutodle": {
+    "source": "https://narutodle.net/favicon.ico",
+    "file": "narutodle.webp",
+    "bytes": 1618
+  },
+  "phoodle": {
+    "source": "https://www.phoodle.net/favicon.ico",
+    "file": "phoodle.webp",
+    "bytes": 764
+  },
+  "pokedle": {
+    "source": "https://pokedle.com/favicon-32x32.png",
+    "file": "pokedle.webp",
+    "bytes": 966
+  },
+  "pokedoku": {
+    "source": "https://pokedoku.com/favicon.ico",
+    "file": "pokedoku.webp",
+    "bytes": 746
+  },
+  "puckdoku": {
+    "source": "https://www.puckdoku.com/favicon.ico",
+    "file": "puckdoku.webp",
+    "bytes": 988
+  },
+  "smashdle": {
+    "source": "https://smashdle.net/img/Logo.d1a12095.png",
+    "file": "smashdle.webp",
+    "bytes": 9814
+  },
+  "the-dozen": {
+    "source": "https://dailydozentrivia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.85d8936d.png&w=828&q=75",
+    "file": "the-dozen.webp",
+    "bytes": 10898
+  },
+  "time-guessr": {
+    "source": "https://timeguessr.com/favicon-32x32.png",
+    "file": "time-guessr.webp",
+    "bytes": 800
+  },
+  "tradle": {
+    "source": "https://tradle.net/images/oec-tradle-logo.png",
+    "file": "tradle.webp",
+    "bytes": 5200
+  },
+  "travle": {
+    "source": "https://travle.earth/images/logo/teuteuf.svg",
+    "file": "travle.svg",
+    "bytes": 7720
+  },
+  "wordle": {
+    "source": "https://www.nytimes.com/games-assets/v2/assets/wordle/page-icons/wordle-icon.svg",
+    "file": "wordle.svg",
+    "bytes": 2051
+  },
+  "worldle": {
+    "source": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f30e.png",
+    "file": "worldle.png",
+    "bytes": 916
+  }
+}
