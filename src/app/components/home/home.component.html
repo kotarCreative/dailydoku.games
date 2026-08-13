@@ -1,5 +1,23 @@
-<h1 class="sr-only">DailyDoku - Discover daily puzzle games</h1>
 <app-header />
-<app-daily-banner />
-<app-game-list />
 
+<main>
+  <section class="bg-slate-700 px-6 pb-2 pt-6">
+    <div class="mx-auto max-w-7xl">
+      <h1 class="text-2xl font-bold tracking-tight text-slate-100 sm:text-3xl">
+        Daily Puzzles &amp; Daily Games, All in One Place
+      </h1>
+      <p class="mt-2 max-w-3xl text-base text-slate-300">
+        DailyDoku is a directory of the best free daily puzzles and daily games on the web. Browse
+        daily word games, grid puzzles and trivia games, favourite the ones you love, and build a
+        custom daily routine that tracks your streak.
+      </p>
+    </div>
+  </section>
+
+  <app-daily-banner />
+
+  <section id="games">
+    <h2 class="sr-only">Browse all daily puzzles and daily games</h2>
+    <app-game-list />
+  </section>
+</main>

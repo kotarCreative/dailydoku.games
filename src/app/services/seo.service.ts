@@ -1,7 +1,13 @@
-import { Injectable, inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { Injectable, inject } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { DOCUMENT } from '@angular/common';
+
+import {
+  DEFAULT_OG_IMAGE,
+  SITE_NAME,
+  TWITTER_HANDLE,
+  absoluteUrl
+} from '../site-config';
 
 interface SeoConfig {
   title: string;
@@ -21,26 +27,20 @@ export class SeoService {
   private titleService = inject(Title);
   private meta = inject(Meta);
   private document = inject(DOCUMENT);
-  private platformId = inject(PLATFORM_ID);
-
-  private readonly siteName = 'Dailydoku';
-  private readonly siteUrl = 'https://www.daily-doku.com';
-  private readonly defaultImage = 'https://www.daily-doku.com/assets/og-image.png';
-  private readonly twitterHandle = '@dailydoku';
 
   setMeta(config: SeoConfig): void {
     const {
       title,
       description,
       url,
-      image = this.defaultImage,
+      image = DEFAULT_OG_IMAGE,
       imageAlt = title,
       type = 'website',
       robots = 'index, follow',
       keywords
     } = config;
 
-    const fullUrl = url ? `${this.siteUrl}${url}` : this.siteUrl;
+    const fullUrl = absoluteUrl(url);
 
     // Basic meta tags
     this.titleService.setTitle(title);
@@ -57,13 +57,14 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:description', content: description });
     this.meta.updateTag({ property: 'og:url', content: fullUrl });
     this.meta.updateTag({ property: 'og:type', content: type });
-    this.meta.updateTag({ property: 'og:site_name', content: this.siteName });
+    this.meta.updateTag({ property: 'og:site_name', content: SITE_NAME });
     this.meta.updateTag({ property: 'og:image', content: image });
     this.meta.updateTag({ property: 'og:image:alt', content: imageAlt });
     this.meta.updateTag({ property: 'og:locale', content: 'en_US' });
 
     // Twitter Card tags
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+    this.meta.updateTag({ name: 'twitter:site', content: TWITTER_HANDLE });
     this.meta.updateTag({ name: 'twitter:title', content: title });
     this.meta.updateTag({ name: 'twitter:description', content: description });
     this.meta.updateTag({ name: 'twitter:image', content: image });
@@ -99,5 +100,16 @@ export class SeoService {
     }
 
     script.textContent = JSON.stringify(data);
+  }
+
+  /**
+   * Removes a previously injected JSON-LD block. Needed because the document is
+   * reused across client-side navigations, so stale schema from another route
+   * would otherwise linger in the head.
+   */
+  removeJsonLd(key: string): void {
+    this.document
+      .querySelector(`script[type="application/ld+json"][data-seo-key="${key}"]`)
+      ?.remove();
   }
 }

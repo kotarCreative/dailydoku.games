@@ -12,6 +12,7 @@ import { HttpClient } from '@angular/common/http';
 import { Analytics, logEvent } from '@angular/fire/analytics';
 
 import Game, { IGame } from '@models/Game';
+import { gameTypeLabel } from '../site-config';
 
 @Injectable({
   providedIn: 'root',
@@ -32,7 +33,10 @@ export class GamesService {
         const searchTerm = this._searchTerm().toLowerCase();
         return (
           game.name.toLowerCase().includes(searchTerm) ||
-          game.type.toLowerCase().includes(searchTerm)
+          game.type.toLowerCase().includes(searchTerm) ||
+          // Match the human-facing label too, so searching "word" finds the
+          // games whose internal type is "oodle".
+          gameTypeLabel(game.type).toLowerCase().includes(searchTerm)
         );
       }
 

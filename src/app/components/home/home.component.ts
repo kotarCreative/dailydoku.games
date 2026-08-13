@@ -5,6 +5,13 @@ import { GameListComponent } from '@components/game-list/game-list.component';
 import { DailyBannerComponent } from '@components/daily-banner/daily-banner.component';
 import { SeoService } from '@services/seo.service';
 import { GamesService } from '@services/games.service';
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_KEYWORDS,
+  DEFAULT_TITLE,
+  SITE_URL,
+  absoluteUrl
+} from '../../site-config';
 
 @Component({
   selector: 'app-home',
@@ -23,25 +30,42 @@ export class HomeComponent implements OnInit {
         return;
       }
 
+      // CollectionPage wrapping the game list tells crawlers this page is a
+      // curated directory of daily puzzles rather than a single game page.
       this.seoService.setJsonLd('game-item-list', {
         '@context': 'https://schema.org',
-        '@type': 'ItemList',
-        itemListElement: games.map((game, index) => ({
-          '@type': 'ListItem',
-          position: index + 1,
-          name: game.name,
-          url: `https://www.daily-doku.com/games/${game.slug}`
-        }))
+        '@type': 'CollectionPage',
+        '@id': `${SITE_URL}/#collection`,
+        name: 'Daily Puzzles & Daily Games',
+        description: DEFAULT_DESCRIPTION,
+        url: absoluteUrl('/'),
+        isPartOf: { '@id': `${SITE_URL}/#website` },
+        mainEntity: {
+          '@type': 'ItemList',
+          name: 'Daily puzzles and daily games',
+          numberOfItems: games.length,
+          itemListElement: games.map((game, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: game.name,
+            description: game.description || undefined,
+            url: absoluteUrl(`/games/${game.slug}`)
+          }))
+        }
       });
     });
   }
 
   ngOnInit(): void {
+    // Drop game-page schema when arriving back here via client-side nav.
+    this.seoService.removeJsonLd('breadcrumb');
+    this.seoService.removeJsonLd('game');
+
     this.seoService.setMeta({
-      title: 'Dailydoku: A place to discover puzzle games',
-      description: 'Find your new favourite puzzle game. Search for games like wordle, cine2nerdle, pokedoku, and more.',
+      title: DEFAULT_TITLE,
+      description: DEFAULT_DESCRIPTION,
       url: '/',
-      keywords: 'daily puzzle games, wordle, pokedoku, word games, trivia games, puzzle games, daily games, wordle alternatives',
+      keywords: DEFAULT_KEYWORDS,
       type: 'website'
     });
   }

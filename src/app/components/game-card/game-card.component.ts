@@ -13,6 +13,7 @@ import { RouterLink } from '@angular/router';
 import { Analytics, logEvent } from '@angular/fire/analytics';
 
 import type { IGame } from '@models/Game';
+import { gameTypeShortLabel } from '../../site-config';
 
 @Component({
     selector: 'app-game-card',
@@ -34,6 +35,10 @@ export class GameCardComponent {
   favouriteGame = new EventEmitter<boolean>();
 
   constructor(@Optional() private _analytics: Analytics) {}
+
+  get typeLabel(): string {
+    return gameTypeShortLabel(this.game.type);
+  }
 
   goto() {
     if (isPlatformBrowser(this.platformId)) {

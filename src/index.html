@@ -2,64 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Dailydoku: A place to discover puzzle games</title>
+    <title>DailyDoku: Daily Puzzles &amp; Daily Games in One Place</title>
     <meta
       name="description"
-      content="Find your new favourite puzzle game. Search for games like wordle, cine2nerdle, pokedoku, and more."
+      content="Discover the best daily puzzles and daily games in one place. Play Wordle, Pokedoku, cine2nerdle and 40+ more daily games, then track your streak with a custom daily routine."
     />
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Icons & Manifest -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
     <!-- SEO Meta Tags -->
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Dailydoku" />
+    <meta name="author" content="DailyDoku" />
     <meta
       name="keywords"
-      content="daily puzzle games, wordle, pokedoku, word games, trivia games, puzzle games, daily games"
+      content="daily puzzles, daily games, daily puzzle games, wordle alternatives, games like wordle, pokedoku, word games, trivia games, grid puzzles, daily word game, free daily puzzles"
     />
     <link rel="canonical" href="https://www.daily-doku.com/" />
 
+    <!-- Performance: warm up the third-party origins we hit on first paint -->
+    <link rel="preconnect" href="https://firebasestorage.googleapis.com" crossorigin />
+    <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Dailydoku" />
-    <meta property="og:title" content="Dailydoku: A place to discover puzzle games" />
+    <meta property="og:site_name" content="DailyDoku" />
+    <meta property="og:title" content="DailyDoku: Daily Puzzles &amp; Daily Games in One Place" />
     <meta
       property="og:description"
-      content="Find your new favourite puzzle game. Search for games like wordle, cine2nerdle, pokedoku, and more."
+      content="Discover the best daily puzzles and daily games in one place. Play Wordle, Pokedoku, cine2nerdle and 40+ more daily games, then track your streak with a custom daily routine."
     />
     <meta property="og:url" content="https://www.daily-doku.com/" />
     <meta property="og:image" content="https://www.daily-doku.com/assets/og-image.png" />
-    <meta property="og:image:alt" content="Dailydoku - Daily Puzzle Games" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="DailyDoku - Daily Puzzles and Daily Games" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Dailydoku: A place to discover puzzle games" />
+    <meta name="twitter:site" content="@dailydoku" />
+    <meta name="twitter:title" content="DailyDoku: Daily Puzzles &amp; Daily Games in One Place" />
     <meta
       name="twitter:description"
-      content="Find your new favourite puzzle game. Search for games like wordle, cine2nerdle, pokedoku, and more."
+      content="Discover the best daily puzzles and daily games in one place. Play Wordle, Pokedoku, cine2nerdle and 40+ more daily games, then track your streak with a custom daily routine."
     />
     <meta name="twitter:image" content="https://www.daily-doku.com/assets/og-image.png" />
-    <meta name="twitter:image:alt" content="Dailydoku - Daily Puzzle Games" />
+    <meta name="twitter:image:alt" content="DailyDoku - Daily Puzzles and Daily Games" />
 
     <!-- Additional SEO -->
     <meta name="theme-color" content="#334155" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Dailydoku" />
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "DailyDoku",
-        "url": "https://www.daily-doku.com/",
-        "description": "Find your new favourite puzzle game. Search for games like wordle, cine2nerdle, pokedoku, and more."
-      }
-    </script>
+    <meta name="apple-mobile-web-app-title" content="DailyDoku" />
   </head>
   <body>
     <app-root></app-root>
