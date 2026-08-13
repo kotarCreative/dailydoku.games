@@ -16,7 +16,7 @@ const sharp = require('sharp');
  * originals are frequently far larger than the ~128px slot they render in
  * (one was a 3840x1195 PNG weighing 1.1MB).
  *
- * Runs as part of `prebuild`. games.json is committed with `logo` already
+ * Runs on demand via `node scripts/fetch-logos.js`. games.json is committed with `logo` already
  * pointing at the local copy, so a normal build does no network work at all:
  * every logo is resolved from the manifest. Network requests only happen for a
  * newly added game, or when a file named in the manifest has gone missing.
