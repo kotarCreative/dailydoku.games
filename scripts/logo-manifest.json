@@ -149,6 +149,11 @@
     "file": "phoodle.webp",
     "bytes": 764
   },
+  "pixeal": {
+    "source": "https://pixeal.gg/og.png",
+    "file": "pixeal.webp",
+    "bytes": 6732
+  },
   "pokedle": {
     "source": "https://pokedle.com/favicon-32x32.png",
     "file": "pokedle.webp",

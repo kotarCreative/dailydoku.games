@@ -248,6 +248,14 @@
     "description": "Guess the food related word"
   },
   {
+    "name": "Pixeal",
+    "slug": "pixeal",
+    "type": "puzzle",
+    "url": "https://pixeal.gg/?ref=daily-doku",
+    "logo": "/assets/logos/pixeal.webp",
+    "description": "A pixel-art picture hides under the board. Draw it out, reveal as little as you can, and name it."
+  },
+  {
     "name": "Pokedle",
     "slug": "pokedle",
     "type": "oodle",
