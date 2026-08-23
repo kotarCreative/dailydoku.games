@@ -76,3 +76,71 @@ function typeLabels(type?: string): GameTypeLabel {
   const key = (type ?? '').trim().toLowerCase();
   return GAME_TYPE_LABELS[key] ?? FALLBACK_TYPE_LABEL;
 }
+
+/**
+ * Category hub pages. Each maps a crawlable URL to one internal game `type`,
+ * giving the site ranking surfaces for genre queries ("daily word games")
+ * that individual game pages cannot win.
+ */
+export interface CategoryConfig {
+  /** URL path of the hub page. */
+  path: string;
+  /** Internal game type this category collects. */
+  type: string;
+  /** Page heading (h1). */
+  heading: string;
+  /** Meta/OG title. */
+  title: string;
+  /** Meta description and intro paragraph source. */
+  description: string;
+  /** Extra prose rendered under the heading for on-page content. */
+  intro: string;
+}
+
+export const CATEGORIES: CategoryConfig[] = [
+  {
+    path: '/word-games',
+    type: 'oodle',
+    heading: 'Daily Word Games',
+    title: 'Daily Word Games - Free Word Puzzles to Play Every Day | DailyDoku',
+    description:
+      'Play the best free daily word games in one place. Wordle, Quordle, Contexto, Heardle and 20+ more daily word puzzles, all free and refreshed every morning.',
+    intro:
+      'One new puzzle per day is what makes these games addictive - everyone plays the same challenge, so scores and streaks actually mean something. This collection gathers the best daily word games on the web, from classic five-letter guessing to semantic hunts, song intros and themed variants.',
+  },
+  {
+    path: '/grid-puzzles',
+    type: 'doku',
+    heading: 'Daily Grid Puzzles',
+    title: 'Daily Grid Puzzles - Free Trivia Grids & Sudoku-Style Games | DailyDoku',
+    description:
+      'Free daily grid puzzles for sports, movies, music and gaming fans. Immaculate Grid, Pokedoku, HoopGrids and more trivia grids, updated every day.',
+    intro:
+      'Fill every cell without repeats and you have earned your daily bragging rights. These trivia grids cross two criteria per square, testing whether you really remember who played where, which films qualify and which Pokémon fit the bill.',
+  },
+  {
+    path: '/trivia-games',
+    type: 'trivia',
+    heading: 'Daily Trivia Games',
+    title: 'Daily Trivia Games - Free Geography, Music & Quiz Puzzles | DailyDoku',
+    description:
+      'Test yourself with free daily trivia games. Geography guessing, photo dating, box office history and more quiz games with a fresh round every day.',
+    intro:
+      'Every day brings a fresh set of questions the whole internet answers together. Guess countries from photos, date historic images or rebuild decades-old charts - these daily trivia games turn general knowledge into a habit.',
+  },
+  {
+    path: '/puzzles',
+    type: 'puzzle',
+    heading: 'Daily Puzzles',
+    title: 'Daily Puzzles - Free Logic, Word & Jigsaw Games Every Day | DailyDoku',
+    description:
+      'Solve a new free puzzle every day. Connections, Strands, Spelling Bee, Murdle, Waffle and more daily logic and word puzzles, all in one place.',
+    intro:
+      'Logic grids, hidden themes, murder mysteries and jigsaws: these daily puzzles reward careful thinking over fast fingers. Like everything here, they are free, browser-based and refresh once a day so your streak stays honest.',
+  },
+];
+
+/** Looks up a category config by its URL path. */
+export function categoryByPath(path: string): CategoryConfig | undefined {
+  return CATEGORIES.find((category) => category.path === path);
+}

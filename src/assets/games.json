@@ -5,7 +5,8 @@
     "type": "doku",
     "url": "https://actorle.com/fill-the-grid/",
     "logo": "/assets/logos/actorle.webp",
-    "description": "Guess the actors using the clues in the grid"
+    "description": "Guess the actors using the clues in the grid",
+    "about": "Actorle's Fill the Grid mode is a daily crossword with a cast list instead of words. Every square hides an actor's name behind a film-buff clue - a famous role, a run of collaborations or a career milestone. You never need the exact spelling of a movie, just a good memory for who was in what.\n\nA good approach is to sweep the grid for clues you can answer instantly and let the crossing entries fill in the rest. Because every answer shares letters with its neighbours, one confident guess often unlocks a whole corner of the board. A fresh grid is published every day."
   },
   {
     "name": "Bandle",
@@ -13,7 +14,17 @@
     "type": "trivia",
     "url": "https://bandle.app/",
     "logo": "/assets/logos/bandle.webp",
-    "description": "Guess the song with the least musicians playing"
+    "description": "Guess the song with the least musicians playing",
+    "about": "Bandle peels a song apart layer by layer and dares you to name it from as little as possible. You start hearing just the bass line; if that is not enough, each wrong guess brings in another musician until drums, keys, guitar and vocals have all joined in.\n\nThe scoring rewards musical memory over luck - naming the track on the first bass-only listen feels far better than waiting for the full band. Song choices lean heavily on well-loved classics, so even casual listeners have a fighting chance. There is a new song to dissect every day."
+  },
+  {
+    "name": "Blossom",
+    "slug": "blossom",
+    "type": "puzzle",
+    "url": "https://blossomword.com/",
+    "logo": "/assets/logos/blossom.webp",
+    "description": "Make as many words as you can from seven letters and bloom every flower",
+    "about": "Blossom gives you seven letters arranged around a centre petal and asks you to grow as many words as you can. Every word must be at least four letters long and must use the centre letter, so the flower shape is doing real work rather than looking pretty.\n\nLonger words fill more petals, and using all seven letters in a single word earns a bonus bloom. When you stall, hunt for common endings like -ing, -ed and -s, then try slotting your best prefixes onto the centre letter. A new bouquet arrives daily."
   },
   {
     "name": "Box Office Game",
@@ -21,7 +32,8 @@
     "type": "trivia",
     "url": "https://boxofficega.me/",
     "logo": "/assets/logos/box-office-game.webp",
-    "description": "Guess the movies that were in theatres on a specific weekend"
+    "description": "Guess the movies that were in theatres on a specific weekend",
+    "about": "The Box Office Game rewinds the clock to a random weekend in cinema history and asks you to rebuild its top five. Given only the release window, you type the films you think ruled the charts that Friday through Sunday, ranked in order.\n\nStuck entrants can be nudged along with hints - a studio logo here, a star's name there - though each reveal costs points. It is a lovely mix of film trivia and pop-culture archaeology: half the fun is remembering which blockbuster edged out which. A new weekend opens up daily."
   },
   {
     "name": "Canuckle",
@@ -29,7 +41,8 @@
     "type": "oodle",
     "url": "https://www.canucklegame.ca/",
     "logo": "/assets/logos/canuckle.png",
-    "description": "Guess the Canada themed word"
+    "description": "Guess the Canada themed word",
+    "about": "Canuckle takes the familiar five-letter, six-guess formula and wraps it in a maple leaf. Every answer has a Canadian connection - slang, places, foods, hockey lore - so solving it doubles as a small tour of the Great White North.\n\nFeedback works exactly as word-game veterans expect: letters light up for correct spots, near misses and misses alike. If you know your toques from your tuques, trust the theme; when torn between options, the more Canuck-flavoured word is usually the one. The daily word drops every morning, eh."
   },
   {
     "name": "Centumth",
@@ -37,7 +50,17 @@
     "type": "trivia",
     "url": "https://www.centumth.com/",
     "logo": "/assets/logos/centumth.webp",
-    "description": "Guess the items ranked closest to #100 in today's category"
+    "description": "Guess the items ranked closest to #100 in today's category",
+    "about": "Centumth flips ranking games on their head: instead of chasing number one, you are hunting the items sitting closest to 100th place. Each round presents a category with exactly one hundred ranked entries, and your job is to name things that land near the bottom of that particular top-100 list.\n\nIt rewards niche knowledge over headline facts - the obvious answers are all taken near the top, so the winning moves are deep cuts. Think carefully about what just barely belongs in a category rather than what defines it. A fresh category and a fresh countdown arrive every day."
+  },
+  {
+    "name": "Chronophoto",
+    "slug": "chronophoto",
+    "type": "trivia",
+    "url": "https://www.chronophoto.app/daily.html",
+    "logo": "/assets/logos/chronophoto.webp",
+    "description": "Guess the year each of five photos was taken",
+    "about": "Chronophoto hands you five photographs and one question: when were these taken? You slide each image along a timeline to the year you believe it was captured, and precise estimates score big while wild guesses cost you.\n\nThe trick is reading the details - car models, fashion, film grain, technology lurking in the background. Anchoring each photo with an 'earliest possible' and 'latest possible' year before committing keeps your errors honest. Five new photos are developed daily."
   },
   {
     "name": "cine2nerdle",
@@ -45,7 +68,35 @@
     "type": "doku",
     "url": "https://www.cinenerdle2.app/",
     "logo": "/assets/logos/cine2nerdle.webp",
-    "description": "Try to solve what topics match a specific movie"
+    "description": "Try to solve what topics match a specific movie",
+    "about": "cine2nerdle is daily movie trivia played on a grid. Columns and rows each carry a constraint - a genre, a decade, a performer, a box-office milestone - and every cell asks for one film that satisfies both at once.\n\nUsed titles are locked out for everyone else in the round, so breadth of film knowledge matters as much as depth. Start with the intersections you know cold, and keep a mental shortlist of versatile movies that tick several boxes. The board resets daily with fresh constraints."
+  },
+  {
+    "name": "Citydle",
+    "slug": "citydle",
+    "type": "oodle",
+    "url": "https://citydle.com",
+    "logo": "/assets/logos/citydle.webp",
+    "description": "Guess the daily city from distance and direction clues",
+    "about": "Citydle picks a city somewhere on Earth and lets you triangulate your way there. Type any city and you will learn how far off you are and in which direction to look next, turning each guess into a compass bearing.\n\nKnowledge of capitals and major metros gives you a strong opening network; from there it is pure geography detective work, halving distances and following arrows across continents. Fewer guesses mean a sharper sense of direction. A new mystery city appears each day."
+  },
+  {
+    "name": "Connections",
+    "slug": "connections",
+    "type": "puzzle",
+    "url": "https://www.nytimes.com/games/connections",
+    "logo": "/assets/logos/connections.webp",
+    "description": "Group sixteen words into four hidden categories",
+    "about": "Connections deals you sixteen words and hides four secret groups of four among them. Find every group without making four mistakes and the board is yours - but the puzzle is engineered with overlapping categories designed to bait you away from the truth.\n\nPurple-tier answers usually involve wordplay such as homophones, hidden words or things that precede a common phrase. Scan for the most specific group first, and remember that a word fitting two clusters almost certainly belongs to the trickier one. The New York Times publishes a new board daily."
+  },
+  {
+    "name": "Contexto",
+    "slug": "contexto",
+    "type": "oodle",
+    "url": "https://contexto.me/en",
+    "logo": "/assets/logos/contexto.webp",
+    "description": "Find the secret word using semantic closeness ranks for every guess",
+    "about": "Contexto is a semantic treasure hunt powered by an AI that understands meaning, not spelling. You submit unlimited word guesses and the game tells you how contextually close each one sits to the secret word, ranking them numerically.\n\nBecause synonyms score far better than lookalikes, the winning strategy is to think in ideas rather than letters: guess broad categories first, then narrow toward whatever region of meaning keeps returning low numbers. Reaching rank #1 ends the round, and a new target word appears daily."
   },
   {
     "name": "Costcodle",
@@ -53,7 +104,8 @@
     "type": "oodle",
     "url": "https://costcodle.com/",
     "logo": "/assets/logos/costcodle.webp",
-    "description": "Guess the price of the costco item using clues given from other guesses"
+    "description": "Guess the price of the costco item using clues given from other guesses",
+    "about": "Costcodle tests whether your receipt memory is as good as your bulk-buying instincts. Each day shows you a product sold at Costco and asks for its price; every guess returns higher-or-lower feedback plus how warm you are, honing in on the exact figure.\n\nKnowing warehouse quirks helps - pricing conventions, package sizes and which items live in which aisle all sharpen your range. Seven tries are allowed, so bracket early with aggressive high-and-low bids before narrowing in. A new item hits the shelves daily."
   },
   {
     "name": "Country Draw",
@@ -61,7 +113,8 @@
     "type": "trivia",
     "url": "https://countrydraw.games/?ref=daily-doku",
     "logo": "/assets/logos/country-draw.webp",
-    "description": "Draw the hidden country from memory on a real map and compare your sketch with the actual border"
+    "description": "Draw the hidden country from memory on a real map and compare your sketch with the actual border",
+    "about": "Country Draw turns cartography into a party trick. You are shown the name of a country and an empty world map, then asked to sketch its border entirely from memory before the outline is revealed and your drawing is scored against the real thing.\n\nEven geographers discover how fuzzy their mental atlases really are - coastlines wander, neighbours loom larger than they should. Start from distinctive features like capes or panhandles and work around the perimeter. Your masterpiece and accuracy score are saved, and a new country is dealt every day."
   },
   {
     "name": "DailyJig",
@@ -69,7 +122,8 @@
     "type": "puzzle",
     "url": "https://dailyjig.com/",
     "logo": "/assets/logos/dailyjig.webp",
-    "description": "Play free daily games and puzzles including Jigsaw, Memory, and Capybas, with fresh challenges every day"
+    "description": "Play free daily games and puzzles including Jigsaw, Memory, and Capybas, with fresh challenges every day",
+    "about": "DailyJig is a calm corner of the daily-games world: a fresh jigsaw every day, alongside rotating memory challenges and quick-fire modes like Capybas for when you want something snappier than edge pieces.\n\nThere is no clock breathing down your neck - just the satisfying click of pieces finding home. Difficulty varies day to day, so a Monday breeze might pair with a Saturday grind. If you crave a daily ritual that is gentler than word-guessing, this is the streak to build."
   },
   {
     "name": "Dotadle",
@@ -77,7 +131,8 @@
     "type": "oodle",
     "url": "https://dotadle.net/",
     "logo": "/assets/logos/dotadle.webp",
-    "description": "Guess the Dota 2 champion from clues given when guessing other champions"
+    "description": "Guess the Dota 2 champion from clues given when guessing other champions",
+    "about": "Dotadle is a daily quiz for Dota 2 players, built around guessing today's hero. Wrong guesses feed you fresh intel - attribute icons, attack type, ability teasers - until the roster knowledge locked in your head finally names the right one.\n\nVeterans can play it like a deduction game, eliminating candidates by role and stat line, while newer players simply enjoy the tour through the hero pool. Modes rotate between classic guessing, quotes and abilities, so both lore nerds and theorycrafters get a turn. A new hero steps out of the fountain daily."
   },
   {
     "name": "Filmdle",
@@ -85,7 +140,8 @@
     "type": "oodle",
     "url": "https://heardlewordle.io/filmdle",
     "logo": "/assets/logos/filmdle.png",
-    "description": "Guess the movie from the tagline and other hints"
+    "description": "Guess the movie from the tagline and other hints",
+    "about": "Filmdle gives you a single tagline and expects a title back. Every miss reveals another hint - the year, a star, the director, a plot fragment - so each wrong turn paradoxically makes the film easier and your score worse.\n\nTaglines are deliberately oblique ('who you gonna call?' style), so treat them as riddles rather than summaries. Guessing a plausible famous movie early is worth it just to harvest the extra clues. One film per day keeps it a two-minute habit."
   },
   {
     "name": "Flagle",
@@ -93,7 +149,8 @@
     "type": "oodle",
     "url": "https://flagle.io",
     "logo": "/assets/logos/flagle.webp",
-    "description": "Guess the country based on seeing parts of their flag"
+    "description": "Guess the country based on seeing parts of their flag",
+    "about": "Flagle flashes a tiny sliver of a national flag and asks which country it belongs to. Each incorrect guess uncovers more of the design and reports how far your answer sits from the target, blending vexillology with geography.\n\nColour alone rarely settles it - a red-white-blue sliver fits dozens of nations - so lean on the distance readouts to prune continents. Recognising stripe counts and emblem positions pays off fast. The daily flag unfurls once every twenty-four hours."
   },
   {
     "name": "FoodGuessr",
@@ -101,7 +158,8 @@
     "type": "oodle",
     "url": "https://www.foodguessr.com/daily",
     "logo": "/assets/logos/foodguessr.webp",
-    "description": "Guess what country the food comes from"
+    "description": "Guess what country the food comes from",
+    "about": "FoodGuessr plates up photos of real meals and asks where in the world they come from. Pick a country for each dish and the map shows exactly how far your palate drifted from the truth.\n\nRegional clues hide in plain sight: spice tones, plating style, cutlery (or its absence), even the table surface. Trusting first impressions about a cuisine's signature ingredients beats second-guessing yourself into fusion confusion. Multiple courses are served daily."
   },
   {
     "name": "Framed",
@@ -109,7 +167,8 @@
     "type": "oodle",
     "url": "https://framedgame.io/",
     "logo": "/assets/logos/framed.webp",
-    "description": "Guess the movie from still shots taken from the movie"
+    "description": "Guess the movie from still shots taken from the movie",
+    "about": "Framed is Wordle for cinephiles: one frame from a famous movie, six chances to name it. Every wrong answer advances the film to a later, slightly more revealing still, so the story literally unfolds as your attempts dwindle.\n\nIconic cinematography carries many rounds, but costume, aspect ratio and set design are the quiet giveaways. Committing to a strong first guess buys you the maximum number of extra frames. A new film premieres daily."
   },
   {
     "name": "Gamedle",
@@ -117,7 +176,17 @@
     "type": "oodle",
     "url": "https://www.gamedle.wtf/classic",
     "logo": "/assets/logos/gamedle.webp",
-    "description": "Guess the game from partial images of the box art"
+    "description": "Guess the game from partial images of the box art",
+    "about": "Gamedle blurs a piece of video game history and asks you to name it. Box art starts heavily pixelated and comes into focus with every wrong guess, while alternate modes quiz you on keywords and quotes from gaming's greatest hits.\n\nCover composition is the tell: recognise the art style of a beloved franchise and you can skip several zoom levels. Even when stumped, the reveal doubles as a nostalgic museum tour. A new game loads up every day."
+  },
+  {
+    "name": "GeoGuess",
+    "slug": "geoguess",
+    "type": "trivia",
+    "url": "https://geoguess.com/",
+    "logo": "/assets/logos/geoguess.svg",
+    "description": "Guess where each photo was taken by dropping a pin on the world map",
+    "about": "GeoGuess drops you into a random panorama somewhere on the planet and scores you on how precisely you drop a pin back. Look around freely - signage, soil colour, driving side and sun angle are all evidence.\n\nMeta-knowledge accelerates improvement: bollard shapes, camera generations and licence-blur patterns narrow regions quickly. Move methodically from hemisphere to country to roadside, and never waste time deliberating between two nearby pins. The daily challenge uses the same map for everyone, so bragging rights are legitimate."
   },
   {
     "name": "Globle",
@@ -125,7 +194,17 @@
     "type": "trivia",
     "url": "https://globle-game.com/game",
     "logo": "/assets/logos/globle.webp",
-    "description": "Guess the country from a picture of its silhouette"
+    "description": "Guess the country from a picture of its silhouette",
+    "about": "Globle turns the whole planet into a hot-and-cold board. Guess any country and it shades in with a temperature indicating how close it lies to the mystery nation - scorching means share a border, icy means wrong ocean.\n\nSweep strategically: test one country per continent early, then follow the heat gradient inward. Because adjacency glows hottest, island nations produce satisfying endgame chases. Land the exact country in as few guesses as possible; a new target appears daily."
+  },
+  {
+    "name": "GridironGrids",
+    "slug": "gridirongrids",
+    "type": "doku",
+    "url": "https://gridirongrids.com/",
+    "logo": "/assets/logos/gridirongrids.webp",
+    "description": "Name the NFL players that match both the row and column clues in the grid",
+    "about": "GridironGrids is fantasy-football trivia boiled down to nine squares. Rows and columns describe NFL criteria - teams played for, statistical milestones, awards - and each cell demands one player who satisfies both intersecting conditions.\n\nEvery athlete may be used only once, so drafting becomes resource management: save your dual-threat legends for the tightest intersections. Rarity scoring rewards obscure role players over household names if you fancy chasing style points. A clean sweep of all nine cells is the daily dream."
   },
   {
     "name": "Heardle",
@@ -133,7 +212,8 @@
     "type": "oodle",
     "url": "https://heardlewordle.io/",
     "logo": "/assets/logos/heardle.webp",
-    "description": "Guess the song from a small snippet of the song"
+    "description": "Guess the song from a small snippet of the song",
+    "about": "Heardle is a game of musical first impressions. You hear a single second of a song's intro and must name the track; each skipped or wrong guess extends the clip by another beat until the mystery resolves itself.\n\nLibrary breadth wins - the catalogue skews toward streaming-era staples everyone has half-heard. Shazam your own speakers all you like; honour system rules apply. Naming it on second one is the daily flex, and a fresh intro spins up tomorrow."
   },
   {
     "name": "Heardle 80s",
@@ -141,7 +221,26 @@
     "type": "oodle",
     "url": "https://heardlewordle.io/heardle-80s",
     "logo": "/assets/logos/heardle-80s.webp",
-    "description": "Guess the 80s song by listening to small clips of the game"
+    "description": "Guess the 80s song by listening to small clips of the game",
+    "about": "Heardle 80s rewinds the tape three decades: synth arpeggios gated reverbs and drum machines replace modern production, and your job is still to name the song from the shortest possible snippet.\n\nThe decade's signature sounds help - a DX7 chord or LinnDrum crack narrows the field immediately. Expect chart titans and one-hit wonders in equal measure, so brush up on those track-two deep cuts. A neon-soaked new puzzle plays daily."
+  },
+  {
+    "name": "Higher or Lower",
+    "slug": "higher-or-lower",
+    "type": "trivia",
+    "url": "https://playhigherlower.com/daily",
+    "logo": "/assets/logos/higher-or-lower.webp",
+    "description": "Guess whether each value is higher or lower than the last and build a streak in one shared daily round",
+    "about": "Higher or Lower distills trivia into its purest binary form. Each round shows you a value - search volume, sales, statistics - and asks whether the next one ranks above or below it, chaining into one shared daily sequence everyone plays.\n\nCalibration beats knowledge: knowing rough magnitudes of everyday quantities matters more than encyclopedic recall. Streak pressure makes even confident comparisons sweaty, and one shared daily ladder means leaderboard climbs feel earned. A fresh deck is shuffled every day."
+  },
+  {
+    "name": "HoopGrids",
+    "slug": "hoopgrids",
+    "type": "doku",
+    "url": "https://hoopgrids.com/",
+    "logo": "/assets/logos/hoopgrids.ico",
+    "description": "Name the NBA players that match both the row and column clues in the grid",
+    "about": "HoopGrids challenges basketball brains with a three-by-three matrix. Criteria run along each row and column - franchises, award seasons, statistical thresholds - and you must nominate one NBA player per cell who clears both bars.\n\nEach player counts once, so managing your superteam across nine slots is the real puzzle. Chasing a low rarity score by naming journeymen instead of superstars is the connoisseur's path. Nine-for-nine completes a perfect sheet; the grid renews daily."
   },
   {
     "name": "Immaculate Footy",
@@ -149,7 +248,8 @@
     "type": "doku",
     "url": "https://www.immaculatefooty.com/",
     "logo": "https://www.immaculatefooty.com/favicon.ico",
-    "description": "Guess the soccer players that match the clues in the grid."
+    "description": "Guess the soccer players that match the clues in the grid.",
+    "about": "Immaculate Footy translates the immaculate-grid formula to world football. Intersecting rows and columns pose club-and-country puzzles - think 'won the Champions League' meeting 'played in Serie A' - and each square wants a footballer who ticks both boxes.\n\nTransfer-history recall is the core skill, and the nine-use rule forces careful allocation of your galacticos. Rare picks score lower on the rarity meter, so digging out cult heroes pays dividends. A fresh fixture list drops every day."
   },
   {
     "name": "Immaculate Grid (Baseball)",
@@ -157,7 +257,8 @@
     "type": "doku",
     "url": "https://www.immaculategrid.com/",
     "logo": "/assets/logos/immaculate-grid-baseball.webp",
-    "description": "Guess the baseball players that match the clues in the grid."
+    "description": "Guess the baseball players that match the clues in the grid.",
+    "about": "Immaculate Grid is baseball trivia distilled into a tic-tac-toe board. Each row and column sets a condition - a team, an award, a stat plateau, a teammate requirement - and every cell needs one player satisfying both intersecting criteria.\n\nWith only nine slots and no repeats, squad construction is strategy: spend Babe Ruth where he is irreplaceable and dig deeper for the corners. The rarity percentage tells you how contrarian your card is. A new grid is delivered daily, rain or shine."
   },
   {
     "name": "Immaculate Grid (Football)",
@@ -165,7 +266,8 @@
     "type": "doku",
     "url": "https://www.immaculategrid.com/football",
     "logo": "/assets/logos/immaculate-grid-football.webp",
-    "description": "Guess the football players that match the clues in the grid."
+    "description": "Guess the football players that match the clues in the grid.",
+    "about": "Immaculate Grid (Football) applies the nine-square formula to American football. Team tenures, Pro Bowl nods, championship rings and stat milestones form intersecting constraints, and each cell calls for one player who meets both.\n\nRoster memory across eras is tested gently but thoroughly - the format favours fans who remember the supporting casts, not just MVPs. Use your locks wisely since no athlete may appear twice on one card. The next grid kicks off daily."
   },
   {
     "name": "Immaculate Grid (Hockey)",
@@ -173,7 +275,8 @@
     "type": "doku",
     "url": "https://www.immaculategrid.com/hockey",
     "logo": "/assets/logos/immaculate-grid-hockey.webp",
-    "description": "Guess the hockey players that match the clues in the grid."
+    "description": "Guess the hockey players that match the clues in the grid.",
+    "about": "Immaculate Grid (Hockey) freezes the daily-grid concept onto ice. Row-and-column criteria span franchises, trophies, draft positions and statistical clubs, demanding one qualifying skater or goalie per square.\n\nDepth scoring matters: the difference between a legend and a third-line grinder is often just trivia courage, and rare answers earn better rarity marks. No player may be used twice, so budget your Hall of Famers. Fresh ice is laid every day."
   },
   {
     "name": "Immaculate Grid (Mens Basketball)",
@@ -181,7 +284,8 @@
     "type": "doku",
     "url": "https://www.immaculategrid.com/basketball/mens",
     "logo": "/assets/logos/immaculate-grid-mens-basketball.webp",
-    "description": "Guess the basketball players that match the clues in the grid."
+    "description": "Guess the basketball players that match the clues in the grid.",
+    "about": "Immaculate Grid (Men's Basketball) is the hardwood edition of the daily nine-square puzzle. Franchise histories, All-Star selections, scoring titles and college ties intersect cell by cell, and each demands one men's player clearing both hurdles.\n\nThe one-player-per-card rule turns it into roster Tetris - spread your stars across the board rather than stacking them. Rarity percentages reward the historians who remember role players and one-season rentals. A new card tips off daily."
   },
   {
     "name": "Immaculate Grid (Womens Basketball)",
@@ -189,7 +293,8 @@
     "type": "doku",
     "url": "https://www.immaculategrid.com/basketball/womens",
     "logo": "/assets/logos/immaculate-grid-womens-basketball.webp",
-    "description": "Guess the basketball players that match the clues in the grid."
+    "description": "Guess the basketball players that match the clues in the grid.",
+    "about": "Immaculate Grid (Women's Basketball) brings the same satisfying intersection puzzle to the women's game. College careers, WNBA franchises, international stops and award winners form the rows and columns; you supply one qualifying player per square.\n\nIt is a brilliant excuse to learn the league's history beyond the headlines - dynasties, journeywomen and overseas legends all count. As always, nine unique names, no substitutions, rarity points for obscurity done right. The next grid drops daily."
   },
   {
     "name": "Isaacle",
@@ -197,7 +302,8 @@
     "type": "oodle",
     "url": "https://isaacle.net/",
     "logo": "/assets/logos/isaacle.webp",
-    "description": "Guess the item from the Binding of Isaac games using clues given from other guesses"
+    "description": "Guess the item from the Binding of Isaac games using clues given from other guesses",
+    "about": "Isaacle tests your memory of The Binding of Isaac's sprawling item pool. Name an item and the game reveals clues about the secret one - its pool, quality, item type and other attributes - turning roguelike expertise into a deduction race.\n\nPlayers who can recite synergies from memory will feel at home, while lapsed fans get a refresher course in Isaac's gross wonders. Wrong answers are never wasted; each eliminates possibilities and sharpens the picture. A new item crawls out of the basement daily."
   },
   {
     "name": "Loldle",
@@ -205,7 +311,8 @@
     "type": "oodle",
     "url": "https://loldle.net/classic",
     "logo": "/assets/logos/loldle.webp",
-    "description": "Guess the League of Legends champion name from clues given when guessing other pokemon"
+    "description": "Guess the League of Legends champion name from clues given when guessing other pokemon",
+    "about": "Loldle is a daily celebration of League of Legends minutiae across several modes. Guess champions from splash art silhouettes, iconic voice quotes, ability icons or emoji riddles, with colour-coded feedback after every attempt.\n\nSuccess leans on pattern recognition - recognising a blade silhouette or a taunt line instantly separates the summoners from the spectators. Modes reset together each day, so a bad quote round never ruins a good emoji run. Rift knowledge required, flash optional."
   },
   {
     "name": "Love Me Doku",
@@ -213,7 +320,8 @@
     "type": "doku",
     "url": "https://lovemedoku.com/",
     "logo": "/assets/logos/love-me-doku.webp",
-    "description": "Fill the grid with Beatles songs that match the given clues"
+    "description": "Fill the grid with Beatles songs that match the given clues",
+    "about": "Love Me Doku is a crossword-logic puzzle built entirely from Beatles songs. Clues describe lyrical fragments, albums and chart facts, and the answers interlock into a grid the way only a catalogue this rich allows.\n\nYou do not need to be a superfan, but knowing Abbey Road from Let It Be speeds everything up. Solving works best from the longest titles inward, letting crossings confirm the shorter cuts. Whether 'doku' means sudoku-style discipline or singalong joy, a new grid is here come the day."
   },
   {
     "name": "MapleWordle",
@@ -221,7 +329,8 @@
     "type": "oodle",
     "url": "https://www.maplewordle.com/",
     "logo": "/assets/logos/maplewordle.webp",
-    "description": "Guess the MapleStory character from clues given by guessing other characters"
+    "description": "Guess the MapleStory character from clues given by guessing other characters",
+    "about": "MapleWordle grafts the daily-guess format onto MapleStory's sprawling character roster. Start with a blind guess, then use the revealed clues - class, world, level band and other traits - to zero in on today's NPC or hero.\n\nLongtime players hold an advantage, but the clue ladder keeps rounds winnable for returning Maplers too. Deduction beats brute force: eliminate whole branches of the character tree with each attempt. A new face logs in every day."
   },
   {
     "name": "Movie Grid",
@@ -229,7 +338,17 @@
     "type": "doku",
     "url": "https://moviegrid.io/",
     "logo": "/assets/logos/movie-grid.webp",
-    "description": "Guess the movies that fit the clues on the edge of the grid"
+    "description": "Guess the movies that fit the clues on the edge of the grid",
+    "about": "Movie Grid serves daily film trivia as an intersection puzzle. Every column and row states a cinematic criterion, and each of the nine cells asks for one title or person satisfying both - with no repeats anywhere on the card.\n\nThe joy is in the squeeze: your favourite blockbuster probably fails one constraint, sending you spelunking for that perfect mid-tier fit. Filling fewer squares is fine, but perfectionists chase the full house. Tonight's double feature refreshes daily."
+  },
+  {
+    "name": "Murdle",
+    "slug": "murdle",
+    "type": "puzzle",
+    "url": "https://murdle.com/",
+    "logo": "/assets/logos/murdle.webp",
+    "description": "Use logic-grid clues to deduce the culprit, weapon, and location",
+    "about": "Murdle hands you a crime scene, a suspect pool and a set of logic clues, then asks who did it, with what, and where. Each bite-sized case is solvable by pure deduction - no guesswork required if you grid out the possibilities properly.\n\nDifficulty climbs through the week, introducing liars, coded statements and ever-weirder weapons. Keeping a truth table is legal and encouraged; the satisfaction of a fully deduced accusation is the hook. A fresh body turns up every morning."
   },
   {
     "name": "Narutodle",
@@ -237,7 +356,8 @@
     "type": "oodle",
     "url": "https://narutodle.net",
     "logo": "/assets/logos/narutodle.webp",
-    "description": "Guess the Naruto character from clues about them"
+    "description": "Guess the Naruto character from clues about them",
+    "about": "Narutodle is a daily guessing game for fans of the Hidden Leaf. Name any character and receive progressive hints - affiliation, village, jutsu type, era - until today's shinobi is unmasked.\n\nFiller-character knowledge occasionally steals the show, which is precisely the fun. Treat each clue as an elimination round across the massive cast, and savour the moment a vague hint clicks into a name. A new ninja graduates to puzzle status daily."
   },
   {
     "name": "Phoodle",
@@ -245,7 +365,8 @@
     "type": "oodle",
     "url": "https://www.phoodle.net/",
     "logo": "/assets/logos/phoodle.webp",
-    "description": "Guess the food related word"
+    "description": "Guess the food related word",
+    "about": "Phoodle seasons the classic word-guessing loop with culinary flavour. Every answer is food-related - dishes, ingredients, techniques, kitchen slang - and you get the usual green-yellow-grey guidance across six tries.\n\nCulinary vocabulary runs deeper than menu items, so consider knife cuts, pastry terms and wine words when brainstorming. After solving, Phoodle serves up a curated fact about the day's term, which is half the delight. Dinner is served daily."
   },
   {
     "name": "Pixeal",
@@ -253,7 +374,8 @@
     "type": "puzzle",
     "url": "https://pixeal.gg/?ref=daily-doku",
     "logo": "/assets/logos/pixeal.webp",
-    "description": "A pixel-art picture hides under the board. Draw it out, reveal as little as you can, and name it."
+    "description": "A pixel-art picture hides under the board. Draw it out, reveal as little as you can, and name it.",
+    "about": "Pixeal hides a pixel-art image behind a wall of tiles and challenges you to expose as little as possible. Peel back squares cautiously, form a hypothesis about what the artwork depicts, then commit to your answer.\n\nFewer reveals mean a higher score, so disciplined peeking beats exhaustive excavation. The gallery spans art, landmarks, characters and objects - anything renderable in charming chunky pixels. Sharpen your eye on a fresh canvas every day."
   },
   {
     "name": "Pokedle",
@@ -261,7 +383,8 @@
     "type": "oodle",
     "url": "https://pokedle.com/classic",
     "logo": "/assets/logos/pokedle.webp",
-    "description": "Guess the pokemons name from clues given when guessing other pokemon"
+    "description": "Guess the pokemons name from clues given when guessing other pokemon",
+    "about": "Pokedle is a daily Pokédex exam in disguise. Guess any Pokémon and the game grades you on everything at once - type, generation, height, weight, evolution stage and more - with each attribute colour-coding how close your pick came.\n\nThe multi-attribute feedback makes every wrong answer a genuine clue: a matching generation but mismatched type tells you exactly which branch of the family tree to explore. Veterans can solve from silhouette mode alone, while everyone else deduces happily. A new Pokémon is caught daily."
   },
   {
     "name": "Pokedoku",
@@ -269,7 +392,8 @@
     "type": "doku",
     "url": "https://pokedoku.com/",
     "logo": "/assets/logos/pokedoku.webp",
-    "description": "Fill the doku with pokemon that match types and other stats"
+    "description": "Fill the doku with pokemon that match types and other stats",
+    "about": "Pokedoku fuses sudoku structure with Pokédex obsession. Each three-by-three grid intersects row and column categories - types, generations, evolution lines, colours - and you must fill all nine cells with distinct Pokémon matching both criteria.\n\nNo duplicates allowed anywhere on the card, so saving versatile species for tricky intersections is essential. Completionists chase the perfect grid; everyone else enjoys the excuse to open the Pokédex. A fresh set of constraints hatches daily."
   },
   {
     "name": "puckdoku",
@@ -277,7 +401,26 @@
     "type": "doku",
     "url": "https://puckdoku.com",
     "logo": "/assets/logos/puckdoku.webp",
-    "description": "Fill the doku with hockey players that match teams and other stats"
+    "description": "Fill the doku with hockey players that match teams and other stats",
+    "about": "Puckdoku puts hockey history on a three-by-three grill. Team stints, trophy wins, draft classes and milestone clubs form the intersecting criteria, and every square demands one NHL player who satisfies the pair.\n\nRemembering which journeyman briefly wore which sweater is a genuine competitive skill here, and low-rarity answers earn bragging rights on the rarity meter. Guard your legends - no skater may appear twice. The zamboni resurfaces a fresh grid nightly."
+  },
+  {
+    "name": "Quordle",
+    "slug": "quordle",
+    "type": "oodle",
+    "url": "https://www.merriam-webster.com/games/quordle",
+    "logo": "/assets/logos/quordle.webp",
+    "description": "Solve four Wordle-style words at once in nine guesses",
+    "about": "Quordle runs four simultaneous word puzzles on one screen. Every guess you type counts against all four boards at once, and nine total attempts must cover four five-letter answers.\n\nEfficiency is everything: opening words packed with common consonants buy the most information per keystroke, and midway through you should switch to letter-hunting mode on the lagging grids. Finishing all four feels like conducting a quartet. Four new boards tune up daily."
+  },
+  {
+    "name": "Semantle",
+    "slug": "semantle",
+    "type": "oodle",
+    "url": "https://semantle.com/",
+    "logo": "/assets/logos/semantle.webp",
+    "description": "Guess the secret word using similarity scores for each attempt",
+    "about": "Semantle measures meaning, not spelling. Guess any word and receive a numeric similarity score describing how semantically close it sits to the secret word, with a percentile ranking showing how many candidate words you just beat.\n\nCold-start rounds reward brainstorming themes: if 'teacher' scores warmly, try classroom, lesson and homework to map the concept space. The final answer is often mundane, which is exactly why it stays hidden so long. Patience wins; a new concept awaits daily."
   },
   {
     "name": "Smashdle",
@@ -285,7 +428,53 @@
     "type": "oodle",
     "url": "https://smashdle.net/",
     "logo": "/assets/logos/smashdle.webp",
-    "description": "Guess the Super Smash Bros champion when guessing other champions"
+    "description": "Guess the Super Smash Bros champion when guessing other champions",
+    "about": "Smashdle quizzes Super Smash Bros. mastery across multiple daily modes. Identify fighters from silhouette, series emblem, debut year, weight class or victory quotes, with instant feedback narrowing the roster after every swing.\n\nCasual fans do fine on the headliners, but the extended cast - echo fighters and DLC surprises included - separates mains from passengers. Rotating modes keep mornings fresh even when yesterday's guess went sideways. Today's challenger approaches."
+  },
+  {
+    "name": "Spelling Bee",
+    "slug": "spelling-bee",
+    "type": "puzzle",
+    "url": "https://www.nytimes.com/puzzles/spelling-bee",
+    "logo": "/assets/logos/spelling-bee.webp",
+    "description": "Build as many words as possible from seven letters, always including the center letter",
+    "about": "Spelling Bee arranges seven letters in a honeycomb and invites you to make as many words as possible. Every word needs the centre letter and at least four characters, with pangrams - words using all seven - earning oversized praise.\n\nProgress ranks carry charming names, from Beginner through Genius to Queen Bee, giving long sessions a visible payoff. Prefixes and suffixes stretch modest roots into point machines. The hive refreshes with new letters daily."
+  },
+  {
+    "name": "Spotle",
+    "slug": "spotle",
+    "type": "oodle",
+    "url": "https://spotle.io/",
+    "logo": "/assets/logos/spotle.webp",
+    "description": "Guess the daily music artist from debut year, genre, nationality and other clues",
+    "about": "Spotle turns your streaming habits into trivia ammunition. Each guess names an artist, and the game responds with clues about the mystery act - follower count bands, debut decade, genre tags, even shared-label connections.\n\nMusic-nerd knowledge compounds fast: knowing roughly when emo revived or which label owns which indie darlings collapses the search space dramatically. Ten guesses, one artist, endless arguments about genres. A new act tops the chart daily."
+  },
+  {
+    "name": "Squardle",
+    "slug": "squardle",
+    "type": "puzzle",
+    "url": "https://fubargames.se/squardle",
+    "logo": "/assets/logos/squardle.webp",
+    "description": "Solve a five-by-five grid hiding six words with letter feedback on every guess",
+    "about": "Squardle plays word-guessing on a grid instead of a single line. Letters you submit are judged horizontally and vertically at once, colour-coded across every row and column they touch, so information multiplies with each entry.\n\nPlanning submissions that test several unknown letters simultaneously is the core skill - wasteful guesses are punished by the board's patience, not a timer. Clearing every line's requirements closes out the round. A fresh grid shuffles in daily."
+  },
+  {
+    "name": "Squareword",
+    "slug": "squareword",
+    "type": "puzzle",
+    "url": "https://squareword.org/",
+    "logo": "/assets/logos/squareword.png",
+    "description": "Uncover the five-by-five grid so every row and column spells a valid word",
+    "about": "Squareword asks for something deceptively simple: a five-by-five square where every row reads left-to-right as a valid word and every column reads top-to-bottom as one too. You start with a few letters seeded in and fill the rest.\n\nUnlimited guesses with gentle feedback make it a meditative solve, closer to sudoku's rhythm than Wordle's tension. Vowels are precious currency - place them thoughtfully and the consonants fall into line. A new lattice is printed daily."
+  },
+  {
+    "name": "Strands",
+    "slug": "strands",
+    "type": "puzzle",
+    "url": "https://www.nytimes.com/games/strands",
+    "logo": "/assets/logos/strands.webp",
+    "description": "Find the hidden theme words and the spangram in the letter grid",
+    "about": "Strands buries a hidden theme inside a letter grid. Find every theme word by dragging connected letters, and you will also net one spangram - a special entry stretching across the board that names the theme itself.\n\nNon-theme words are not wasted: every three found charges a hint that reveals letters of a missing theme word. Themes range from literal to slyly punny, so once you spot one answer, interrogate its neighbours for the pattern. The New York Times weaves a new web daily."
   },
   {
     "name": "The Dozen",
@@ -293,7 +482,17 @@
     "type": "trivia",
     "url": "https://dailydozentrivia.com/",
     "logo": "/assets/logos/the-dozen.webp",
-    "description": "A grid of 12 trivia questions from multiple topics"
+    "description": "A grid of 12 trivia questions from multiple topics",
+    "about": "The Dozen lays twelve trivia questions on a daily grid spanning multiple topics - history, science, sport, culture - with difficulty scattered unpredictably across the squares.\n\nUnlike linear quizzes you cannot bank momentum: a sports question might sit beside organic chemistry, keeping generalists humble. Answer all twelve, compare your tally with friends playing the identical board, and let one fluky square decide bragging rights. Twelve new questions load daily."
+  },
+  {
+    "name": "The Mini Crossword",
+    "slug": "mini-crossword",
+    "type": "puzzle",
+    "url": "https://www.nytimes.com/crosswords/game/mini",
+    "logo": "/assets/logos/mini-crossword.svg",
+    "description": "A bite-sized daily crossword you can solve in minutes",
+    "about": "The Mini Crossword is the espresso shot of crossword solving: a compact grid designed to be finished in minutes, sometimes seconds. Clues skew playful and current, rewarding quick pattern recognition over arcane vocabulary.\n\nSpeedrunners care about downs-before-across technique - locking the short verticals first cascades fills everywhere. Beating your personal best time is the real daily boss fight, and streaks are tracked for motivation. A fresh mini brews every morning."
   },
   {
     "name": "Time Guessr",
@@ -301,7 +500,8 @@
     "type": "trivia",
     "url": "https://timeguessr.com/roundonedaily",
     "logo": "/assets/logos/time-guessr.webp",
-    "description": "Guess the year and location of different photos"
+    "description": "Guess the year and location of different photos",
+    "about": "TimeGuessr shows you historical photographs twice-stripped of context and asks two questions: where was this taken, and when? Pin the location on a map, drag the year along a timeline, and score according to your precision on both axes.\n\nArchitecture, signage, fashion and photographic quality all leak temporal clues, so train yourself to date an image before placing it. Combining spatial and chronological reasoning makes each round richer than pure geography games. A new album develops daily."
   },
   {
     "name": "Tradle",
@@ -309,7 +509,8 @@
     "type": "oodle",
     "url": "https://tradle.net/",
     "logo": "/assets/logos/tradle.webp",
-    "description": "Guess the country from its daily exports treemap"
+    "description": "Guess the country from its daily exports treemap",
+    "about": "Tradle teaches economics through guessing games. Each day presents a treemap chart of one country's exports and asks you to identify the nation behind the data, with distance-and-direction feedback steering subsequent guesses.\n\nCommodity fingerprints are surprisingly legible - crude oil rectangles, semiconductor slivers, coffee patches - and recognising them doubles as an international trade crash course. Fewer guesses, better econ literacy. Tomorrow's export profile ships in twenty-four hours."
   },
   {
     "name": "Travle",
@@ -317,7 +518,26 @@
     "type": "oodle",
     "url": "https://travle.earth/",
     "logo": "/assets/logos/travle.svg",
-    "description": "Find the route between 2 countries"
+    "description": "Find the route between 2 countries",
+    "about": "Travle plans the trip your travel agent never would: journey from a starting country to a destination using nothing but overland border crossings. Name the intermediate countries in order, aiming for the mathematically shortest route.\n\nIsland destinations force creative ferry logic, and enclaves complicate otherwise obvious paths. Knowing that one Central Asian border quietly reopened can be the difference between a perfect route and a detour. A new itinerary is filed daily."
+  },
+  {
+    "name": "Waffle",
+    "slug": "waffle",
+    "type": "puzzle",
+    "url": "https://wafflegame.net/",
+    "logo": "/assets/logos/waffle.webp",
+    "description": "Rearrange the letters to fix six intersecting words within fifteen swaps",
+    "about": "Waffle scrambles six interlocking words into a waffle-shaped grid and grants fifteen swaps to restore order. Drag any two letters to exchange them - every move counts, so efficiency determines your score tier.\n\nGreen letters are already home; yellow ones exist somewhere in their word; greys need relocation entirely. Reading the whole waffle before touching anything prevents the classic cascade mistake. Six golden-brown puzzles bake fresh daily."
+  },
+  {
+    "name": "WhenTaken",
+    "slug": "whentaken",
+    "type": "trivia",
+    "url": "https://whentaken.com/",
+    "logo": "/assets/logos/whentaken.webp",
+    "description": "Pin where each photo was taken and guess the year it was shot",
+    "about": "Whentaken presents a photograph stripped of its metadata and asks the two questions archivists dread: where was this shot, and when? Drop a pin, pick a year, and refine based on how far off both answers were.\n\nVegetation, road markings, architecture and photo quality each whisper decade and continent if you listen. It scratches the same itch as travel trivia but with a forensic twist. A new snapshot enters the darkroom daily."
   },
   {
     "name": "Wordle",
@@ -325,7 +545,17 @@
     "type": "oodle",
     "url": "https://www.nytimes.com/games/wordle/index.html",
     "logo": "/assets/logos/wordle.svg",
-    "description": "Guess the 5 letter word from letter clues given when guessing other words"
+    "description": "Guess the 5 letter word from letter clues given when guessing other words",
+    "about": "Wordle needs little introduction: six attempts to find a five-letter word, with green tiles confirming placement, yellow flagging misplaced letters and grey ruling characters out entirely. Its genius is scarcity - one word per day for everyone.\n\nStrong openings balance common vowels against frequent consonants, then the mid-game becomes constraint logic: track eliminated letters, avoid reusing greys, and consider that answers repeat letters more often than intuition suggests. Hard Mode enforces honesty for purists. The original daily ritual, one word at a time."
+  },
+  {
+    "name": "WorldGuessr",
+    "slug": "worldguessr",
+    "type": "trivia",
+    "url": "https://www.worldguessr.com/",
+    "logo": "/assets/logos/worldguessr.webp",
+    "description": "Explore street-view panoramas and drop your pin where you think you are",
+    "about": "WorldGuessr is a free street-view exploration game with daily challenges: get dropped somewhere on Earth, wander the panorama, and pinpoint your location on the map as precisely as possible.\n\nSince it costs nothing, it is the friendliest way to train real GeoGuessr skills - sun position, road lines, script styles and foliage biomes all become readable signals with practice. Score scales with pin distance, so centimetres matter. A new drop zone awaits daily."
   },
   {
     "name": "Worldle",
@@ -333,6 +563,7 @@
     "type": "oodle",
     "url": "https://worldle.teuteuf.fr/",
     "logo": "/assets/logos/worldle.png",
-    "description": "Guess the country from a picture of its silhouette"
+    "description": "Guess the country from a picture of its silhouette",
+    "about": "Worldle outlines a country's silhouette and asks you to name it from shape alone. Misses are productive: each wrong guess returns distance, direction and a list of the target's actual borders, steadily fencing in the answer.\n\nRecognising distinctive geography - Chile's ribbon, Chad's blob, Portugal's rectangle - is the opener's skillset, while the border hints carry the endgame. Bonus rounds on size and capital cities extend the geography lesson. A new territory is traced daily."
   }
 ]

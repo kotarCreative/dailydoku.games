@@ -1,0 +1,41 @@
+<app-header />
+
+<main>
+  @if (resolved(); as data) {
+  <section class="bg-slate-700 px-6 py-8">
+    <div class="mx-auto max-w-7xl">
+      <nav aria-label="Breadcrumb" class="mb-3 text-sm text-slate-300">
+        <a routerLink="/" class="hover:text-white">Daily Puzzles &amp; Games</a>
+        <span class="mx-2">/</span>
+        <span class="text-slate-100">{{ data.category.heading }}</span>
+      </nav>
+      <h1 class="text-2xl font-bold tracking-tight text-slate-100 sm:text-3xl">
+        {{ data.category.heading }}
+      </h1>
+      <p class="mt-3 max-w-3xl text-base text-slate-300">
+        {{ data.category.intro }}
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="mx-auto grid max-w-7xl gap-4 p-6 sm:grid-cols-2 md:grid-cols-4">
+      @for (game of data.games; track game) {
+      <app-game-card [game]="game" [isFavourite]="isFavourite(game)"
+        (favouriteGame)="onFavouriteGame(game, $event)" />
+      }
+    </div>
+  </section>
+
+  <section class="px-6 pb-12">
+    <div class="mx-auto max-w-3xl text-base leading-relaxed text-slate-300">
+      <p>
+        Every game in this collection is free to play in your browser, needs no
+        account, and resets once a day. Favourite the ones you love on
+        DailyDoku to build a {{ data.category.heading.toLowerCase() }} routine
+        that tracks your streaks across all of them.
+      </p>
+    </div>
+  </section>
+  }
+</main>

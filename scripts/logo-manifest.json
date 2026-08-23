@@ -9,6 +9,11 @@
     "file": "bandle.webp",
     "bytes": 7332
   },
+  "blossom": {
+    "source": "https://blossomword.com/apple-touch-icon.png",
+    "file": "blossom.webp",
+    "bytes": 2974
+  },
   "box-office-game": {
     "source": "https://boxofficega.me/_next/image?url=%2Fbox_office_game.png&w=640&q=75",
     "file": "box-office-game.webp",
@@ -24,10 +29,30 @@
     "file": "centumth.webp",
     "bytes": 4214
   },
+  "chronophoto": {
+    "source": "https://www.chronophoto.app/apple-touch-icon.png",
+    "file": "chronophoto.webp",
+    "bytes": 1392
+  },
   "cine2nerdle": {
     "source": "https://www.cinenerdle2.app/icon.png",
     "file": "cine2nerdle.webp",
     "bytes": 1132
+  },
+  "citydle": {
+    "source": "https://citydle.com/city.png",
+    "file": "citydle.webp",
+    "bytes": 676
+  },
+  "connections": {
+    "source": "https://www.nytimes.com/games-assets/v2/metadata/connections-apple-touch-icon.png?v=",
+    "file": "connections.webp",
+    "bytes": 1286
+  },
+  "contexto": {
+    "source": "https://contexto.me/logo192.png",
+    "file": "contexto.webp",
+    "bytes": 958
   },
   "costcodle": {
     "source": "https://costcodle.com/public/favicon.ico",
@@ -74,10 +99,20 @@
     "file": "gamedle.webp",
     "bytes": 984
   },
+  "geoguess": {
+    "source": "https://geoguess.com/assets/icons/logo.svg",
+    "file": "geoguess.svg",
+    "bytes": 54065
+  },
   "globle": {
     "source": "https://globle-game.com/favicon.ico",
     "file": "globle.webp",
     "bytes": 1446
+  },
+  "gridirongrids": {
+    "source": "https://gridirongrids.com/favicon.ico",
+    "file": "gridirongrids.webp",
+    "bytes": 1036
   },
   "heardle": {
     "source": "https://heardlewordle.io/cache/data/image/options/heardle-game2-m60x60.png",
@@ -88,6 +123,16 @@
     "source": "https://heardlewordle.io/cache/data/image/options/heardle-game2-m60x60.png",
     "file": "heardle-80s.webp",
     "bytes": 1192
+  },
+  "higher-or-lower": {
+    "source": "https://playhigherlower.com/logo.png",
+    "file": "higher-or-lower.webp",
+    "bytes": 8912
+  },
+  "hoopgrids": {
+    "source": "https://hoopgrids.com/favicon.ico",
+    "file": "hoopgrids.ico",
+    "bytes": 2096
   },
   "immaculate-grid-baseball": {
     "source": "https://www.immaculategrid.com/favicon.ico",
@@ -139,6 +184,11 @@
     "file": "movie-grid.webp",
     "bytes": 1548
   },
+  "murdle": {
+    "source": "https://murdle.com/murdle-bookdesign.png",
+    "file": "murdle.webp",
+    "bytes": 2718
+  },
   "narutodle": {
     "source": "https://narutodle.net/favicon.ico",
     "file": "narutodle.webp",
@@ -169,15 +219,55 @@
     "file": "puckdoku.webp",
     "bytes": 988
   },
+  "quordle": {
+    "source": "https://www.merriam-webster.com/games/quordle/assets/icon-quordle.webp",
+    "file": "quordle.webp",
+    "bytes": 488
+  },
+  "semantle": {
+    "source": "https://semantle.com/assets/cover.png",
+    "file": "semantle.webp",
+    "bytes": 1986
+  },
   "smashdle": {
     "source": "https://smashdle.net/img/Logo.d1a12095.png",
     "file": "smashdle.webp",
     "bytes": 9814
   },
+  "spelling-bee": {
+    "source": "https://www.nytimes.com/games-assets/v2/metadata/sb-apple-touch-icon.png?v=",
+    "file": "spelling-bee.webp",
+    "bytes": 2162
+  },
+  "spotle": {
+    "source": "https://spotle.io/favicon.png",
+    "file": "spotle.webp",
+    "bytes": 312
+  },
+  "squardle": {
+    "source": "https://fubargames.se/squardle/graphics/squaredle-wordle-like-daily-word-game.png",
+    "file": "squardle.webp",
+    "bytes": 7992
+  },
+  "squareword": {
+    "source": "https://squareword.org/icons/favicon-128x128.png",
+    "file": "squareword.png",
+    "bytes": 2313
+  },
+  "strands": {
+    "source": "https://www.nytimes.com/games-assets/v2/assets/strands/strands_logo_192x192.png",
+    "file": "strands.webp",
+    "bytes": 3704
+  },
   "the-dozen": {
     "source": "https://dailydozentrivia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.85d8936d.png&w=828&q=75",
     "file": "the-dozen.webp",
     "bytes": 10898
+  },
+  "mini-crossword": {
+    "source": "https://www.nytimes.com/games-assets/v2/assets/icons/mini.svg",
+    "file": "mini-crossword.svg",
+    "bytes": 1005
   },
   "time-guessr": {
     "source": "https://timeguessr.com/favicon-32x32.png",
@@ -194,10 +284,25 @@
     "file": "travle.svg",
     "bytes": 7720
   },
+  "waffle": {
+    "source": "https://wafflegame.net/apple-touch-icon.5835c1c5.png",
+    "file": "waffle.webp",
+    "bytes": 1714
+  },
+  "whentaken": {
+    "source": "https://whentaken.com/android-chrome-192x192.png",
+    "file": "whentaken.webp",
+    "bytes": 3804
+  },
   "wordle": {
     "source": "https://www.nytimes.com/games-assets/v2/assets/wordle/page-icons/wordle-icon.svg",
     "file": "wordle.svg",
     "bytes": 2051
+  },
+  "worldguessr": {
+    "source": "https://www.worldguessr.com/worldguessr_square_1200.png",
+    "file": "worldguessr.webp",
+    "bytes": 6490
   },
   "worldle": {
     "source": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f30e.png",

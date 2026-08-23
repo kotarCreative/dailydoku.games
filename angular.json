@@ -32,7 +32,8 @@
               "src/assets",
               "src/site.webmanifest",
               "src/robots.txt",
-              "src/sitemap.xml"
+              "src/sitemap.xml",
+              "src/llms.txt"
             ],
             "styles": [
               "src/styles.scss"
@@ -128,5 +129,8 @@
     "@schematics/angular:resolver": {
       "typeSeparator": "."
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

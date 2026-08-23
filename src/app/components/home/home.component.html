@@ -13,6 +13,16 @@
         daily word games, grid puzzles and trivia games, favourite the ones you love, and build a
         custom daily routine that tracks your streak.
       </p>
+      <nav aria-label="Game categories" class="mt-5 flex flex-wrap gap-2">
+        @for (category of categories; track category.path) {
+        <a
+          [routerLink]="category.path"
+          class="rounded-full border border-slate-400 px-4 py-1.5 text-sm font-semibold text-slate-200 hover:border-slate-100 hover:text-white"
+        >
+          {{ category.heading }}
+        </a>
+        }
+      </nav>
     </div>
   </section>
 

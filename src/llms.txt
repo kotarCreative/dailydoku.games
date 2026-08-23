@@ -1,0 +1,88 @@
+# DailyDoku
+
+> Find your next favourite daily puzzle. Browse 60+ daily games in one place.
+
+Discover the best daily puzzles and daily games in one place. Play Wordle, Pokedoku, cine2nerdle and 60+ more daily games, then track your streak with a custom daily routine. Every listing links to a page describing the game, how it plays and where to play it. All games are free, browser-based and refresh once per day.
+
+## Pages
+
+- [Home](https://www.daily-doku.com/): the full directory of daily puzzles and daily games
+- [Daily Word Games](https://www.daily-doku.com/word-games)
+- [Daily Grid Puzzles](https://www.daily-doku.com/grid-puzzles)
+- [Daily Trivia Games](https://www.daily-doku.com/trivia-games)
+- [Daily Puzzles](https://www.daily-doku.com/puzzles)
+
+## Daily Word Games
+
+- [Canuckle](https://www.daily-doku.com/games/canuckle): Guess the Canada themed word
+- [Citydle](https://www.daily-doku.com/games/citydle): Guess the daily city from distance and direction clues
+- [Contexto](https://www.daily-doku.com/games/contexto): Find the secret word using semantic closeness ranks for every guess
+- [Costcodle](https://www.daily-doku.com/games/costcodle): Guess the price of the costco item using clues given from other guesses
+- [Dotadle](https://www.daily-doku.com/games/dotadle): Guess the Dota 2 champion from clues given when guessing other champions
+- [Filmdle](https://www.daily-doku.com/games/filmdle): Guess the movie from the tagline and other hints
+- [Flagle](https://www.daily-doku.com/games/flagle): Guess the country based on seeing parts of their flag
+- [FoodGuessr](https://www.daily-doku.com/games/foodguessr): Guess what country the food comes from
+- [Framed](https://www.daily-doku.com/games/framed): Guess the movie from still shots taken from the movie
+- [Gamedle](https://www.daily-doku.com/games/gamedle): Guess the game from partial images of the box art
+- [Heardle](https://www.daily-doku.com/games/heardle): Guess the song from a small snippet of the song
+- [Heardle 80s](https://www.daily-doku.com/games/heardle-80s): Guess the 80s song by listening to small clips of the game
+- [Isaacle](https://www.daily-doku.com/games/isaacle): Guess the item from the Binding of Isaac games using clues given from other guesses
+- [Loldle](https://www.daily-doku.com/games/loldle): Guess the League of Legends champion name from clues given when guessing other pokemon
+- [MapleWordle](https://www.daily-doku.com/games/maplewordle): Guess the MapleStory character from clues given by guessing other characters
+- [Narutodle](https://www.daily-doku.com/games/narutodle): Guess the Naruto character from clues about them
+- [Phoodle](https://www.daily-doku.com/games/phoodle): Guess the food related word
+- [Pokedle](https://www.daily-doku.com/games/pokedle): Guess the pokemons name from clues given when guessing other pokemon
+- [Quordle](https://www.daily-doku.com/games/quordle): Solve four Wordle-style words at once in nine guesses
+- [Semantle](https://www.daily-doku.com/games/semantle): Guess the secret word using similarity scores for each attempt
+- [Smashdle](https://www.daily-doku.com/games/smashdle): Guess the Super Smash Bros champion when guessing other champions
+- [Spotle](https://www.daily-doku.com/games/spotle): Guess the daily music artist from debut year, genre, nationality and other clues
+- [Tradle](https://www.daily-doku.com/games/tradle): Guess the country from its daily exports treemap
+- [Travle](https://www.daily-doku.com/games/travle): Find the route between 2 countries
+- [Wordle](https://www.daily-doku.com/games/wordle): Guess the 5 letter word from letter clues given when guessing other words
+- [Worldle](https://www.daily-doku.com/games/worldle): Guess the country from a picture of its silhouette
+
+## Daily Grid Puzzles
+
+- [Actorle](https://www.daily-doku.com/games/actorle): Guess the actors using the clues in the grid
+- [cine2nerdle](https://www.daily-doku.com/games/cine2nerdle): Try to solve what topics match a specific movie
+- [GridironGrids](https://www.daily-doku.com/games/gridirongrids): Name the NFL players that match both the row and column clues in the grid
+- [HoopGrids](https://www.daily-doku.com/games/hoopgrids): Name the NBA players that match both the row and column clues in the grid
+- [Immaculate Footy](https://www.daily-doku.com/games/immaculate-footy): Guess the soccer players that match the clues in the grid.
+- [Immaculate Grid (Baseball)](https://www.daily-doku.com/games/immaculate-grid-baseball): Guess the baseball players that match the clues in the grid.
+- [Immaculate Grid (Football)](https://www.daily-doku.com/games/immaculate-grid-football): Guess the football players that match the clues in the grid.
+- [Immaculate Grid (Hockey)](https://www.daily-doku.com/games/immaculate-grid-hockey): Guess the hockey players that match the clues in the grid.
+- [Immaculate Grid (Mens Basketball)](https://www.daily-doku.com/games/immaculate-grid-mens-basketball): Guess the basketball players that match the clues in the grid.
+- [Immaculate Grid (Womens Basketball)](https://www.daily-doku.com/games/immaculate-grid-womens-basketball): Guess the basketball players that match the clues in the grid.
+- [Love Me Doku](https://www.daily-doku.com/games/love-me-doku): Fill the grid with Beatles songs that match the given clues
+- [Movie Grid](https://www.daily-doku.com/games/movie-grid): Guess the movies that fit the clues on the edge of the grid
+- [Pokedoku](https://www.daily-doku.com/games/pokedoku): Fill the doku with pokemon that match types and other stats
+- [puckdoku](https://www.daily-doku.com/games/puckdoku): Fill the doku with hockey players that match teams and other stats
+
+## Daily Trivia Games
+
+- [Bandle](https://www.daily-doku.com/games/bandle): Guess the song with the least musicians playing
+- [Box Office Game](https://www.daily-doku.com/games/box-office-game): Guess the movies that were in theatres on a specific weekend
+- [Centumth](https://www.daily-doku.com/games/centumth): Guess the items ranked closest to #100 in today's category
+- [Chronophoto](https://www.daily-doku.com/games/chronophoto): Guess the year each of five photos was taken
+- [Country Draw](https://www.daily-doku.com/games/country-draw): Draw the hidden country from memory on a real map and compare your sketch with the actual border
+- [GeoGuess](https://www.daily-doku.com/games/geoguess): Guess where each photo was taken by dropping a pin on the world map
+- [Globle](https://www.daily-doku.com/games/globle): Guess the country from a picture of its silhouette
+- [Higher or Lower](https://www.daily-doku.com/games/higher-or-lower): Guess whether each value is higher or lower than the last and build a streak in one shared daily round
+- [The Dozen](https://www.daily-doku.com/games/the-dozen): A grid of 12 trivia questions from multiple topics
+- [Time Guessr](https://www.daily-doku.com/games/time-guessr): Guess the year and location of different photos
+- [WhenTaken](https://www.daily-doku.com/games/whentaken): Pin where each photo was taken and guess the year it was shot
+- [WorldGuessr](https://www.daily-doku.com/games/worldguessr): Explore street-view panoramas and drop your pin where you think you are
+
+## Daily Puzzles
+
+- [Blossom](https://www.daily-doku.com/games/blossom): Make as many words as you can from seven letters and bloom every flower
+- [Connections](https://www.daily-doku.com/games/connections): Group sixteen words into four hidden categories
+- [DailyJig](https://www.daily-doku.com/games/dailyjig): Play free daily games and puzzles including Jigsaw, Memory, and Capybas, with fresh challenges every day
+- [Murdle](https://www.daily-doku.com/games/murdle): Use logic-grid clues to deduce the culprit, weapon, and location
+- [Pixeal](https://www.daily-doku.com/games/pixeal): A pixel-art picture hides under the board. Draw it out, reveal as little as you can, and name it.
+- [Spelling Bee](https://www.daily-doku.com/games/spelling-bee): Build as many words as possible from seven letters, always including the center letter
+- [Squardle](https://www.daily-doku.com/games/squardle): Solve a five-by-five grid hiding six words with letter feedback on every guess
+- [Squareword](https://www.daily-doku.com/games/squareword): Uncover the five-by-five grid so every row and column spells a valid word
+- [Strands](https://www.daily-doku.com/games/strands): Find the hidden theme words and the spangram in the letter grid
+- [The Mini Crossword](https://www.daily-doku.com/games/mini-crossword): A bite-sized daily crossword you can solve in minutes
+- [Waffle](https://www.daily-doku.com/games/waffle): Rearrange the letters to fix six intersecting words within fifteen swaps

@@ -7,6 +7,30 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/word-games</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/grid-puzzles</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/trivia-games</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/puzzles</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/actorle</loc>
     <lastmod>2026-08-17</lastmod>
     <priority>0.8</priority>
@@ -14,6 +38,12 @@
   </url>
   <url>
     <loc>https://www.daily-doku.com/games/bandle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/blossom</loc>
     <lastmod>2026-08-17</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -37,7 +67,31 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/chronophoto</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/cine2nerdle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/citydle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/connections</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/contexto</loc>
     <lastmod>2026-08-17</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -97,7 +151,19 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/geoguess</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/globle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/gridirongrids</loc>
     <lastmod>2026-08-17</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -110,6 +176,18 @@
   </url>
   <url>
     <loc>https://www.daily-doku.com/games/heardle-80s</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/higher-or-lower</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/hoopgrids</loc>
     <lastmod>2026-08-17</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -181,6 +259,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/murdle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/narutodle</loc>
     <lastmod>2026-08-17</lastmod>
     <priority>0.8</priority>
@@ -217,13 +301,61 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/quordle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/semantle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/smashdle</loc>
     <lastmod>2026-08-17</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/spelling-bee</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/spotle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/squardle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/squareword</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/strands</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/the-dozen</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/mini-crossword</loc>
     <lastmod>2026-08-17</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -247,7 +379,25 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/waffle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/whentaken</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/wordle</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/worldguessr</loc>
     <lastmod>2026-08-17</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>

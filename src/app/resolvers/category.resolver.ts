@@ -4,19 +4,21 @@ import { HttpClient } from '@angular/common/http';
 import { map, catchError, of } from 'rxjs';
 
 import Game, { IGame } from '@models/Game';
+import { CategoryConfig } from '../site-config';
 
-export interface ResolvedGame {
-  game: IGame;
-  /** Same-genre games for the "related" section; stable alphabetical order. */
-  relatedGames: IGame[];
+export interface ResolvedCategory {
+  category: CategoryConfig;
+  games: IGame[];
 }
 
-const RELATED_COUNT = 4;
-
-export const gameResolver: ResolveFn<ResolvedGame | null> = (route) => {
+/**
+ * Loads the catalogue once and slices out the games belonging to the
+ * category's type. Mirrors gameResolver so both hub pages and detail pages
+ * resolve synchronously during prerendering.
+ */
+export const categoryResolver: ResolveFn<ResolvedCategory | null> = (route) => {
   const http = inject(HttpClient);
   const router = inject(Router);
-  const slug = route.paramMap.get('slug');
 
   return http.get<IGame[]>('/assets/games.json').pipe(
     map((games) => {
@@ -28,20 +30,19 @@ export const gameResolver: ResolveFn<ResolvedGame | null> = (route) => {
         }
       });
 
-      const game = validatedGames.find((g) => g.slug === slug);
+      // The category config is injected via route data when the static
+      // category routes are registered.
+      const category = route.data['category'] as CategoryConfig | undefined;
 
-      if (!game) {
+      if (!category) {
         router.navigate(['/']);
         return null;
       }
 
-      // Alphabetical slice keeps the internal links deterministic across
-      // builds, which crawlers appreciate.
-      const relatedGames = validatedGames
-        .filter((candidate) => candidate.type === game.type && candidate.slug !== game.slug)
-        .slice(0, RELATED_COUNT);
-
-      return { game, relatedGames };
+      return {
+        category,
+        games: validatedGames.filter((game) => game.type === category.type)
+      };
     }),
     catchError(() => {
       router.navigate(['/']);

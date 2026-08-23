@@ -1,4 +1,5 @@
 import { Component, effect, inject, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { HeaderComponent } from '@components/header/header.component';
 import { GameListComponent } from '@components/game-list/game-list.component';
@@ -6,6 +7,7 @@ import { DailyBannerComponent } from '@components/daily-banner/daily-banner.comp
 import { SeoService } from '@services/seo.service';
 import { GamesService } from '@services/games.service';
 import {
+  CATEGORIES,
   DEFAULT_DESCRIPTION,
   DEFAULT_KEYWORDS,
   DEFAULT_TITLE,
@@ -15,13 +17,15 @@ import {
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, GameListComponent, DailyBannerComponent],
+  imports: [RouterLink, HeaderComponent, GameListComponent, DailyBannerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
   private seoService = inject(SeoService);
   private gamesService = inject(GamesService);
+
+  categories = CATEGORIES;
 
   constructor() {
     effect(() => {
@@ -60,6 +64,7 @@ export class HomeComponent implements OnInit {
     // Drop game-page schema when arriving back here via client-side nav.
     this.seoService.removeJsonLd('breadcrumb');
     this.seoService.removeJsonLd('game');
+    this.seoService.removeJsonLd('category-item-list');
 
     this.seoService.setMeta({
       title: DEFAULT_TITLE,
