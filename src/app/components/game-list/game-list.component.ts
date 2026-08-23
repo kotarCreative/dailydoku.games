@@ -15,6 +15,15 @@ export class GameListComponent {
     return this._gamesService.games;
   }
 
+  get showEmptyFavouritesMessage(): boolean {
+    const gamesService = this._gamesService;
+    return (
+      gamesService.filterFavourites &&
+      gamesService.favouriteCount === 0 &&
+      !gamesService.searchTerm
+    );
+  }
+
   constructor(private _gamesService: GamesService) {}
 
   onFavouriteGame(game: IGame, isFavourite: boolean) { 

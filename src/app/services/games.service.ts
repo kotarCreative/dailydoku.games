@@ -52,6 +52,10 @@ export class GamesService {
     return this._filterFavourites();
   }
 
+  get favouriteCount(): number {
+    return this._favouriteGames().length;
+  }
+
   get searchTerm(): string {
     return this._searchTerm();
   }
