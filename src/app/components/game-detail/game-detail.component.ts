@@ -133,13 +133,10 @@ export class GameDetailComponent implements OnInit {
     });
   }
 
-  playGame(): void {
+  trackGameClick(): void {
     const game = this.game();
-    if (game) {
-      if (this._analytics !== null) {
-        logEvent(this._analytics, 'game_clicked', { game: game.name });
-      }
-      window.open(game.url, '_blank');
+    if (game && this._analytics !== null) {
+      logEvent(this._analytics, 'game_clicked', { game: game.name });
     }
   }
 
