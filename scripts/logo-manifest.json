@@ -104,6 +104,11 @@
     "file": "gamedle.webp",
     "bytes": 984
   },
+  "garage-grid": {
+    "source": "https://pistonarcade.com/icon.png",
+    "file": "garage-grid.webp",
+    "bytes": 6354
+  },
   "geoguess": {
     "source": "https://geoguess.com/assets/icons/logo.svg",
     "file": "geoguess.svg",

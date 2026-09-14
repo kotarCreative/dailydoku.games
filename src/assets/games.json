@@ -189,6 +189,15 @@
     "about": "Gamedle blurs a piece of video game history and asks you to name it. Box art starts heavily pixelated and comes into focus with every wrong guess, while alternate modes quiz you on keywords and quotes from gaming's greatest hits.\n\nCover composition is the tell: recognise the art style of a beloved franchise and you can skip several zoom levels. Even when stumped, the reveal doubles as a nostalgic museum tour. A new game loads up every day."
   },
   {
+    "name": "Garage Grid",
+    "slug": "garage-grid",
+    "type": "doku",
+    "url": "https://pistonarcade.com/garage-grid",
+    "logo": "/assets/logos/garage-grid.webp",
+    "description": "Find nine different cars that match every row and column intersection",
+    "about": "Garage Grid is a daily 3x3 car grid from Piston Arcade. Pick a square and name a car that satisfies both its row and column clues, with every correct car used only once.\n\nThree mistakes end the run, and rarity scoring rewards obscure picks over obvious ones, with unfilled cells adding penalty points. A fresh automotive grid arrives every day, and missed grids stay playable in the archive."
+  },
+  {
     "name": "GeoGuess",
     "slug": "geoguess",
     "type": "trivia",
