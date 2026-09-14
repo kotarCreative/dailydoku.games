@@ -45,6 +45,15 @@
     "about": "Canuckle takes the familiar five-letter, six-guess formula and wraps it in a maple leaf. Every answer has a Canadian connection - slang, places, foods, hockey lore - so solving it doubles as a small tour of the Great White North.\n\nFeedback works exactly as word-game veterans expect: letters light up for correct spots, near misses and misses alike. If you know your toques from your tuques, trust the theme; when torn between options, the more Canuck-flavoured word is usually the one. The daily word drops every morning, eh."
   },
   {
+    "name": "Cast Six",
+    "slug": "cast-six",
+    "type": "doku",
+    "url": "https://castsix.com/?ref=daily-doku",
+    "logo": "/assets/logos/cast-six.webp",
+    "description": "Match six movies to six categories and find the lineup in three checks",
+    "about": "Cast Six deals you six movies and six categories and asks for the one lineup where everything fits. Some films fit more than one part, so the whole cast has to work together, and you get three checks to find it.\n\nStart with the most distinctive categories first and save the flexible blockbusters for last, since one movie can cover two slots. Hints place a correct match for a points penalty, but daily streaks survive hint use. A new cast arrives every day, plus themed packs when one round is not enough."
+  },
+  {
     "name": "Centumth",
     "slug": "centumth",
     "type": "trivia",

@@ -44,6 +44,7 @@ Discover the best daily puzzles and daily games in one place. Play Wordle, Poked
 ## Daily Grid Puzzles
 
 - [Actorle](https://www.daily-doku.com/games/actorle): Guess the actors using the clues in the grid
+- [Cast Six](https://www.daily-doku.com/games/cast-six): Match six movies to six categories and find the lineup in three checks
 - [cine2nerdle](https://www.daily-doku.com/games/cine2nerdle): Try to solve what topics match a specific movie
 - [GridironGrids](https://www.daily-doku.com/games/gridirongrids): Name the NFL players that match both the row and column clues in the grid
 - [HoopGrids](https://www.daily-doku.com/games/hoopgrids): Name the NBA players that match both the row and column clues in the grid

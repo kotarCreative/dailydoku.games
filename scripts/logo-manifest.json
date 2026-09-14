@@ -24,6 +24,11 @@
     "file": "canuckle.png",
     "bytes": 1491
   },
+  "cast-six": {
+    "source": "https://www.castsix.com/assets/apple-touch-icon.png",
+    "file": "cast-six.webp",
+    "bytes": 1336
+  },
   "centumth": {
     "source": "https://www.centumth.com/centumth%20logo%20white.png",
     "file": "centumth.webp",
