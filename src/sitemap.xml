@@ -37,6 +37,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/amountle</loc>
+    <lastmod>2026-09-14</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/bandle</loc>
     <lastmod>2026-09-14</lastmod>
     <priority>0.8</priority>

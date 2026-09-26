@@ -9,6 +9,15 @@
     "about": "Actorle's Fill the Grid mode is a daily crossword with a cast list instead of words. Every square hides an actor's name behind a film-buff clue - a famous role, a run of collaborations or a career milestone. You never need the exact spelling of a movie, just a good memory for who was in what.\n\nA good approach is to sweep the grid for clues you can answer instantly and let the crossing entries fill in the rest. Because every answer shares letters with its neighbours, one confident guess often unlocks a whole corner of the board. A fresh grid is published every day."
   },
   {
+    "name": "Amountle",
+    "slug": "amountle",
+    "type": "puzzle",
+    "url": "https://amountle.dev/?ref=daily-doku",
+    "logo": "/assets/logos/amountle.svg",
+    "description": "Watch objects fall and estimate how many are inside",
+    "about": "Amountle is a daily visual estimation game that tests your number sense instead of your vocabulary. Objects drop into a container while you watch, then you estimate how many landed inside - no counting, just gut feel sharpened by attention.\n\nEach day serves five rounds of falling piles, and your score reflects how close every guess lands to the true count. The trick is calibrating your eye: small piles fool you differently than big ones, and comparing your pattern of overs and unders round after round is how streaks are built. A fresh pile drops every day."
+  },
+  {
     "name": "Bandle",
     "slug": "bandle",
     "type": "trivia",

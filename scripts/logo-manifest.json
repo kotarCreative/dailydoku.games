@@ -4,6 +4,11 @@
     "file": "actorle.webp",
     "bytes": 1544
   },
+  "amountle": {
+    "source": "https://www.amountle.dev/favicon.svg",
+    "file": "amountle.svg",
+    "bytes": 370
+  },
   "bandle": {
     "source": "https://bandle.app/favicon.ico",
     "file": "bandle.webp",

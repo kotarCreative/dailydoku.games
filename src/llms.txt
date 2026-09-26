@@ -77,6 +77,7 @@ Discover the best daily puzzles and daily games in one place. Play Wordle, Poked
 
 ## Daily Puzzles
 
+- [Amountle](https://www.daily-doku.com/games/amountle): Watch objects fall and estimate how many are inside
 - [Blossom](https://www.daily-doku.com/games/blossom): Make as many words as you can from seven letters and bloom every flower
 - [Connections](https://www.daily-doku.com/games/connections): Group sixteen words into four hidden categories
 - [DailyJig](https://www.daily-doku.com/games/dailyjig): Play free daily games and puzzles including Jigsaw, Memory, and Capybas, with fresh challenges every day
