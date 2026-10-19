@@ -4,10 +4,25 @@
     "file": "actorle.webp",
     "bytes": 1544
   },
+  "afterimage": {
+    "source": "https://bludle.com/images/social/afterimage.jpg",
+    "file": "afterimage.webp",
+    "bytes": 4024
+  },
   "amountle": {
     "source": "https://www.amountle.dev/favicon.svg",
     "file": "amountle.svg",
     "bytes": 370
+  },
+  "arrow-puzzle": {
+    "source": "https://arrowpuzzle.app/icon?ee19c9d0802a9eea",
+    "file": "arrow-puzzle.webp",
+    "bytes": 2174
+  },
+  "arrowgame": {
+    "source": "https://arrowgame.app/assets/og-image.36b5c4acb3.png",
+    "file": "arrowgame.webp",
+    "bytes": 7778
   },
   "bandle": {
     "source": "https://bandle.app/favicon.ico",
@@ -23,6 +38,16 @@
     "source": "https://boxofficega.me/_next/image?url=%2Fbox_office_game.png&w=640&q=75",
     "file": "box-office-game.webp",
     "bytes": 5036
+  },
+  "brainilab-daily": {
+    "source": "https://brainilabgames.com/assets/brand/og-card.png",
+    "file": "brainilab-daily.webp",
+    "bytes": 3842
+  },
+  "brawldly": {
+    "source": "https://brawldly.com/OG/default.webp",
+    "file": "brawldly.webp",
+    "bytes": 6884
   },
   "canuckle": {
     "source": "https://www.canucklegame.ca/images/canuckle_logo_144x144.png",
@@ -54,6 +79,16 @@
     "file": "citydle.webp",
     "bytes": 676
   },
+  "cluster": {
+    "source": "https://cluster.cyber-jack.uk/og.png",
+    "file": "cluster.webp",
+    "bytes": 2802
+  },
+  "colour-match": {
+    "source": "https://bludle.com/images/social/colormatch.jpg",
+    "file": "colour-match.webp",
+    "bytes": 3740
+  },
   "connections": {
     "source": "https://www.nytimes.com/games-assets/v2/metadata/connections-apple-touch-icon.png?v=",
     "file": "connections.webp",
@@ -74,15 +109,40 @@
     "file": "country-draw.webp",
     "bytes": 3484
   },
+  "cubewords": {
+    "source": "https://cubewords.xyz/social-cube.png",
+    "file": "cubewords.webp",
+    "bytes": 4456
+  },
   "dailyjig": {
     "source": "https://dailyjig.com/static/favicon/favicon.png",
     "file": "dailyjig.webp",
     "bytes": 328
   },
+  "daisy": {
+    "source": "https://games.cyber-jack.uk/og/daisy.png",
+    "file": "daisy.webp",
+    "bytes": 3686
+  },
+  "does-monday-work": {
+    "source": "https://www.doesmondaywork.com/_next/static/immutable/media/logo.3dpbfxc6tk1a_.png",
+    "file": "does-monday-work.webp",
+    "bytes": 5222
+  },
   "dotadle": {
     "source": "https://dotadle.net/img/Logo.5b0230f6.png",
     "file": "dotadle.webp",
     "bytes": 7674
+  },
+  "double-cross": {
+    "source": "https://everhall.ca/card.png",
+    "file": "double-cross.webp",
+    "bytes": 2328
+  },
+  "eightfold": {
+    "source": "https://games.cyber-jack.uk/og/eightfold.png",
+    "file": "eightfold.webp",
+    "bytes": 4112
   },
   "filmdle": {
     "source": "https://heardlewordle.io/cache/data/image/game/filmdle-m228x151.png",
@@ -124,10 +184,20 @@
     "file": "globle.webp",
     "bytes": 1446
   },
+  "glyph": {
+    "source": "https://bludle.com/images/social/glyph.jpg",
+    "file": "glyph.webp",
+    "bytes": 3308
+  },
   "gridirongrids": {
     "source": "https://gridirongrids.com/favicon.ico",
     "file": "gridirongrids.webp",
     "bytes": 1036
+  },
+  "handful": {
+    "source": "https://games.cyber-jack.uk/og/handful.png",
+    "file": "handful.webp",
+    "bytes": 3046
   },
   "heardle": {
     "source": "https://heardlewordle.io/cache/data/image/options/heardle-game2-m60x60.png",
@@ -148,6 +218,11 @@
     "source": "https://hoopgrids.com/favicon.ico",
     "file": "hoopgrids.ico",
     "bytes": 2096
+  },
+  "immaculate-footy": {
+    "source": "https://www.immaculatefooty.com/favicon.ico",
+    "file": "immaculate-footy.webp",
+    "bytes": 440
   },
   "immaculate-grid-baseball": {
     "source": "https://www.immaculategrid.com/favicon.ico",
@@ -179,6 +254,11 @@
     "file": "isaacle.webp",
     "bytes": 342
   },
+  "letterly": {
+    "source": "https://letterly.cyber-jack.uk/og.png",
+    "file": "letterly.webp",
+    "bytes": 4388
+  },
   "loldle": {
     "source": "https://loldle.net/img/Logo.f04e5476.webp",
     "file": "loldle.webp",
@@ -209,6 +289,11 @@
     "file": "narutodle.webp",
     "bytes": 1618
   },
+  "noillirk": {
+    "source": "https://noillirk.app/blog/noillirk/noillirk-forest.webp",
+    "file": "noillirk.webp",
+    "bytes": 11636
+  },
   "phoodle": {
     "source": "https://www.phoodle.net/favicon.ico",
     "file": "phoodle.webp",
@@ -224,6 +309,11 @@
     "file": "pokedle.webp",
     "bytes": 966
   },
+  "pokedleplus": {
+    "source": "https://pokedleplus.com/images/web/pokedleplus_rrss.png",
+    "file": "pokedleplus.webp",
+    "bytes": 2768
+  },
   "pokedoku": {
     "source": "https://pokedoku.com/favicon.ico",
     "file": "pokedoku.webp",
@@ -238,6 +328,36 @@
     "source": "https://www.merriam-webster.com/games/quordle/assets/icon-quordle.webp",
     "file": "quordle.webp",
     "bytes": 488
+  },
+  "rankle": {
+    "source": "https://rankle.cyber-jack.uk/og.png",
+    "file": "rankle.webp",
+    "bytes": 2664
+  },
+  "rarest": {
+    "source": "https://games.cyber-jack.uk/og/rarest.png",
+    "file": "rarest.webp",
+    "bytes": 3252
+  },
+  "rikivo-numbers": {
+    "source": "https://www.rikivo.com/Logo1.png",
+    "file": "rikivo-numbers.webp",
+    "bytes": 3618
+  },
+  "rikivo-words": {
+    "source": "https://www.rikivo.com/favicon.svg",
+    "file": "rikivo-words.svg",
+    "bytes": 423
+  },
+  "royaedly": {
+    "source": "https://royaledly.com/og/defaultogimage.png",
+    "file": "royaedly.webp",
+    "bytes": 8338
+  },
+  "second-sight": {
+    "source": "https://bludle.com/images/social/secondsight.jpg",
+    "file": "second-sight.webp",
+    "bytes": 3034
   },
   "semantle": {
     "source": "https://semantle.com/assets/cover.png",
@@ -269,10 +389,20 @@
     "file": "squareword.png",
     "bytes": 2313
   },
+  "stepwise": {
+    "source": "https://games.cyber-jack.uk/og/stepwise.png",
+    "file": "stepwise.webp",
+    "bytes": 3858
+  },
   "strands": {
     "source": "https://www.nytimes.com/games-assets/v2/assets/strands/strands_logo_192x192.png",
     "file": "strands.webp",
     "bytes": 3704
+  },
+  "the-daily-leak": {
+    "source": "https://thedailyleak.today/assets/og-image.png",
+    "file": "the-daily-leak.webp",
+    "bytes": 7282
   },
   "the-dozen": {
     "source": "https://dailydozentrivia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.85d8936d.png&w=828&q=75",
@@ -299,10 +429,20 @@
     "file": "travle.svg",
     "bytes": 7720
   },
+  "unquote": {
+    "source": "https://games.cyber-jack.uk/og/unquote.png",
+    "file": "unquote.webp",
+    "bytes": 5420
+  },
   "waffle": {
     "source": "https://wafflegame.net/apple-touch-icon.5835c1c5.png",
     "file": "waffle.webp",
     "bytes": 1714
+  },
+  "werdle": {
+    "source": "https://bludle.com/images/social/werdle.jpg",
+    "file": "werdle.webp",
+    "bytes": 3558
   },
   "whentaken": {
     "source": "https://whentaken.com/android-chrome-192x192.png",

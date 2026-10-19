@@ -9,6 +9,15 @@
     "about": "Actorle's Fill the Grid mode is a daily crossword with a cast list instead of words. Every square hides an actor's name behind a film-buff clue - a famous role, a run of collaborations or a career milestone. You never need the exact spelling of a movie, just a good memory for who was in what.\n\nA good approach is to sweep the grid for clues you can answer instantly and let the crossing entries fill in the rest. Because every answer shares letters with its neighbours, one confident guess often unlocks a whole corner of the board. A fresh grid is published every day."
   },
   {
+    "name": "Afterimage",
+    "slug": "afterimage",
+    "type": "puzzle",
+    "url": "https://bludle.com/afterimage/?ref=daily-doku",
+    "logo": "/assets/logos/afterimage.webp",
+    "description": "Study a colour, then rebuild it from memory with RGB controls",
+    "about": "Afterimage is a daily test of colour memory. You are shown a colour for five seconds, it vanishes, and your job is to rebuild it from scratch using red, green and blue sliders.\n\nFive rounds make up each day's set, and the closer your mix lands to the original, the better you score. Because there is no reference left once the colour disappears, it rewards attention to warmth, brightness and intensity rather than any trick of the interface. It is a quick, quietly difficult way to find out how well you really remembered a shade. A new set of colours appears every day."
+  },
+  {
     "name": "Amountle",
     "slug": "amountle",
     "type": "puzzle",
@@ -16,6 +25,24 @@
     "logo": "/assets/logos/amountle.svg",
     "description": "Watch objects fall and estimate how many are inside",
     "about": "Amountle is a daily visual estimation game that tests your number sense instead of your vocabulary. Objects drop into a container while you watch, then you estimate how many landed inside - no counting, just gut feel sharpened by attention.\n\nEach day serves five rounds of falling piles, and your score reflects how close every guess lands to the true count. The trick is calibrating your eye: small piles fool you differently than big ones, and comparing your pattern of overs and unders round after round is how streaks are built. A fresh pile drops every day."
+  },
+  {
+    "name": "Arrow Puzzle",
+    "slug": "arrow-puzzle",
+    "type": "puzzle",
+    "url": "https://arrowpuzzle.app/daily?ref=daily-doku",
+    "logo": "/assets/logos/arrow-puzzle.webp",
+    "description": "Solve the same daily arrow escape puzzle as everyone else",
+    "about": "Arrow Puzzle is a daily arrow escape challenge. The board is a dense tangle of arrows, and only the ones with an unobstructed path off the edge can go first; clear them in the correct order and the whole board unravels.\n\nThe daily puzzle gives every player the exact same board, so results are directly comparable, and a shareable summary lets you post your time without spoiling the solution. An additional journey mode offers a longer run of levels for anyone who wants more than one board a day. A new daily challenge appears every day."
+  },
+  {
+    "name": "ArrowGame",
+    "slug": "arrowgame",
+    "type": "puzzle",
+    "url": "https://arrowgame.app/?ref=daily-doku",
+    "logo": "/assets/logos/arrowgame.webp",
+    "description": "Clear every arrow off the board in the right order",
+    "about": "ArrowGame is an arrow escape puzzle: the board is packed with arrows and only the ones with a clear path off the edge can move. Tap an arrow, it slides away, and the next ones open up - work through them in the wrong order and you are stuck.\n\nIt offers 1,000 hand-built levels alongside a daily challenge, so there is always one more board to clear, and it plays in the browser on desktop or mobile with no download or sign-up. Reading the whole board before you tap is the real skill. A new daily challenge is set every day."
   },
   {
     "name": "Bandle",
@@ -43,6 +70,24 @@
     "logo": "/assets/logos/box-office-game.webp",
     "description": "Guess the movies that were in theatres on a specific weekend",
     "about": "The Box Office Game rewinds the clock to a random weekend in cinema history and asks you to rebuild its top five. Given only the release window, you type the films you think ruled the charts that Friday through Sunday, ranked in order.\n\nStuck entrants can be nudged along with hints - a studio logo here, a star's name there - though each reveal costs points. It is a lovely mix of film trivia and pop-culture archaeology: half the fun is remembering which blockbuster edged out which. A new weekend opens up daily."
+  },
+  {
+    "name": "BrainiLab Daily",
+    "slug": "brainilab-daily",
+    "type": "trivia",
+    "url": "https://brainilabgames.com/daily-quiz/?ref=daily-doku",
+    "logo": "/assets/logos/brainilab-daily.webp",
+    "description": "A fresh quiz or puzzle picked for you each day",
+    "about": "BrainiLab Daily is a rotating daily challenge rather than a single game. One main quiz or puzzle is chosen for you each day, with an optional extra waiting when you want more, spanning general knowledge, logic and quick-fire rounds.\n\nBecause the featured game changes from day to day, it doubles as a tour of the wider BrainiLab collection, and your streaks and rankings carry across. Progress can be saved, so an interrupted round picks up where you left off. A new selection is drawn every day."
+  },
+  {
+    "name": "Brawldly",
+    "slug": "brawldly",
+    "type": "oodle",
+    "url": "https://brawldly.com/?ref=daily-doku",
+    "logo": "/assets/logos/brawldly.webp",
+    "description": "Guess the Brawl Stars brawler across eight daily mini-games",
+    "about": "Brawldly is the Brawl Stars sibling of Royaedly: eight daily mini-games that all come down to naming the right brawler. Clues arrive as word hints, pixel art, gadget and star power descriptions, emojis, hypercharge details and a higher-or-lower challenge.\n\nThe daily puzzles reset at midnight UTC and keep a running streak, while endless modes let you keep playing after today's set is finished. It is aimed squarely at players who know the roster well enough to recognise a brawler from the faintest clue. A fresh batch of challenges lands every day."
   },
   {
     "name": "Canuckle",
@@ -99,6 +144,24 @@
     "about": "Citydle picks a city somewhere on Earth and lets you triangulate your way there. Type any city and you will learn how far off you are and in which direction to look next, turning each guess into a compass bearing.\n\nKnowledge of capitals and major metros gives you a strong opening network; from there it is pure geography detective work, halving distances and following arrows across continents. Fewer guesses mean a sharper sense of direction. A new mystery city appears each day."
   },
   {
+    "name": "Cluster",
+    "slug": "cluster",
+    "type": "puzzle",
+    "url": "https://cluster.cyber-jack.uk/?ref=daily-doku",
+    "logo": "/assets/logos/cluster.webp",
+    "description": "Find the four hidden connections between sixteen words",
+    "about": "Cluster is a daily word group puzzle in the style of Connections: sixteen words are laid out and exactly four groups of four are hiding among them, each with its own connection. Tap the four you think belong together and submit.\n\nGroups lock in by difficulty, from the straightforward yellow through green and blue to the devious purple, and you have four mistakes before the puzzle closes. The craft is in spotting the words that seem to fit two categories and holding back until you are sure. An unlimited archive of past puzzles sits alongside the daily one. A new set of sixteen words appears every day."
+  },
+  {
+    "name": "Colour Match",
+    "slug": "colour-match",
+    "type": "puzzle",
+    "url": "https://bludle.com/colormatch/?ref=daily-doku",
+    "logo": "/assets/logos/colour-match.webp",
+    "description": "Recreate today's colour using only red, green and blue sliders",
+    "about": "Colour Match hands you a single target colour and three sliders - red, green and blue - and asks you to build it back from nothing. There is no eyedropper and no second chance: you get one attempt per day, and the lowest difference wins.\n\nBecause the target stays visible while you mix, the game is really about reading a colour's channels rather than recalling it, which trains a different instinct from a memory test. Nudge one channel at a time and watch how small moves shift the whole shade. A new target colour is set every day."
+  },
+  {
     "name": "Connections",
     "slug": "connections",
     "type": "puzzle",
@@ -135,6 +198,15 @@
     "about": "Country Draw turns cartography into a party trick. You are shown the name of a country and an empty world map, then asked to sketch its border entirely from memory before the outline is revealed and your drawing is scored against the real thing.\n\nEven geographers discover how fuzzy their mental atlases really are - coastlines wander, neighbours loom larger than they should. Start from distinctive features like capes or panhandles and work around the perimeter. Your masterpiece and accuracy score are saved, and a new country is dealt every day."
   },
   {
+    "name": "Cubewords",
+    "slug": "cubewords",
+    "type": "puzzle",
+    "url": "https://cubewords.xyz/?ref=daily-doku",
+    "logo": "/assets/logos/cubewords.webp",
+    "description": "Solve a crossword wrapped around the faces of a cube",
+    "about": "Cubewords takes the familiar crossword and folds it around a cube. Instead of a flat grid, the clues run along the edges of a shape you can spin, so solving means keeping track of where each answer lands and how the faces join up.\n\nAlongside the main daily cube there is a Wordwind mode for a different kind of word challenge, and a set of looks to unlock as you play. It runs in the browser on any device, with an Android version for players who want it on their phone. A new cube is published every day."
+  },
+  {
     "name": "DailyJig",
     "slug": "dailyjig",
     "type": "puzzle",
@@ -144,6 +216,24 @@
     "about": "DailyJig is a calm corner of the daily-games world: a fresh jigsaw every day, alongside rotating memory challenges and quick-fire modes like Capybas for when you want something snappier than edge pieces.\n\nThere is no clock breathing down your neck - just the satisfying click of pieces finding home. Difficulty varies day to day, so a Monday breeze might pair with a Saturday grind. If you crave a daily ritual that is gentler than word-guessing, this is the streak to build."
   },
   {
+    "name": "Daisy",
+    "slug": "daisy",
+    "type": "oodle",
+    "url": "https://games.cyber-jack.uk/daisy/?ref=daily-doku",
+    "logo": "/assets/logos/daisy.webp",
+    "description": "Build the longest word chain you can in sixty seconds",
+    "about": "Daisy is a daily word chain game against the clock. Everyone starts from the same word, and you have sixty seconds to build the longest chain you can, where each new word must begin with the last letter of the one before it - daisy to yellow to wander to rope, and on as far as your vocabulary holds.\n\nThe twist is in the scoring: the words nobody else thought of are worth the most, so reaching for a safe answer is rarely the winning move. Your chain is timed and scored, then compared with the day's other players. A new starting word arrives every day."
+  },
+  {
+    "name": "Does Monday Work?",
+    "slug": "does-monday-work",
+    "type": "puzzle",
+    "url": "https://www.doesmondaywork.com/?ref=daily-doku",
+    "logo": "/assets/logos/does-monday-work.webp",
+    "description": "Fit every event onto the calendar while satisfying all its rules",
+    "about": "Does Monday Work? turns the mild dread of planning a month into a daily logic puzzle. You are handed a themed calendar and a handful of events, each with its own rules - a required weekday, a fixed duration, or a must-come-after relationship with another appointment - and you drag them into place until every constraint is satisfied.\n\nThe twist is that you never see the whole puzzle at once. Every time you place an event, new appointments and new rules reveal themselves, and a schedule that looked settled may need rearranging. Start with the most restricted events, since they have the fewest legal dates, and treat each new rule as a chance to re-check your assumptions. A fresh themed calendar arrives every day."
+  },
+  {
     "name": "Dotadle",
     "slug": "dotadle",
     "type": "oodle",
@@ -151,6 +241,24 @@
     "logo": "/assets/logos/dotadle.webp",
     "description": "Guess the Dota 2 champion from clues given when guessing other champions",
     "about": "Dotadle is a daily quiz for Dota 2 players, built around guessing today's hero. Wrong guesses feed you fresh intel - attribute icons, attack type, ability teasers - until the roster knowledge locked in your head finally names the right one.\n\nVeterans can play it like a deduction game, eliminating candidates by role and stat line, while newer players simply enjoy the tour through the hero pool. Modes rotate between classic guessing, quotes and abilities, so both lore nerds and theorycrafters get a turn. A new hero steps out of the fountain daily."
+  },
+  {
+    "name": "Double Cross",
+    "slug": "double-cross",
+    "type": "puzzle",
+    "url": "https://everhall.ca/?ref=daily-doku",
+    "logo": "/assets/logos/double-cross.webp",
+    "description": "Two clues share one pair of squares, and nothing says which goes where",
+    "about": "Double Cross is a daily crossword with a twist baked into every entry: two clues share the same pair of squares, and nothing on the board tells you which answer belongs in which direction. You solve both at once, using the crossings to work out the assignment as you go.\n\nA strike system and a hint chisel let you push your luck without it becoming a grind, and past puzzles can be revisited. It is made by the team behind Everhall, so the clues lean literary. A new puzzle is published every day."
+  },
+  {
+    "name": "Eightfold",
+    "slug": "eightfold",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/eightfold/?ref=daily-doku",
+    "logo": "/assets/logos/eightfold.webp",
+    "description": "Trace the one hidden eight-letter word in the letter grid",
+    "about": "Eightfold is a daily hidden-word hunt. Press start and a 5x5 grid of letters appears with exactly one eight-letter word woven into it, spelt by a chain of touching squares.\n\nNeighbours can sit above, below, beside or diagonally adjacent, and no square may be used twice, so the word snakes through the grid rather than running in a straight line. Your time to trace it is the score to beat. A new grid is set every day."
   },
   {
     "name": "Filmdle",
@@ -225,6 +333,15 @@
     "about": "Globle turns the whole planet into a hot-and-cold board. Guess any country and it shades in with a temperature indicating how close it lies to the mystery nation - scorching means share a border, icy means wrong ocean.\n\nSweep strategically: test one country per continent early, then follow the heat gradient inward. Because adjacency glows hottest, island nations produce satisfying endgame chases. Land the exact country in as few guesses as possible; a new target appears daily."
   },
   {
+    "name": "Glyph",
+    "slug": "glyph",
+    "type": "oodle",
+    "url": "https://bludle.com/glyph/?ref=daily-doku",
+    "logo": "/assets/logos/glyph.webp",
+    "description": "Read the shape of a word before you see a single letter",
+    "about": "Glyph is a word game that hides the letters and shows you the silhouette instead. You are given the typographic outline of a word - the rise and fall of its lowercase letters - and must work out what it says, with the shape's ascenders, descenders and letter count as your only clues.\n\nFive words make up each day's set, and optional clues and vowel-position hints are there if a shape refuses to resolve; they cost points, so using them is a real trade-off. It is a clever test of how much of reading happens by shape alone. A new set of silhouettes is published every day."
+  },
+  {
     "name": "GridironGrids",
     "slug": "gridirongrids",
     "type": "doku",
@@ -232,6 +349,15 @@
     "logo": "/assets/logos/gridirongrids.webp",
     "description": "Name the NFL players that match both the row and column clues in the grid",
     "about": "GridironGrids is fantasy-football trivia boiled down to nine squares. Rows and columns describe NFL criteria - teams played for, statistical milestones, awards - and each cell demands one player who satisfies both intersecting conditions.\n\nEvery athlete may be used only once, so drafting becomes resource management: save your dual-threat legends for the tightest intersections. Rarity scoring rewards obscure role players over household names if you fancy chasing style points. A clean sweep of all nine cells is the daily dream."
+  },
+  {
+    "name": "Handful",
+    "slug": "handful",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/handful/?ref=daily-doku",
+    "logo": "/assets/logos/handful.webp",
+    "description": "Make your three best words from the day's seven tiles",
+    "about": "Handful is a daily letter-tile game. Everyone gets the same seven tiles, and your job is to build your three best words from them - each at least three letters, drawing on a shared word list that counts both British and American spellings.\n\nA word scores the values printed on its tiles plus a bonus for length, so there is a real decision between three safe medium words and one long swing. When you submit, the game shows the best possible play and where your attempt ranks against everyone else's. A new set of seven tiles appears every day."
   },
   {
     "name": "Heardle",
@@ -274,7 +400,7 @@
     "slug": "immaculate-footy",
     "type": "doku",
     "url": "https://www.immaculatefooty.com/",
-    "logo": "https://www.immaculatefooty.com/favicon.ico",
+    "logo": "/assets/logos/immaculate-footy.webp",
     "description": "Guess the soccer players that match the clues in the grid.",
     "about": "Immaculate Footy translates the immaculate-grid formula to world football. Intersecting rows and columns pose club-and-country puzzles - think 'won the Champions League' meeting 'played in Serie A' - and each square wants a footballer who ticks both boxes.\n\nTransfer-history recall is the core skill, and the nine-use rule forces careful allocation of your galacticos. Rare picks score lower on the rarity meter, so digging out cult heroes pays dividends. A fresh fixture list drops every day."
   },
@@ -333,6 +459,15 @@
     "about": "Isaacle tests your memory of The Binding of Isaac's sprawling item pool. Name an item and the game reveals clues about the secret one - its pool, quality, item type and other attributes - turning roguelike expertise into a deduction race.\n\nPlayers who can recite synergies from memory will feel at home, while lapsed fans get a refresher course in Isaac's gross wonders. Wrong answers are never wasted; each eliminates possibilities and sharpens the picture. A new item crawls out of the basement daily."
   },
   {
+    "name": "Letterly",
+    "slug": "letterly",
+    "type": "oodle",
+    "url": "https://letterly.cyber-jack.uk/?ref=daily-doku",
+    "logo": "/assets/logos/letterly.webp",
+    "description": "One letter, ten categories, ninety seconds",
+    "about": "Letterly is a daily categories game in the spirit of Scattergories. Everyone gets the same starting letter, and over ninety seconds you fill in ten category prompts with answers that begin with it.\n\nWhat makes it competitive is the scoring: an answer is worth more the fewer other players gave the same one, so the obvious word barely counts and a clever, unusual pick can carry the round. A past-answers archive lets you revisit earlier letters. A new letter and category set is drawn every day."
+  },
+  {
     "name": "Loldle",
     "slug": "loldle",
     "type": "oodle",
@@ -387,6 +522,15 @@
     "about": "Narutodle is a daily guessing game for fans of the Hidden Leaf. Name any character and receive progressive hints - affiliation, village, jutsu type, era - until today's shinobi is unmasked.\n\nFiller-character knowledge occasionally steals the show, which is precisely the fun. Treat each clue as an elimination round across the massive cast, and savour the moment a vague hint clicks into a name. A new ninja graduates to puzzle status daily."
   },
   {
+    "name": "Noillirk",
+    "slug": "noillirk",
+    "type": "trivia",
+    "url": "https://noillirk.app/?ref=daily-doku",
+    "logo": "/assets/logos/noillirk.webp",
+    "description": "Guess the most common answers to seven shared questions",
+    "about": "Noillirk is a daily common-answer game - the kind of challenge where the winning move is to think like everyone else. Seven questions are shared with all players each day, and you score by guessing the answers a crowd would give rather than the cleverest one.\n\nYou climb from the forest to the sky as your guesses land, and a leaderboard shows how your flight compares with everyone else's. There is no sign-up, and an unlimited practice mode is there once the daily run is over. Seven fresh questions are set every day, resetting at midnight Beijing time."
+  },
+  {
     "name": "Phoodle",
     "slug": "phoodle",
     "type": "oodle",
@@ -414,6 +558,15 @@
     "about": "Pokedle is a daily Pokédex exam in disguise. Guess any Pokémon and the game grades you on everything at once - type, generation, height, weight, evolution stage and more - with each attribute colour-coding how close your pick came.\n\nThe multi-attribute feedback makes every wrong answer a genuine clue: a matching generation but mismatched type tells you exactly which branch of the family tree to explore. Veterans can solve from silhouette mode alone, while everyone else deduces happily. A new Pokémon is caught daily."
   },
   {
+    "name": "Pokédleplus",
+    "slug": "pokedleplus",
+    "type": "oodle",
+    "url": "https://pokedleplus.com/?ref=daily-doku",
+    "logo": "/assets/logos/pokedleplus.webp",
+    "description": "Guess today's Pokémon from clues, emojis, silhouettes or moves",
+    "about": "Pokédleplus is a daily Pokémon guessing game with several ways in. The Classic mode plays like Wordle for Pokémon, feeding you hints as you guess, while other daily modes hide the answer behind emojis, a zoomed-in image or the stats of the day's move.\n\nBeyond the daily set there are unlimited modes - guessing a Pokémon from its cry, or choosing which of two has the higher stat - so a strong run does not have to end at midnight. It draws on every generation, so a broad Pokédex memory pays off. New daily puzzles appear every day."
+  },
+  {
     "name": "Pokedoku",
     "slug": "pokedoku",
     "type": "doku",
@@ -439,6 +592,60 @@
     "logo": "/assets/logos/quordle.webp",
     "description": "Solve four Wordle-style words at once in nine guesses",
     "about": "Quordle runs four simultaneous word puzzles on one screen. Every guess you type counts against all four boards at once, and nine total attempts must cover four five-letter answers.\n\nEfficiency is everything: opening words packed with common consonants buy the most information per keystroke, and midway through you should switch to letter-hunting mode on the lagging grids. Finishing all four feels like conducting a quartet. Four new boards tune up daily."
+  },
+  {
+    "name": "Rankle",
+    "slug": "rankle",
+    "type": "trivia",
+    "url": "https://rankle.cyber-jack.uk/?ref=daily-doku",
+    "logo": "/assets/logos/rankle.webp",
+    "description": "Put four things in the right order",
+    "about": "Rankle is a quick daily trivia puzzle about ranking. Each day poses a question - say, order these four things by top speed - and gives you four items to arrange from one extreme to the other.\n\nSwap items until you are happy, then submit, and the game colours each one green if it is in the right spot, orange if it is a single place out and red if it is further away; the real values are revealed afterwards. With one attempt a day, it rewards confident general knowledge over lucky guesses. A new ranking question is set every day."
+  },
+  {
+    "name": "Rarest",
+    "slug": "rarest",
+    "type": "oodle",
+    "url": "https://games.cyber-jack.uk/rarest/?ref=daily-doku",
+    "logo": "/assets/logos/rarest.webp",
+    "description": "Give five answers where the obvious ones barely score",
+    "about": "Rarest is a daily word game that rewards the opposite of a safe answer. Each day brings one prompt - a vegetable, a UK town beginning with S, a word containing QU - and you get up to five answers.\n\nThe scoring is the whole game: an answer is worth more the fewer other players gave it, so a common pick earns almost nothing while the one clever answer almost nobody thought of can win the day. It is a gentle nudge to think past your first instinct. A new prompt is set every day."
+  },
+  {
+    "name": "Rikivo Numbers",
+    "slug": "rikivo-numbers",
+    "type": "puzzle",
+    "url": "https://www.rikivo.com/play.html?ref=daily-doku",
+    "logo": "/assets/logos/rikivo-numbers.webp",
+    "description": "Fill the grid with 1 to 16 using distance clues",
+    "about": "Rikivo Numbers is a daily logic grid with a neat spatial twist. Your task is to fill the board with the numbers 1 to 16, using each once, but you never get to place them freely: the shade of the square you are leaving tells you how far away the next number must sit - white for one square, light grey for two, dark grey for three.\n\nMoves run only horizontally and vertically, so every pick has to satisfy both the ordering and the geometry, and the final number is highlighted to anchor your route. A tutorial and separate practice puzzles make it easy to learn the rules before your streak is on the line. A new grid is set every day."
+  },
+  {
+    "name": "Rikivo Words",
+    "slug": "rikivo-words",
+    "type": "puzzle",
+    "url": "https://www.rikivo.com/words/?ref=daily-doku",
+    "logo": "/assets/logos/rikivo-words.svg",
+    "description": "Chain five word clues across a grid using shade distance clues",
+    "about": "Rikivo Words is a daily word puzzle built on a 5x5 grid of 25 letter tiles. You are given five word clues in order, each showing a few fixed letters and its length, and you must spell every answer by tracing a path through the tiles - using each tile exactly once.\n\nThe route never stops at a word's end: the last letter of one answer must connect to the first of the next, and the shade of each tile you leave tells you how far the next letter can be, with movement restricted to straight horizontal or vertical steps. Word knowledge narrows the candidates, but only the grid logic confirms them, and undo and reset are always available when a route dead-ends. A new grid and set of clues appears every day."
+  },
+  {
+    "name": "Royaedly",
+    "slug": "royaedly",
+    "type": "oodle",
+    "url": "https://royaledly.com/?ref=daily-doku",
+    "logo": "/assets/logos/royaedly.webp",
+    "description": "Guess the Clash Royale card across eight daily mini-games",
+    "about": "Royaedly is a daily guessing game for Clash Royale players. Rather than one puzzle, it offers eight mini-games - the card hidden behind word clues, a pixelated sprite, a written description, an emoji riddle, a sound, and more - all built around identifying the right card.\n\nThe daily rounds reset at midnight UTC and share their answers with everyone, so comparing results is half the fun, while the endless modes let you keep guessing once the daily set is done. If you play Brawl Stars too, the same team runs its companion, Brawldly. Eight fresh challenges arrive every day."
+  },
+  {
+    "name": "Second Sight",
+    "slug": "second-sight",
+    "type": "puzzle",
+    "url": "https://bludle.com/secondsight/?ref=daily-doku",
+    "logo": "/assets/logos/second-sight.webp",
+    "description": "Spot the one change between two fleeting colours",
+    "about": "Second Sight is a daily colour perception test built on a simple idea: you see one colour, there is a brief pause, then you see another, and exactly one thing about it has changed - it has grown brighter, darker or shifted in hue.\n\nAcross the day's ten rounds you pick which change occurred, and your score and streak track how sharp your eye is when the comparison has to live in memory rather than on screen. The changes are deliberately subtle, so trusting your first impression usually beats second-guessing. A new set of rounds appears every day."
   },
   {
     "name": "Semantle",
@@ -495,6 +702,15 @@
     "about": "Squareword asks for something deceptively simple: a five-by-five square where every row reads left-to-right as a valid word and every column reads top-to-bottom as one too. You start with a few letters seeded in and fill the rest.\n\nUnlimited guesses with gentle feedback make it a meditative solve, closer to sudoku's rhythm than Wordle's tension. Vowels are precious currency - place them thoughtfully and the consonants fall into line. A new lattice is printed daily."
   },
   {
+    "name": "Stepwise",
+    "slug": "stepwise",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/stepwise/?ref=daily-doku",
+    "logo": "/assets/logos/stepwise.webp",
+    "description": "Change one letter at a time to climb from one word to the other",
+    "about": "Stepwise is a daily word ladder. You are given a start word and a target word of the same length, and you climb between them one rung at a time, changing a single letter on each step.\n\nEvery rung has to be a real English word and no word can be used twice, which is what turns a simple idea into a genuine puzzle when an obvious step paints you into a corner. The game sets a par built from everyday words, and matching or beating it is the goal. A new ladder is set every day."
+  },
+  {
     "name": "Strands",
     "slug": "strands",
     "type": "puzzle",
@@ -502,6 +718,15 @@
     "logo": "/assets/logos/strands.webp",
     "description": "Find the hidden theme words and the spangram in the letter grid",
     "about": "Strands buries a hidden theme inside a letter grid. Find every theme word by dragging connected letters, and you will also net one spangram - a special entry stretching across the board that names the theme itself.\n\nNon-theme words are not wasted: every three found charges a hint that reveals letters of a missing theme word. Themes range from literal to slyly punny, so once you spot one answer, interrogate its neighbours for the pattern. The New York Times weaves a new web daily."
+  },
+  {
+    "name": "The Daily Leak",
+    "slug": "the-daily-leak",
+    "type": "oodle",
+    "url": "https://thedailyleak.today/?ref=daily-doku",
+    "logo": "/assets/logos/the-daily-leak.webp",
+    "description": "Reveal ten redacted words against the clock",
+    "about": "The Daily Leak dresses a word game up as a declassified memo: ten words in today's briefing have been blacked out, and your job is to uncover each one. Type a word and the game tells you how close you are, so every guess narrows the search a little further.\n\nThe timer and streak turn it into a race against your own best time, and a share code lets you compare a result with friends without spoiling the words. Past briefings are kept in an archive for anyone who wants more than one leak a day. A new briefing is published every day."
   },
   {
     "name": "The Dozen",
@@ -549,6 +774,15 @@
     "about": "Travle plans the trip your travel agent never would: journey from a starting country to a destination using nothing but overland border crossings. Name the intermediate countries in order, aiming for the mathematically shortest route.\n\nIsland destinations force creative ferry logic, and enclaves complicate otherwise obvious paths. Knowing that one Central Asian border quietly reopened can be the difference between a perfect route and a detour. A new itinerary is filed daily."
   },
   {
+    "name": "Unquote",
+    "slug": "unquote",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/unquote/?ref=daily-doku",
+    "logo": "/assets/logos/unquote.webp",
+    "description": "Crack the daily cryptogram to reveal a famous quotation",
+    "about": "Unquote is a daily cryptoquote. A well-known line from a film, TV show or book has been put into a simple substitution cipher, where every letter of the alphabet has been swapped for another and the same swap holds throughout the quotation.\n\nYou work it out letter by letter - crack that G stands for E and it stands for E everywhere - using word shapes and common patterns to break in, then fill the rest from context. It is one of the most satisfying kinds of word puzzle to finish, because the whole sentence appears at once. A new quotation is encoded every day."
+  },
+  {
     "name": "Waffle",
     "slug": "waffle",
     "type": "puzzle",
@@ -556,6 +790,15 @@
     "logo": "/assets/logos/waffle.webp",
     "description": "Rearrange the letters to fix six intersecting words within fifteen swaps",
     "about": "Waffle scrambles six interlocking words into a waffle-shaped grid and grants fifteen swaps to restore order. Drag any two letters to exchange them - every move counts, so efficiency determines your score tier.\n\nGreen letters are already home; yellow ones exist somewhere in their word; greys need relocation entirely. Reading the whole waffle before touching anything prevents the classic cascade mistake. Six golden-brown puzzles bake fresh daily."
+  },
+  {
+    "name": "Werdle",
+    "slug": "werdle",
+    "type": "oodle",
+    "url": "https://bludle.com/werdle/?ref=daily-doku",
+    "logo": "/assets/logos/werdle.webp",
+    "description": "Guess the day's five-letter word in five tries",
+    "about": "Werdle is a clean, fast take on the five-letter word guessing game. You get one shared word a day and five tries to find it, with the familiar green, yellow and grey feedback telling you which letters are in place, which are elsewhere and which are out.\n\nWhere it differs is what happens after you solve: Werdle reveals where the answer came from, so a correct guess doubles as a small piece of word trivia. If you finish early, an unlimited practice mode lets you keep playing without touching your daily result. A new word is shared every day."
   },
   {
     "name": "WhenTaken",
