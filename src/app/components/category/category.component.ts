@@ -1,12 +1,15 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
+import { Component, computed, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 
 import { HeaderComponent } from '@components/header/header.component';
 import { GameCardComponent } from '@components/game-card/game-card.component';
+import { DailyBannerComponent } from '@components/daily-banner/daily-banner.component';
+import { IconComponent } from '@components/icon/icon.component';
+import { GameFiltersComponent } from '@components/game-filters/game-filters.component';
 import { SeoService } from '@services/seo.service';
 import { GamesService } from '@services/games.service';
 import { IGame } from '@models/Game';
-import { SITE_URL, absoluteUrl, gameTypePlural } from '../../site-config';
+import { SITE_URL, absoluteUrl, gameTypeLabel, gameTypePlural } from '../../site-config';
 import { ResolvedCategory } from '@resolvers/category.resolver';
 
 /**
@@ -16,7 +19,7 @@ import { ResolvedCategory } from '@resolvers/category.resolver';
  */
 @Component({
   selector: 'app-category',
-  imports: [HeaderComponent, GameCardComponent, RouterLink],
+  imports: [HeaderComponent, GameCardComponent, DailyBannerComponent, RouterLink, IconComponent, GameFiltersComponent],
   templateUrl: './category.component.html',
   styleUrl: './category.component.scss'
 })
@@ -26,6 +29,23 @@ export class CategoryComponent implements OnInit {
   private gamesService = inject(GamesService);
 
   resolved = signal<ResolvedCategory | null>(null);
+  readonly searchTerm = computed(() => this.gamesService.searchTerm);
+  readonly visibleGames = computed(() => {
+    const query = this.gamesService.searchTerm.trim().toLowerCase();
+    return (this.resolved()?.games ?? []).filter(game => {
+      if (this.gamesService.filterFavourites && !this.gamesService.isFavourite(game)) return false;
+      return !query || [game.name, game.type, gameTypeLabel(game.type)].some(value => value.toLowerCase().includes(query));
+    });
+  });
+
+  onSearchChange(event: Event): void {
+    this.gamesService.setSearchTerm((event.target as HTMLInputElement).value);
+  }
+
+  resetFilters(): void {
+    this.gamesService.setSearchTerm('');
+    this.gamesService.setFilterFavourites(false);
+  }
 
   ngOnInit(): void {
     const data = this.route.snapshot.data['resolved'] as ResolvedCategory | null;

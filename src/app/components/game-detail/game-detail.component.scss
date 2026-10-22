@@ -1,5 +1,193 @@
 :host {
   display: block;
   min-height: 100vh;
-  background-color: rgb(51 65 85); // bg-slate-700
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 22px;
+  color: var(--dd-muted);
+  font-size: 12px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 36px;
+    color: var(--dd-primary);
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.game-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 36px 32px;
+  border-radius: 16px;
+  background: var(--dd-primary);
+  color: #fff;
+}
+
+.game-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 140px;
+  width: 140px;
+  height: 140px;
+  padding: 18px;
+  margin: 6px 4px 0;
+  border-radius: 16px;
+  background: #fff;
+  transform: rotate(-5deg);
+
+  img {
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+    transform: rotate(5deg);
+  }
+}
+
+.game-intro { flex: 1; min-width: 0; }
+.game-heading { min-width: 0; }
+
+.type-label, .section-eyebrow {
+  margin: 0;
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+h1 {
+  margin: 8px 0 12px;
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 800;
+  letter-spacing: -.055em;
+  overflow-wrap: anywhere;
+}
+
+.game-description {
+  max-width: 640px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.play-button {
+  background: var(--dd-accent);
+  color: var(--dd-ink);
+  overflow-wrap: anywhere;
+
+  &:hover { background: #ffe166; }
+}
+
+.favourite {
+  border-color: #ffffff85;
+  background: transparent;
+  color: #fff;
+
+  &.is-favourite, &:hover { border-color: #fff; background: #fff; color: var(--dd-primary); }
+  svg { width: 20px; height: 20px; flex-shrink: 0; }
+}
+
+.game-header .dd-button:focus-visible { outline-color: #fff; }
+
+.visit-note {
+  margin: 14px 0 0;
+  color: #eef1ff;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+h2 {
+  margin: 6px 0 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+
+.section-eyebrow { color: var(--dd-primary); }
+.about { max-width: 800px; padding: 36px 0; }
+
+.about-copy {
+  margin: 16px 0 0;
+  color: #4b5262;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.related-games {
+  border-top: 1px solid var(--dd-line);
+  padding-top: 28px;
+}
+
+.section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-bottom: 12px;
+
+  > div { flex: 1; min-width: min(100%, 240px); }
+}
+
+.browse-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  min-height: 44px;
+  color: var(--dd-primary);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.loading { padding: 80px 20px; color: var(--dd-muted); text-align: center; }
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .game-header { flex-direction: column; padding: 28px; gap: 24px; }
+  .game-art { flex-basis: auto; width: 88px; height: 88px; padding: 12px; }
+  .game-art img { width: 64px; height: 64px; }
+  h1 { font-size: 40px; line-height: 46px; }
+}
+
+@media (max-width: 700px) {
+  .breadcrumbs { margin: 0; padding: 8px 20px 12px; font-size: 11px; }
+  .breadcrumbs a { min-height: 44px; }
+  .game-header { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 18px 16px; padding: 26px 20px; border-radius: 0; }
+  .game-art { width: 64px; height: 64px; margin: 4px 0 0; padding: 8px; border-radius: 10px; }
+  .game-art img { width: 48px; height: 48px; }
+  .game-intro { display: contents; }
+  .game-heading { grid-column: 2; align-self: center; }
+  .type-label { font-size: 9px; line-height: 16px; letter-spacing: .07em; }
+  h1 { margin: 5px 0 0; font-size: 32px; line-height: 36px; }
+  .game-description, .game-actions, .visit-note { grid-column: 1 / -1; }
+  .game-description { font-size: 14px; line-height: 23px; }
+  .game-actions { margin: 0; gap: 10px; }
+  .game-actions .dd-button { flex: 1 1 100%; }
+  .visit-note { margin: 0; font-size: 11px; }
+  .about { padding: 28px 20px; }
+  .about-copy { font-size: 14px; line-height: 25px; }
+  .related-games { margin: 0 20px; padding-top: 24px; }
+  .section-heading { gap: 4px; }
+  h2 { font-size: 22px; line-height: 29px; }
 }

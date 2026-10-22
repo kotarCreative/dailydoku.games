@@ -14,19 +14,19 @@ import { SeoService } from '@services/seo.service';
   template: `
     <app-header />
     <main
-      class="flex min-h-[60vh] flex-col items-center justify-center bg-slate-700 px-6 text-center"
+      class="flex min-h-[60vh] flex-col items-center justify-center px-6 text-center"
     >
-      <p class="text-6xl font-bold text-slate-100">404</p>
-      <h1 class="mt-4 text-2xl font-semibold text-slate-200">
+      <p class="text-6xl font-extrabold text-[#244ce8]">404</p>
+      <h1 class="mt-4 text-2xl font-bold">
         This puzzle doesn't exist... yet
       </h1>
-      <p class="mt-3 max-w-md text-base text-slate-300">
+      <p class="mt-3 max-w-md text-base text-[#626879]">
         The page you're looking for has wandered off. Head back to the daily
         puzzles directory to find your next game.
       </p>
       <a
         routerLink="/"
-        class="mt-8 rounded bg-emerald-700 px-6 py-2 font-semibold text-white hover:bg-emerald-600"
+        class="dd-button mt-8"
       >
         Browse daily games
       </a>

@@ -14,10 +14,11 @@ import { Analytics, logEvent } from '@angular/fire/analytics';
 
 import type { IGame } from '@models/Game';
 import { gameTypeShortLabel } from '../../site-config';
+import { IconComponent } from '@components/icon/icon.component';
 
 @Component({
     selector: 'app-game-card',
-    imports: [RouterLink],
+    imports: [RouterLink, IconComponent],
     templateUrl: './game-card.component.html',
     styleUrl: './game-card.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush
@@ -40,13 +41,17 @@ export class GameCardComponent {
     return gameTypeShortLabel(this.game.type);
   }
 
-  goto() {
+  trackGameClick() {
     if (isPlatformBrowser(this.platformId)) {
       if (this._analytics) {
         logEvent(this._analytics, 'game_clicked', { game: this.game.name });
       }
-      window.open(this.game.url, '_blank');
     }
+  }
+
+  // Kept as a compatibility alias for callers that used the old card action.
+  goto() {
+    this.trackGameClick();
   }
 
   onFavouriteGame() {

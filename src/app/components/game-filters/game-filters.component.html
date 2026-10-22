@@ -1,0 +1,10 @@
+<nav class="dd-categories" aria-label="Game filters">
+  <a routerLink="/" [attr.aria-current]="!activeCategory && !favouritesActive() ? 'page' : null" (click)="clearFavourites()">All games</a>
+  <button type="button" [attr.aria-pressed]="favouritesActive()" (click)="showFavourites()">
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0l-1 1.1-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" /></svg>
+    Favourites
+  </button>
+  @for (category of categories; track category.path) {
+    <a [routerLink]="category.path" [attr.aria-current]="!favouritesActive() && category.path === activeCategory ? 'page' : null" (click)="clearFavourites()">{{ category.label }}</a>
+  }
+</nav>

@@ -11,7 +11,7 @@ describe('GamesService', () => {
     {
       name: 'Game One',
       slug: 'game-one',
-      type: 'Puzzle',
+      type: 'puzzle',
       url: 'http://game-one.com',
       logo: 'logo1.png',
       description: 'First game'
@@ -19,7 +19,7 @@ describe('GamesService', () => {
     {
       name: 'Game Two',
       slug: 'game-two',
-      type: 'Strategy',
+      type: 'trivia',
       url: 'http://game-two.com',
       logo: 'logo2.png',
       description: 'Second game'
@@ -27,7 +27,7 @@ describe('GamesService', () => {
     {
         name: 'Game Three',
         slug: 'game-three',
-        type: 'Puzzle',
+        type: 'puzzle',
         url: 'http://game-three.com',
         logo: 'logo3.png',
         description: 'Third game'
@@ -35,6 +35,7 @@ describe('GamesService', () => {
   ];
 
   beforeEach(() => {
+    localStorage.removeItem('dailyDoku-settings');
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
       providers: [GamesService]
@@ -45,6 +46,7 @@ describe('GamesService', () => {
 
   afterEach(() => {
     httpMock.verify();
+    localStorage.removeItem('dailyDoku-settings');
   });
 
   it('should be created', () => {

@@ -1,13 +1,13 @@
-import { Component, effect, inject, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, computed, effect, inject, OnInit } from '@angular/core';
 
 import { HeaderComponent } from '@components/header/header.component';
 import { GameListComponent } from '@components/game-list/game-list.component';
 import { DailyBannerComponent } from '@components/daily-banner/daily-banner.component';
+import { IconComponent } from '@components/icon/icon.component';
+import { GameFiltersComponent } from '@components/game-filters/game-filters.component';
 import { SeoService } from '@services/seo.service';
 import { GamesService } from '@services/games.service';
 import {
-  CATEGORIES,
   DEFAULT_DESCRIPTION,
   DEFAULT_KEYWORDS,
   DEFAULT_TITLE,
@@ -17,7 +17,7 @@ import {
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, HeaderComponent, GameListComponent, DailyBannerComponent],
+  imports: [HeaderComponent, GameListComponent, DailyBannerComponent, IconComponent, GameFiltersComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -25,7 +25,11 @@ export class HomeComponent implements OnInit {
   private seoService = inject(SeoService);
   private gamesService = inject(GamesService);
 
-  categories = CATEGORIES;
+  readonly searchTerm = computed(() => this.gamesService.searchTerm);
+
+  onSearchChange(event: Event): void {
+    this.gamesService.setSearchTerm((event.target as HTMLInputElement).value);
+  }
 
   constructor() {
     effect(() => {

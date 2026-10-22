@@ -46,4 +46,10 @@ describe('GameCardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('renders the Play action with an external-link icon', () => {
+    const play = fixture.nativeElement.querySelector('.play') as HTMLAnchorElement;
+    expect(play.getAttribute('aria-label')).toBe('Play Test Game in a new tab');
+    expect(play.querySelector('app-icon')?.getAttribute('name')).toBe('external');
+  });
 });

@@ -1,33 +1,37 @@
-<app-header />
+<app-header #siteHeader />
 
-<main>
+<div class="dd-workspace">
   <app-daily-banner />
+  <main class="dd-main">
+    <section class="hero" aria-labelledby="home-heading">
+      <div>
+        <p class="eyebrow">SMALL GAMES. BIG BRAIN ENERGY.</p>
+        <h1 id="home-heading">Your daily dose<br />of “one more”.<span class="sr-only"> Daily puzzles and games.</span></h1>
+        <p class="hero-description">Great daily puzzles and games from all over the web.<span class="desktop-only"> Find your next favourite.</span></p>
+      </div>
+      <div class="play-tiles" aria-hidden="true">
+        <span>P</span><span>L</span><span>A</span><span>Y</span>
+      </div>
+      <span class="play-sticker" aria-hidden="true">LET'S PLAY</span>
+    </section>
 
-  <section class="bg-slate-700 px-6 py-8">
-    <div class="mx-auto max-w-7xl">
-      <h1 class="text-2xl font-bold tracking-tight text-slate-100 sm:text-3xl">
-        Daily Puzzles &amp; Daily Games, All in One Place
-      </h1>
-      <p class="mt-3 max-w-3xl text-base text-slate-300">
-        DailyDoku is a directory of the best free daily puzzles and daily games on the web. Browse
-        daily word games, grid puzzles and trivia games, favourite the ones you love, and build a
-        custom daily routine that tracks your streak.
-      </p>
-      <nav aria-label="Game categories" class="mt-5 flex flex-wrap gap-2">
-        @for (category of categories; track category.path) {
-        <a
-          [routerLink]="category.path"
-          class="rounded-full border border-slate-400 px-4 py-1.5 text-sm font-semibold text-slate-200 hover:border-slate-100 hover:text-white"
-        >
-          {{ category.heading }}
-        </a>
-        }
+    <label class="dd-mobile-search">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.7" cy="10.7" r="6.7" /><path d="m16 16 5 5" stroke-linecap="round" /></svg>
+      <input type="search" aria-label="Search daily games" aria-controls="games" placeholder="Find your next obsession" [value]="searchTerm()" (input)="onSearchChange($event)" />
+    </label>
+
+    <app-game-filters />
+
+    <section id="games" aria-label="Browse daily games">
+      <app-game-list />
+    </section>
+
+    <footer class="dd-footer">
+      <p>A good kind of screen time.</p>
+      <nav aria-label="Community">
+        <button type="button" (click)="siteHeader.openSuggestDialog()">Know a great game? Tell us</button>
+        <a href="https://www.buymeacoffee.com/kotarcreative" target="_blank" rel="noopener noreferrer">Support DailyDoku <app-icon name="external" /></a>
       </nav>
-    </div>
-  </section>
-
-  <section id="games">
-    <h2 class="sr-only">Browse all daily puzzles and daily games</h2>
-    <app-game-list />
-  </section>
-</main>
+    </footer>
+  </main>
+</div>

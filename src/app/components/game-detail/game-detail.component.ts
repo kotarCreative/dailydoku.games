@@ -1,4 +1,6 @@
-import { Component, inject, OnInit, Optional, signal } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit, Optional, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { UpperCasePipe } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Analytics, logEvent } from '@angular/fire/analytics';
 
@@ -6,6 +8,9 @@ import { IGame } from '@models/Game';
 import { GamesService } from '@services/games.service';
 import { SeoService } from '@services/seo.service';
 import { GameCardComponent } from '@components/game-card/game-card.component';
+import { HeaderComponent } from '@components/header/header.component';
+import { DailyBannerComponent } from '@components/daily-banner/daily-banner.component';
+import { IconComponent } from '@components/icon/icon.component';
 import {
   SITE_NAME,
   SITE_URL,
@@ -20,7 +25,7 @@ import { ResolvedGame } from '@resolvers/game.resolver';
 
 @Component({
   selector: 'app-game-detail',
-  imports: [RouterLink, GameCardComponent],
+  imports: [RouterLink, GameCardComponent, HeaderComponent, DailyBannerComponent, IconComponent, UpperCasePipe],
   templateUrl: './game-detail.component.html',
   styleUrl: './game-detail.component.scss'
 })
@@ -28,6 +33,7 @@ export class GameDetailComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private gamesService = inject(GamesService);
   private seoService = inject(SeoService);
+  private destroyRef = inject(DestroyRef);
 
   game = signal<IGame | null>(null);
   aboutParagraphs = signal<string[]>([]);
@@ -41,9 +47,13 @@ export class GameDetailComponent implements OnInit {
   constructor(@Optional() private _analytics: Analytics) {}
 
   ngOnInit(): void {
-    // Get game from resolver - this is available synchronously during SSR
-    const resolved = this.route.snapshot.data['game'] as ResolvedGame | null;
+    // The same component is reused when following a related-game link.
+    this.route.data.pipe(takeUntilDestroyed(this.destroyRef)).subscribe(data => {
+      this.applyResolvedGame(data['game'] as ResolvedGame | null);
+    });
+  }
 
+  private applyResolvedGame(resolved: ResolvedGame | null): void {
     if (!resolved) {
       return;
     }
@@ -136,10 +146,9 @@ export class GameDetailComponent implements OnInit {
   playGame(): void {
     const game = this.game();
     if (game) {
-      if (this._analytics !== null) {
+      if (this._analytics) {
         logEvent(this._analytics, 'game_clicked', { game: game.name });
       }
-      window.open(game.url, '_blank');
     }
   }
 

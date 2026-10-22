@@ -2,7 +2,6 @@ import { computed, effect, inject, Injectable, PLATFORM_ID, signal, WritableSign
 import { isPlatformBrowser } from '@angular/common';
 import { GamesService } from './games.service';
 import { DailySession } from '@models/daily-session';
-import { IGame } from '@models/Game';
 
 @Injectable({
   providedIn: 'root'
@@ -37,13 +36,15 @@ export class DailyWalkthroughService {
 
     // Listen to favorite changes
     effect(() => {
-       // We access the signal directly to get reactive updates
-       const favorites = this._gamesService.allGames
+       const allGames = this._gamesService.allGames;
+       // Do not interpret the initial empty catalogue as an empty favourites
+       // list: the catalogue and saved favourites are restored asynchronously.
+       if (allGames.length === 0) return;
+       const favorites = allGames
         .filter(g => this._gamesService.isFavourite(g))
         .map(g => g.name);
-        
        this._syncFavorites(favorites);
-    }, { allowSignalWrites: true });
+    });
   }
 
   startDailySession() {
@@ -57,7 +58,7 @@ export class DailyWalkthroughService {
 
   completeGame(gameName: string) {
     const session = this._currentSession();
-    if (!session) return;
+    if (!session || !session.games.includes(gameName)) return;
 
     if (!session.completedGames.includes(gameName)) {
       const updatedSession = {
@@ -66,7 +67,7 @@ export class DailyWalkthroughService {
       };
 
       // Check for daily completion
-      if (updatedSession.completedGames.length === updatedSession.games.length && 
+      if (!session.endTime && updatedSession.completedGames.length === updatedSession.games.length &&
           session.completedGames.length !== session.games.length) {
         this._incrementStreak();
         updatedSession.endTime = Date.now();
@@ -86,10 +87,20 @@ export class DailyWalkthroughService {
 
   private _syncFavorites(currentFavorites: string[]) {
       const session = this._currentSession();
-      if (!session) return;
-      
       const today = new Date().toISOString().split('T')[0];
-      if (session.date !== today) return; // Only sync for current day session
+      if (!session || session.date !== today) {
+        if (session && session.completedGames.length < session.games.length) {
+          this._currentStreak.set(0);
+        }
+        if (currentFavorites.length) this._createSession(today, currentFavorites);
+        else this._currentSession.set(null);
+        return;
+      }
+
+      if (session.games.length === 0 && currentFavorites.length > 0) {
+        this._currentSession.set({ ...session, games: this._shuffleArray(currentFavorites) });
+        return;
+      }
 
       const sessionGamesSet = new Set(session.games);
       const currentFavoritesSet = new Set(currentFavorites);
@@ -141,15 +152,7 @@ export class DailyWalkthroughService {
         .filter(g => this._gamesService.isFavourite(g))
         .map(g => g.name);
 
-      if (allFavorites.length > 0) {
-        const newSession: DailySession = {
-          date: today,
-          games: this._shuffleArray(allFavorites),
-          completedGames: [],
-          startTime: Date.now()
-        };
-        this._currentSession.set(newSession);
-      }
+       if (allFavorites.length > 0) this._createSession(today, allFavorites);
     } else {
         // We do minimal sync on load here, but real sync happens via the effect
         // Just handle empty initialization case
@@ -158,15 +161,19 @@ export class DailyWalkthroughService {
         .map(g => g.name);
 
         if (session.games.length === 0 && allFavorites.length > 0) {
-             const newSession: DailySession = {
-                date: today,
-                games: this._shuffleArray(allFavorites),
-                completedGames: [],
-                startTime: Date.now()
-             };
-             this._currentSession.set(newSession);
+             this._currentSession.set({ ...session, games: this._shuffleArray(allFavorites) });
         }
     }
+  }
+
+  private _createSession(today: string, favorites: string[]) {
+    const newSession: DailySession = {
+      date: today,
+      games: this._shuffleArray(favorites),
+      completedGames: [],
+      startTime: Date.now()
+    };
+    this._currentSession.set(newSession);
   }
 
   private _incrementStreak() {

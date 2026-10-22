@@ -1,57 +1,23 @@
-<div class="walkthrough-container">
-  <div class="header">
-    <div class="title-section">
-      <h2>Play all your favourites</h2>
-      <div class="streak-badge" *ngIf="streak() > 0">
-        🔥 {{ streak() }} Day Streak
-      </div>
+<div class="backdrop" (click)="exitWalkthrough()" aria-hidden="true"></div>
+<section class="walkthrough-container" role="dialog" aria-modal="true" aria-labelledby="walkthrough-title" tabindex="-1" (click)="$event.stopPropagation()">
+  <div class="sheet-body">
+    <div class="sheet-top">
+      <div class="grabber" aria-hidden="true"></div>
+      <header class="header"><div><div class="eyebrow">A LITTLE BRAIN TIME</div><h2 id="walkthrough-title">Your daily line-up</h2></div><button class="close-btn" (click)="exitWalkthrough()" aria-label="Close daily line-up"><app-icon name="close" /></button></header>
+      <div class="sheet-streak"><app-icon name="sparkles" />{{ streak() }} day streak <span>{{ streak() ? 'Keep a good thing going.' : 'Start a good thing today.' }}</span></div>
+      <div class="progress" role="progressbar" aria-label="Daily routine progress" aria-valuemin="0" [attr.aria-valuenow]="visitedCount()" [attr.aria-valuemax]="sortedGames().length || 1"><div [style.width.%]="progress()"></div></div>
+      <div class="sheet-caption"><span>{{ visitedCount() }} of {{ sortedGames().length }} games visited</span><strong>{{ summary() }}</strong></div>
     </div>
-    <button class="close-btn" (click)="exitWalkthrough()">×</button>
-  </div>
-
-  <div class="progress-section">
-    <div class="progress-bar-bg">
-      <div class="progress-bar-fill" [style.width.%]="progress()"></div>
+    <div class="sheet-lineup" role="region" aria-label="Daily line-up games" tabindex="0">
+      @for (game of sortedGames(); track game.name) {
+        <a class="routine-row" [class.next]="nextGame()?.name === game.name" [href]="game.url" target="_blank" rel="noopener noreferrer" [attr.aria-label]="'Play ' + game.name + ' in a new tab'" (click)="playGame(game)"><img [src]="game.logo" alt=""><span class="routine-name">{{ game.name }}</span><span class="visit" [class.done]="isCompleted(game.name)">{{ isCompleted(game.name) ? 'Visited ✓' : nextGame()?.name === game.name ? 'Up next' : 'Next' }}</span></a>
+      } @empty { <p class="empty-state">No favourite games yet. Close this line-up and add a few favourites to make it yours.</p> }
     </div>
-    <p class="progress-text">
-      <span *ngIf="remainingGamesCount() > 0"
-        >{{ remainingGamesCount() }} games left to keep your streak!</span
-      >
-      <span *ngIf="remainingGamesCount() === 0">🎉 All done for today!</span>
-    </p>
+    <footer class="sheet-footer">
+      @if (nextGame(); as next) { <a class="primary" [href]="next.url" target="_blank" rel="noopener noreferrer" (click)="playGame(next)">Continue with {{ next.name }} <app-icon name="external" /></a> }
+      @else { <button class="primary" (click)="exitWalkthrough()">{{ sortedGames().length ? 'All visited. Come back tomorrow.' : 'Close and browse games' }} <app-icon name="arrow-right" /></button> }
+      <button type="button" class="edit-routine" (click)="editFavourites()">Edit my favourites</button>
+      <p class="sheet-note">Opens the game in a new tab.<br>Visits are tracked—not your scores or solves.</p>
+    </footer>
   </div>
-
-  <div class="games-grid">
-    @for (game of sortedGames(); track game.name) {
-      <div
-        class="game-wrapper"
-        [class.completed]="isCompleted(game.name)"
-        (click)="playGame(game)"
-      >
-        <app-game-card [game]="game"></app-game-card>
-        <div class="completed-badge" *ngIf="isCompleted(game.name)">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="3"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4.5 12.75l6 6 9-13.5"
-            />
-          </svg>
-        </div>
-      </div>
-    } @empty {
-      <div class="empty-state">
-        <p>
-          No favorite games yet! Add some games to your favorites to be able to
-          track your daily streaks
-        </p>
-      </div>
-    }
-  </div>
-</div>
+</section>

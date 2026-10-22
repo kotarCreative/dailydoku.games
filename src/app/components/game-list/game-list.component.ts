@@ -15,6 +15,18 @@ export class GameListComponent {
     return this._gamesService.games;
   }
 
+  get resultCount(): number {
+    return this.games.length;
+  }
+
+  get heading(): string {
+    return this._gamesService.filterFavourites ? 'Your favourites' : 'Find your next favourite';
+  }
+
+  get showEmptySearchMessage(): boolean {
+    return this.games.length === 0 && !!this._gamesService.searchTerm && !this.showEmptyFavouritesMessage;
+  }
+
   get showEmptyFavouritesMessage(): boolean {
     const gamesService = this._gamesService;
     return (
@@ -28,6 +40,15 @@ export class GameListComponent {
 
   onFavouriteGame(game: IGame, isFavourite: boolean) { 
     this._gamesService.favouriteGame(game, isFavourite);
+  }
+
+  clearSearch() {
+    this._gamesService.setSearchTerm('');
+  }
+
+  showAllGames() {
+    this._gamesService.setFilterFavourites(false);
+    this._gamesService.setSearchTerm('');
   }
 
   isFavourite(game: IGame) {

@@ -1,5 +1,25 @@
 :host {
   display: block;
   min-height: 100vh;
-  background-color: rgb(51 65 85); // bg-slate-700
+}
+
+.category-header { padding: 28px 32px; border-radius: 16px; background: var(--dd-primary); color: #fff; }
+.category-header nav { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; }
+.category-header nav a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+h1 { margin: 20px 0 12px; font-size: 40px; line-height: 46px; font-weight: 800; letter-spacing: -.05em; }
+.category-header p { max-width: 760px; margin: 0; font-size: 14px; line-height: 24px; }
+.list-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 18px 0 2px; }
+.list-heading h2 { margin: 0; font-size: 16px; font-weight: 800; letter-spacing: -.025em; }
+.list-heading p { margin: 0; color: var(--dd-muted); font-size: 12px; white-space: nowrap; }
+.empty-state { padding: 40px 0; }
+.empty-state h2 { font-size: 24px; font-weight: 800; }
+.empty-state p { margin: 12px 0 20px; color: var(--dd-muted); line-height: 24px; }
+
+@media (max-width: 700px) {
+  .category-header { padding: 24px 20px; border-radius: 0; }
+  h1 { font-size: 32px; line-height: 38px; }
+  .category-header p { font-size: 13px; line-height: 22px; }
+  .category-games { padding: 0 20px; }
+  .list-heading h2 { font-size: 14px; }
+  .list-heading p { font-size: 11px; }
 }

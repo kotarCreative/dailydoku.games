@@ -1,0 +1,20 @@
+:host { display: block; min-width: 0; }
+.game-list-section { min-width: 0; }
+.list-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 18px 0 2px; }
+.list-heading h2 { margin: 0; color: var(--dd-ink, #171717); font-size: 16px; font-weight: 800; letter-spacing: -.025em; }
+.list-heading span { flex: 0 0 auto; color: var(--dd-muted, #626879); font-size: 11px; }
+.game-list { min-width: 0; }
+.empty-state { padding: 40px 0; color: var(--dd-muted, #626879); line-height: 1.6; }
+.empty-heart { display: block; color: var(--dd-primary, #244ce8); font-size: 40px; line-height: 1; }
+.empty-state h3 { margin: 10px 0 4px; color: var(--dd-ink, #171717); font-size: 18px; }
+.empty-state p { max-width: 430px; margin: 0 0 16px; font-size: 14px; }
+.empty-state button { min-height: 44px; padding: 0 16px; border: 0; border-radius: 7px; background: var(--dd-primary, #244ce8); color: white; font: inherit; font-size: 13px; font-weight: 800; cursor: pointer; }
+.empty-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.empty-actions button + button { background: var(--dd-surface, #f0f2f8); color: var(--dd-ink, #171717); }
+@media (max-width: 700px) {
+  .list-heading { padding: 0 20px; margin: 16px 0 0; }
+  .list-heading h2 { font-size: 14px; }
+  .list-heading span { font-size: 10px; }
+  .game-list { padding: 0 20px; }
+  .empty-state { padding: 30px 20px; font-size: 13px; }
+}

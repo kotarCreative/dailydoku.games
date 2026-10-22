@@ -1,14 +1,15 @@
 <form
-    class="mb-4 rounded bg-slate-600 p-6 shadow-md max-w-[400px]"
+    class="suggest-form"
     [formGroup]="suggestionForm"
     (ngSubmit)="onSubmit()"
 >
     <div class="mb-4 flex">
-        <h4 class="flex text-2xl font-bold text-slate-200">Suggest a game</h4>
+        <h2 id="suggest-title">Suggest a game</h2>
         <button
             (click)="close()"
             type="button"
-            class="ml-auto rounded border-none bg-transparent px-2 font-semibold text-slate-200 hover:bg-slate-400"
+            class="close-button"
+            aria-label="Close suggestion form"
         >
             <svg
                 height="16px"
@@ -27,12 +28,12 @@
         </button>
     </div>
     <div class="mb-4">
-        <p class="mb-2 text-sm text-slate-200">Have a game you like to play but don't see it here? Let us know about it so that we can add it in.</p>
-        <label class="mb-2 block text-sm font-bold text-slate-200" for="name">
+        <p class="intro">Have a game you like to play but don't see it here? Let us know about it so that we can add it in.</p>
+        <label for="name">
             Name
         </label>
         <input
-            class="focus:shadow-outline w-full appearance-none rounded border bg-transparent px-3 py-2 leading-tight text-slate-200 shadow focus:outline-none"
+            class="field"
             id="name"
             type="text"
             required
@@ -42,19 +43,19 @@
         @if (name.invalid && (name.dirty || name.touched)) {
         <div class="my-2">
             @if (name.errors?.['required']) {
-            <p class="text-sm text-red-300">Required.</p>
+            <p class="error-message">Required.</p>
             } @if (name.errors?.['minlength']) {
-            <p class="text-sm text-red-300">Must be at least 3 characters.</p>
+            <p class="error-message">Must be at least 3 characters.</p>
             }
         </div>
         }
     </div>
     <div class="mb-6">
-        <label class="mb-2 block text-sm font-bold text-slate-200" for="url">
+        <label for="url">
             Website
         </label>
         <input
-            class="focus:shadow-outline mb-3 w-full appearance-none rounded border bg-transparent px-3 py-2 leading-tight text-slate-200 shadow focus:outline-none"
+            class="field"
             id="url"
             type="text"
             required
@@ -64,22 +65,21 @@
         @if (url.invalid && (url.dirty || url.touched)) {
         <div class="mb-2">
             @if (url.errors?.['required']) {
-            <p class="text-sm text-red-300">Required.</p>
+            <p class="error-message">Required.</p>
             } @if (url.errors?.['pattern']) {
-            <p class="text-sm text-red-300">Must start with `https://`</p>
+            <p class="error-message">Must start with http:// or https://</p>
             }
         </div>
         }
     </div>
     <div class="flex items-center justify-between">
         @if (showThankYou()) {
-        <p class="width-full rounded bg-green-300 p-2 text-sm text-green-600">
+        <p class="thank-you" role="status">
             Thank you for your suggestion!
         </p>
         } @else {
         <button
-            class="ml-auto rounded border border-slate-300 bg-slate-300 px-4 py-2 font-semibold text-slate-600 hover:border-slate-400 hover:bg-slate-400 hover:text-slate-700"
-            [class.opacity-50]="suggestionForm.invalid || loading()"
+            class="submit-button"
             [disabled]="suggestionForm.invalid || loading()"
             type="submit"
         >

@@ -1,61 +1,18 @@
-<section
-    class="flex h-full max-w-sm flex-col overflow-hidden rounded-lg bg-slate-600 shadow-lg ring-slate-200 ring-offset-4 ring-offset-slate-700 transition duration-300 ease-in-out hover:cursor-pointer hover:ring"
->
-    <img
-        class="h-48 w-full bg-transparent object-scale-down p-8"
-        src="{{ game.logo }}"
-        alt="{{ game.name }} logo"
-        width="256"
-        height="192"
-        loading="lazy"
-        decoding="async"
-        (click)="goto()"
-    />
-    <div class="mx-auto w-10/12 border border-slate-100 opacity-50"></div>
-    <div class="flex-1 px-6 py-4" (click)="goto()">
-        <h2 class="mb-2 text-xl font-bold capitalize text-slate-200">
-            {{ game.name }}
-        </h2>
-        <p class="text-base text-slate-300">{{ game.description }}</p>
-    </div>
-    <div class="align-center flex px-6 pb-6 pt-4">
-        <span
-            class="inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
-            >{{ typeLabel }}</span
-        >
-        <a
-            [routerLink]="['/games', game.slug]"
-            class="ml-2 inline-block rounded-full bg-slate-500 px-3 py-1 text-sm font-semibold text-white hover:bg-slate-400"
-            (click)="$event.stopPropagation()"
-        >
-            Details
-        </a>
-        <button
-            type="button"
-            [attr.aria-label]="
-                (isFavourite ? 'Remove ' : 'Add ') +
-                game.name +
-                (isFavourite ? ' from your favourites' : ' to your favourites')
-            "
-            [attr.aria-pressed]="isFavourite"
-            class="ml-auto text-red-500 hover:animate-pulse hover:text-red-700"
-            (click)="onFavouriteGame()"
-        >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                [attr.fill]="isFavourite ? 'currentColor' : 'none'"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            >
-                <path
-                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                />
-            </svg>
-        </button>
-    </div>
-</section>
+<article class="game-row">
+    <a class="game-link" [routerLink]="['/games', game.slug]" [attr.aria-label]="game.name + ' details'">
+        <span class="game-icon"><img [src]="game.logo" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+        <div class="game-copy">
+            <h3 class="game-name">{{ game.name }}</h3>
+            <span class="game-description">{{ game.description }}</span>
+            <span class="mobile-details">Game details <app-icon name="arrow-right" /></span>
+        </div>
+    </a>
+    <span class="category">{{ typeLabel }}</span>
+    <button type="button" class="heart" [attr.aria-label]="(isFavourite ? 'Remove ' : 'Add ') + game.name + (isFavourite ? ' from your favourites' : ' to your favourites')"
+        [attr.aria-pressed]="isFavourite" (click)="onFavouriteGame()">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" [attr.fill]="isFavourite ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0l-1 1.1-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" />
+        </svg>
+    </button>
+    <a class="play" [href]="game.url" target="_blank" rel="noopener noreferrer" [attr.aria-label]="'Play ' + game.name + ' in a new tab'" (click)="trackGameClick()"><span class="play-label">Play</span><app-icon name="external" /></a>
+</article>
