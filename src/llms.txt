@@ -81,6 +81,7 @@ Discover the best daily puzzles and daily games in one place. Play Wordle, Poked
 - [Globle](https://www.daily-doku.com/games/globle): Guess the country from a picture of its silhouette
 - [Higher or Lower](https://www.daily-doku.com/games/higher-or-lower): Guess whether each value is higher or lower than the last and build a streak in one shared daily round
 - [Noillirk](https://www.daily-doku.com/games/noillirk): Guess the most common answers to seven shared questions
+- [Otaku Trivia](https://www.daily-doku.com/games/otaku-trivia): Four daily anime challenges: colours, silhouettes, close-ups and niche knowledge
 - [Rankle](https://www.daily-doku.com/games/rankle): Put four things in the right order
 - [The Dozen](https://www.daily-doku.com/games/the-dozen): A grid of 12 trivia questions from multiple topics
 - [Time Guessr](https://www.daily-doku.com/games/time-guessr): Guess the year and location of different photos

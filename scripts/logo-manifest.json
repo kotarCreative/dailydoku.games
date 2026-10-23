@@ -294,6 +294,11 @@
     "file": "noillirk.webp",
     "bytes": 11636
   },
+  "otaku-trivia": {
+    "source": "https://otakutrivia.com/favicon.svg",
+    "file": "otaku-trivia.svg",
+    "bytes": 427
+  },
   "phoodle": {
     "source": "https://www.phoodle.net/favicon.ico",
     "file": "phoodle.webp",

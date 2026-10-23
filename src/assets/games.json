@@ -531,6 +531,15 @@
     "about": "Noillirk is a daily common-answer game - the kind of challenge where the winning move is to think like everyone else. Seven questions are shared with all players each day, and you score by guessing the answers a crowd would give rather than the cleverest one.\n\nYou climb from the forest to the sky as your guesses land, and a leaderboard shows how your flight compares with everyone else's. There is no sign-up, and an unlimited practice mode is there once the daily run is over. Seven fresh questions are set every day, resetting at midnight Beijing time."
   },
   {
+    "name": "Otaku Trivia",
+    "slug": "otaku-trivia",
+    "type": "trivia",
+    "url": "https://otakutrivia.com/",
+    "logo": "/assets/logos/otaku-trivia.svg",
+    "description": "Four daily anime challenges: colours, silhouettes, close-ups and niche knowledge",
+    "about": "Otaku Trivia is a daily anime quiz bundle with four challenges waiting each day: AniColor asks you to rebuild the missing colours on a character, AniSilhouette hides a cast behind black outlines to identify, AniZoom shows extreme close-ups that reveal more with each hint, and AniRare asks you to name the most obscure correct anime for a studio, season or theme.\n\nYour first attempt at each game is the one that counts, and completing all four enters you into the overall ranking - colour accuracy plus points for correct answers, with hints in AniZoom costing you. There is no login, scores can be shared as a challenge link for friends, and practice runs are open once the day is done. Four fresh challenges begin every day at midnight London time."
+  },
+  {
     "name": "Phoodle",
     "slug": "phoodle",
     "type": "oodle",
