@@ -209,6 +209,11 @@
     "file": "heardle-80s.webp",
     "bytes": 1192
   },
+  "hearsay": {
+    "source": "https://games.cyber-jack.uk/og/hearsay.png",
+    "file": "hearsay.webp",
+    "bytes": 3428
+  },
   "higher-or-lower": {
     "source": "https://playhigherlower.com/logo.png",
     "file": "higher-or-lower.webp",
@@ -274,6 +279,11 @@
     "file": "maplewordle.webp",
     "bytes": 1566
   },
+  "marquee": {
+    "source": "https://games.cyber-jack.uk/og/marquee.png",
+    "file": "marquee.webp",
+    "bytes": 6118
+  },
   "movie-grid": {
     "source": "https://moviegrid.io/favicon.ico",
     "file": "movie-grid.webp",
@@ -323,6 +333,11 @@
     "source": "https://pokedoku.com/favicon.ico",
     "file": "pokedoku.webp",
     "bytes": 746
+  },
+  "prompter": {
+    "source": "https://games.cyber-jack.uk/og/prompter.png",
+    "file": "prompter.webp",
+    "bytes": 4102
   },
   "puckdoku": {
     "source": "https://www.puckdoku.com/favicon.ico",
@@ -433,6 +448,11 @@
     "source": "https://travle.earth/images/logo/teuteuf.svg",
     "file": "travle.svg",
     "bytes": 7720
+  },
+  "trellis": {
+    "source": "https://games.cyber-jack.uk/og/trellis.png",
+    "file": "trellis.webp",
+    "bytes": 4222
   },
   "unquote": {
     "source": "https://games.cyber-jack.uk/og/unquote.png",

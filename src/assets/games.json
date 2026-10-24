@@ -378,6 +378,15 @@
     "about": "Heardle 80s rewinds the tape three decades: synth arpeggios gated reverbs and drum machines replace modern production, and your job is still to name the song from the shortest possible snippet.\n\nThe decade's signature sounds help - a DX7 chord or LinnDrum crack narrows the field immediately. Expect chart titans and one-hit wonders in equal measure, so brush up on those track-two deep cuts. A neon-soaked new puzzle plays daily."
   },
   {
+    "name": "Hearsay",
+    "slug": "hearsay",
+    "type": "trivia",
+    "url": "https://games.cyber-jack.uk/hearsay/?ref=daily-doku",
+    "logo": "/assets/logos/hearsay.webp",
+    "description": "Name the film, TV show, book or play a famous line comes from",
+    "about": "Hearsay is a daily who-said-it quiz. One famous line is put in front of you with only its medium - film, TV, book or play - and the year as context, and your job is to name the work it comes from.\n\nStart typing a title and pick it from the list, which is the same shared list every day and holds hundreds of entries, so the options never give the answer away; six wrong titles and the round ends. If the line means nothing, a clue ladder offers the genre, who says it, a director, creator or author, and finally the first letters of the title, each one costing points. A new quotation is set every day at midnight UK time."
+  },
+  {
     "name": "Higher or Lower",
     "slug": "higher-or-lower",
     "type": "trivia",
@@ -495,6 +504,15 @@
     "about": "MapleWordle grafts the daily-guess format onto MapleStory's sprawling character roster. Start with a blind guess, then use the revealed clues - class, world, level band and other traits - to zero in on today's NPC or hero.\n\nLongtime players hold an advantage, but the clue ladder keeps rounds winnable for returning Maplers too. Deduction beats brute force: eliminate whole branches of the character tree with each attempt. A new face logs in every day."
   },
   {
+    "name": "Marquee",
+    "slug": "marquee",
+    "type": "trivia",
+    "url": "https://games.cyber-jack.uk/marquee/?ref=daily-doku",
+    "logo": "/assets/logos/marquee.webp",
+    "description": "Light up the letters of a famous line, then name where it comes from",
+    "about": "Marquee is a daily guess-the-quote game. A famous line from a film, TV show, book or play goes up on a theatre sign as dark letter tiles, with the length of every word on show and its source and year handed to you as a starting hint.\n\nName a letter and it lights up everywhere it appears, or burns out one of your eight bulbs if it is not in the line. Solve early and type the missing letters for a bigger score, then take the bonus round and pick the work the line comes from out of four choices. A new quotation goes up every day at midnight UK time."
+  },
+  {
     "name": "Movie Grid",
     "slug": "movie-grid",
     "type": "doku",
@@ -583,6 +601,15 @@
     "logo": "/assets/logos/pokedoku.webp",
     "description": "Fill the doku with pokemon that match types and other stats",
     "about": "Pokedoku fuses sudoku structure with Pokédex obsession. Each three-by-three grid intersects row and column categories - types, generations, evolution lines, colours - and you must fill all nine cells with distinct Pokémon matching both criteria.\n\nNo duplicates allowed anywhere on the card, so saving versatile species for tricky intersections is essential. Completionists chase the perfect grid; everyone else enjoys the excuse to open the Pokédex. A fresh set of constraints hatches daily."
+  },
+  {
+    "name": "Prompter",
+    "slug": "prompter",
+    "type": "trivia",
+    "url": "https://games.cyber-jack.uk/prompter/?ref=daily-doku",
+    "logo": "/assets/logos/prompter.webp",
+    "description": "Fill in the missing words from a famous line in six tries",
+    "about": "Prompter is a daily finish-the-quote game. A well-known line from a film, TV show, book or play has dried up halfway, with its ending gone blank, while the rest of the sentence, who says it and where it comes from all stay visible.\n\nType the missing words and every letter is marked like a Wordle guess - right letter in the right place, in the phrase but somewhere else, or not in it at all - with six attempts to complete the line. The blanks deliberately hide the less obvious half of the quote, so knowing the catchphrase is only half the battle. A new line is served every day at midnight UK time."
   },
   {
     "name": "puckdoku",
@@ -781,6 +808,15 @@
     "logo": "/assets/logos/travle.svg",
     "description": "Find the route between 2 countries",
     "about": "Travle plans the trip your travel agent never would: journey from a starting country to a destination using nothing but overland border crossings. Name the intermediate countries in order, aiming for the mathematically shortest route.\n\nIsland destinations force creative ferry logic, and enclaves complicate otherwise obvious paths. Knowing that one Central Asian border quietly reopened can be the difference between a perfect route and a detour. A new itinerary is filed daily."
+  },
+  {
+    "name": "Trellis",
+    "slug": "trellis",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/trellis/?ref=daily-doku",
+    "logo": "/assets/logos/trellis.webp",
+    "description": "Trace as many words as you can through the day's letter grid",
+    "about": "Trellis is a daily word hunt on a 5x5 grid of letters shared by everyone. Spell words by tracing through touching squares - up, down or sideways, never diagonally - and no square can be used twice in one word.\n\nLonger words are worth much more, from a single point for three letters up to twelve for seven, and every grid hides exactly one eight-letter word worth forty points on its own, with a hint available to mark its next letter. There is no clock and your words are saved, so you can return to the grid through the day and climb from Seedling towards Full bloom before locking in your score. A new grid appears at midnight UK time."
   },
   {
     "name": "Unquote",

@@ -79,9 +79,12 @@ Discover the best daily puzzles and daily games in one place. Play Wordle, Poked
 - [Country Draw](https://www.daily-doku.com/games/country-draw): Draw the hidden country from memory on a real map and compare your sketch with the actual border
 - [GeoGuess](https://www.daily-doku.com/games/geoguess): Guess where each photo was taken by dropping a pin on the world map
 - [Globle](https://www.daily-doku.com/games/globle): Guess the country from a picture of its silhouette
+- [Hearsay](https://www.daily-doku.com/games/hearsay): Name the film, TV show, book or play a famous line comes from
 - [Higher or Lower](https://www.daily-doku.com/games/higher-or-lower): Guess whether each value is higher or lower than the last and build a streak in one shared daily round
+- [Marquee](https://www.daily-doku.com/games/marquee): Light up the letters of a famous line, then name where it comes from
 - [Noillirk](https://www.daily-doku.com/games/noillirk): Guess the most common answers to seven shared questions
 - [Otaku Trivia](https://www.daily-doku.com/games/otaku-trivia): Four daily anime challenges: colours, silhouettes, close-ups and niche knowledge
+- [Prompter](https://www.daily-doku.com/games/prompter): Fill in the missing words from a famous line in six tries
 - [Rankle](https://www.daily-doku.com/games/rankle): Put four things in the right order
 - [The Dozen](https://www.daily-doku.com/games/the-dozen): A grid of 12 trivia questions from multiple topics
 - [Time Guessr](https://www.daily-doku.com/games/time-guessr): Guess the year and location of different photos
@@ -115,5 +118,6 @@ Discover the best daily puzzles and daily games in one place. Play Wordle, Poked
 - [Stepwise](https://www.daily-doku.com/games/stepwise): Change one letter at a time to climb from one word to the other
 - [Strands](https://www.daily-doku.com/games/strands): Find the hidden theme words and the spangram in the letter grid
 - [The Mini Crossword](https://www.daily-doku.com/games/mini-crossword): A bite-sized daily crossword you can solve in minutes
+- [Trellis](https://www.daily-doku.com/games/trellis): Trace as many words as you can through the day's letter grid
 - [Unquote](https://www.daily-doku.com/games/unquote): Crack the daily cryptogram to reveal a famous quotation
 - [Waffle](https://www.daily-doku.com/games/waffle): Rearrange the letters to fix six intersecting words within fifteen swaps
