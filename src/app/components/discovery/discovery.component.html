@@ -1,0 +1,51 @@
+<app-header />
+
+<div class="dd-workspace">
+  <app-daily-banner />
+  <main class="dd-main editorial-page">
+    @if (resolved(); as data) {
+      <article>
+        <header class="editorial-header">
+          <nav aria-label="Breadcrumb"><a routerLink="/">Daily Puzzles &amp; Games</a><span aria-hidden="true">/</span><span>{{ data.guide.heading }}</span></nav>
+          <p class="eyebrow">FIND YOUR NEXT DAILY CHALLENGE</p>
+          <h1>{{ data.guide.heading }}</h1>
+          <p>{{ data.guide.intro }}</p>
+        </header>
+
+        <section class="editorial-copy" aria-labelledby="choose-heading">
+          <h2 id="choose-heading">{{ data.guide.chooseHeading }}</h2>
+          <p>{{ data.guide.chooseText }}</p>
+          <p class="selection-note">{{ data.guide.selectionNote }}</p>
+        </section>
+
+        <section class="guide-picks" aria-label="Recommended games and comparisons">
+          @for (pick of data.picks; track pick.game.slug) {
+            <article class="guide-pick">
+              <h2><a [routerLink]="['/games', pick.game.slug]">{{ pick.game.name }}</a></h2>
+              <p class="best-for">{{ pick.bestFor }}</p>
+              <p class="comparison">{{ pick.comparison }}</p>
+              <app-game-card [game]="pick.game" [isFavourite]="isFavourite(pick.game)" (favouriteGame)="onFavouriteGame(pick.game, $event)" />
+            </article>
+          }
+        </section>
+
+        <section class="editorial-copy questions" aria-labelledby="questions-heading">
+          <h2 id="questions-heading">Before you play</h2>
+          @for (question of data.guide.questions; track question.question) {
+            <h3>{{ question.question }}</h3>
+            <p>{{ question.answer }}</p>
+          }
+        </section>
+
+        <nav class="editorial-links" aria-label="More discovery guides">
+          <a [routerLink]="['/games', data.guide.sourceSlug]">Original game details</a>
+          <a routerLink="/word-games">Browse all daily word games</a>
+          @for (guide of guides; track guide.path) {
+            @if (guide.path !== data.guide.path) { <a [routerLink]="guide.path">{{ guide.heading }}</a> }
+          }
+          <a routerLink="/about">How DailyDoku works</a>
+        </nav>
+      </article>
+    }
+  </main>
+</div>

@@ -1,4 +1,5 @@
-import { Component, computed, inject, OnInit, signal } from '@angular/core';
+import { Component, computed, DestroyRef, inject, OnInit, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 
 import { HeaderComponent } from '@components/header/header.component';
@@ -9,8 +10,10 @@ import { GameFiltersComponent } from '@components/game-filters/game-filters.comp
 import { SeoService } from '@services/seo.service';
 import { GamesService } from '@services/games.service';
 import { IGame } from '@models/Game';
-import { SITE_URL, absoluteUrl, gameTypeLabel, gameTypePlural } from '../../site-config';
+import { SITE_URL, absoluteUrl, gameTypePlural } from '../../site-config';
+import { DISCOVERY_GUIDES } from '../../discovery-guides';
 import { ResolvedCategory } from '@resolvers/category.resolver';
+import { gameMatchesSearch } from '../../game-catalogue';
 
 /**
  * Category hub page (e.g. /word-games). Renders the games of one internal
@@ -27,14 +30,16 @@ export class CategoryComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private seoService = inject(SeoService);
   private gamesService = inject(GamesService);
+  private destroyRef = inject(DestroyRef);
 
   resolved = signal<ResolvedCategory | null>(null);
+  readonly guides = DISCOVERY_GUIDES;
   readonly searchTerm = computed(() => this.gamesService.searchTerm);
   readonly visibleGames = computed(() => {
     const query = this.gamesService.searchTerm.trim().toLowerCase();
     return (this.resolved()?.games ?? []).filter(game => {
       if (this.gamesService.filterFavourites && !this.gamesService.isFavourite(game)) return false;
-      return !query || [game.name, game.type, gameTypeLabel(game.type)].some(value => value.toLowerCase().includes(query));
+      return gameMatchesSearch(game, query);
     });
   });
 
@@ -48,8 +53,12 @@ export class CategoryComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const data = this.route.snapshot.data['resolved'] as ResolvedCategory | null;
+    this.route.data.pipe(takeUntilDestroyed(this.destroyRef)).subscribe(data => {
+      this.applyCategory(data['resolved'] as ResolvedCategory | null);
+    });
+  }
 
+  private applyCategory(data: ResolvedCategory | null): void {
     if (!data) {
       return;
     }
@@ -60,6 +69,7 @@ export class CategoryComponent implements OnInit {
     // Drop schema owned by other pages when arriving via client-side nav.
     this.seoService.removeJsonLd('game-item-list');
     this.seoService.removeJsonLd('game');
+    this.seoService.removeJsonLd('discovery-item-list');
 
     this.seoService.setMeta({
       title: category.title,

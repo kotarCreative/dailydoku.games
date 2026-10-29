@@ -57,4 +57,14 @@ describe('GameDetailComponent', () => {
     expect(seo.setJsonLd).toHaveBeenCalledWith('breadcrumb', jasmine.objectContaining({ '@type': 'BreadcrumbList' }));
     expect(seo.setJsonLd).toHaveBeenCalledWith('game', jasmine.objectContaining({ '@type': 'Game' }));
   });
+
+  it('describes a directory page rather than claiming the game is hosted here', () => {
+    expect(seo.setMeta).toHaveBeenCalledWith(jasmine.objectContaining({
+      title: 'First: How to Play & Similar Games | DailyDoku'
+    }));
+    expect(fixture.nativeElement.querySelector('.breadcrumbs a[href="/word-games"]')).not.toBeNull();
+    const schema = seo.setJsonLd.calls.allArgs().filter(args => args[0] === 'game').at(-1)?.[1];
+    expect(schema.offers).toBeUndefined();
+    expect(schema.screenshot).toBeUndefined();
+  });
 });

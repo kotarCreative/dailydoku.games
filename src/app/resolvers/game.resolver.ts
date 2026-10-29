@@ -4,14 +4,13 @@ import { HttpClient } from '@angular/common/http';
 import { map, catchError, of } from 'rxjs';
 
 import Game, { IGame } from '@models/Game';
+import { relatedGamesFor } from '../game-catalogue';
 
 export interface ResolvedGame {
   game: IGame;
-  /** Same-genre games for the "related" section; stable alphabetical order. */
+  /** Ranked by shared mechanics and topics, with deterministic tie-breaking. */
   relatedGames: IGame[];
 }
-
-const RELATED_COUNT = 4;
 
 export const gameResolver: ResolveFn<ResolvedGame | null> = (route) => {
   const http = inject(HttpClient);
@@ -35,11 +34,7 @@ export const gameResolver: ResolveFn<ResolvedGame | null> = (route) => {
         return null;
       }
 
-      // Alphabetical slice keeps the internal links deterministic across
-      // builds, which crawlers appreciate.
-      const relatedGames = validatedGames
-        .filter((candidate) => candidate.type === game.type && candidate.slug !== game.slug)
-        .slice(0, RELATED_COUNT);
+      const relatedGames = relatedGamesFor(game, validatedGames);
 
       return { game, relatedGames };
     }),

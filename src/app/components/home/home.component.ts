@@ -1,4 +1,5 @@
 import { Component, computed, effect, inject, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { HeaderComponent } from '@components/header/header.component';
 import { GameListComponent } from '@components/game-list/game-list.component';
@@ -14,10 +15,12 @@ import {
   SITE_URL,
   absoluteUrl
 } from '../../site-config';
+import { GAME_COUNT } from '../../content-meta';
+import { DISCOVERY_GUIDES } from '../../discovery-guides';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, GameListComponent, DailyBannerComponent, IconComponent, GameFiltersComponent],
+  imports: [HeaderComponent, GameListComponent, DailyBannerComponent, IconComponent, GameFiltersComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -26,6 +29,8 @@ export class HomeComponent implements OnInit {
   private gamesService = inject(GamesService);
 
   readonly searchTerm = computed(() => this.gamesService.searchTerm);
+  readonly gameCount = GAME_COUNT;
+  readonly guides = DISCOVERY_GUIDES;
 
   onSearchChange(event: Event): void {
     this.gamesService.setSearchTerm((event.target as HTMLInputElement).value);
@@ -69,6 +74,7 @@ export class HomeComponent implements OnInit {
     this.seoService.removeJsonLd('breadcrumb');
     this.seoService.removeJsonLd('game');
     this.seoService.removeJsonLd('category-item-list');
+    this.seoService.removeJsonLd('discovery-item-list');
 
     this.seoService.setMeta({
       title: DEFAULT_TITLE,

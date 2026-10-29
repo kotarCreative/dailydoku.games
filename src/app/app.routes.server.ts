@@ -2,6 +2,7 @@ import { RenderMode, ServerRoute } from '@angular/ssr';
 
 import gamesData from '../assets/games.json';
 import { CATEGORIES } from './site-config';
+import { DISCOVERY_GUIDES } from './discovery-guides';
 
 export const serverRoutes: ServerRoute[] = [
   {
@@ -15,6 +16,10 @@ export const serverRoutes: ServerRoute[] = [
       return gamesData.map((game: { slug: string }) => ({ slug: game.slug }));
     },
   },
+  { path: 'about', renderMode: RenderMode.Prerender },
+  ...DISCOVERY_GUIDES.map((guide): ServerRoute => ({
+    path: guide.path.slice(1), renderMode: RenderMode.Prerender
+  })),
   // Category hubs are a fixed set of static paths.
   ...CATEGORIES.map(
     (category): ServerRoute => ({

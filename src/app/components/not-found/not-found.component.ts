@@ -37,6 +37,9 @@ export class NotFoundComponent implements OnInit {
   private seoService = inject(SeoService);
 
   ngOnInit(): void {
+    for (const key of ['breadcrumb', 'game', 'game-item-list', 'category-item-list', 'discovery-item-list']) {
+      this.seoService.removeJsonLd(key);
+    }
     this.seoService.setMeta({
       title: `Page Not Found | DailyDoku`,
       description: 'The page you are looking for does not exist.',

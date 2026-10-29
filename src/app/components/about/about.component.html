@@ -1,0 +1,35 @@
+<app-header #siteHeader />
+
+<div class="dd-workspace">
+  <app-daily-banner />
+  <main class="dd-main editorial-page">
+    <article>
+      <header class="editorial-header">
+        <nav aria-label="Breadcrumb"><a routerLink="/">Daily Puzzles &amp; Games</a><span aria-hidden="true">/</span><span>About</span></nav>
+        <h1>About DailyDoku</h1>
+        <p>A place to discover small daily challenges and keep your favourites together.</p>
+      </header>
+      <section class="editorial-copy" aria-labelledby="directory-heading">
+        <h2 id="directory-heading">A directory, not the games' publisher</h2>
+        <p>DailyDoku brings together browser games from across the web. Each listing explains the premise and links to the game's own website. The games, their puzzles and their scoring systems belong to their respective creators and publishers.</p>
+        <p>Play links open another site. DailyDoku does not host Wordle, Connections or the other games in the catalogue, and is not affiliated with their publishers.</p>
+      </section>
+      <section class="editorial-copy" aria-labelledby="listings-heading">
+        <h2 id="listings-heading">How listings and guides work</h2>
+        <p>The catalogue focuses on browser-based games with daily or recurring challenges. Listings describe the basic rules; discovery guides explain similarities and differences so you can choose a game that suits you. Guide order is not a player-rating or popularity ranking.</p>
+        <p>Game availability, rules, archives and pricing can change. A free daily challenge may sit alongside paid extras or a subscription. Check the publisher's site for current details. A listing is not a promise that every mode is free.</p>
+        <p>Know a game that belongs here? <button class="dd-button" type="button" (click)="siteHeader.openSuggestDialog()">Suggest a game</button> Suggestions are reviewed before they become catalogue entries; submitting a game does not publish it automatically.</p>
+      </section>
+      <section class="editorial-copy" aria-labelledby="routine-heading">
+        <h2 id="routine-heading">Your routine stays on this device</h2>
+        <p>Tap the hearts to save favourites and build a daily lineup. Your favourites and daily routine are saved in this browser's local storage, without a DailyDoku account. Clearing browser data or switching devices can remove or change that routine.</p>
+        <p>A visit marks a game as visited in DailyDoku. It does not confirm a win, read your answers or import a score from the game's website. DailyDoku also uses Firebase Analytics to understand site usage; local routine storage is not a claim that the whole site is analytics-free.</p>
+      </section>
+      <nav class="editorial-links" aria-label="Discover daily games">
+        <a routerLink="/">Browse all daily games</a>
+        <a routerLink="/games-like-wordle">Games like Wordle</a>
+        <a routerLink="/games-like-connections">Games like Connections</a>
+      </nav>
+    </article>
+  </main>
+</div>

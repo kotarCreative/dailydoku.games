@@ -1,10 +1,11 @@
 import siteConfig from '../site.config.json';
+import { GAME_COUNT } from './content-meta';
 
 export const SITE_NAME = siteConfig.siteName;
 export const SITE_URL = siteConfig.siteUrl;
 export const TWITTER_HANDLE = siteConfig.twitterHandle;
-export const DEFAULT_TITLE = siteConfig.title;
-export const DEFAULT_DESCRIPTION = siteConfig.description;
+export const DEFAULT_TITLE = siteConfig.title.replace('{gameCount}', String(GAME_COUNT));
+export const DEFAULT_DESCRIPTION = siteConfig.description.replace('{gameCount}', String(GAME_COUNT));
 export const DEFAULT_KEYWORDS = siteConfig.keywords;
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/og-image.png`;
 
@@ -104,15 +105,15 @@ export const CATEGORIES: CategoryConfig[] = [
     heading: 'Daily Word Games',
     title: 'Daily Word Games - Free Word Puzzles to Play Every Day | DailyDoku',
     description:
-      'Play the best free daily word games in one place. Wordle, Quordle, Contexto, Heardle and 20+ more daily word puzzles, all free and refreshed every morning.',
+      'Discover daily word games, from Wordle and Quordle to Connections, crosswords and word searches. Compare the rules and find your next word puzzle.',
     intro:
-      'One new puzzle per day is what makes these games addictive - everyone plays the same challenge, so scores and streaks actually mean something. This collection gathers the best daily word games on the web, from classic five-letter guessing to semantic hunts, song intros and themed variants.',
+      'Find a daily word puzzle that fits your mood: guess letters in Wordle, follow meaning in Contexto, group words in Connections or tackle a bite-sized crossword. These games focus on words and language; music and geography guessing live in our trivia collection.',
   },
   {
     path: '/grid-puzzles',
     type: 'doku',
     heading: 'Daily Grid Puzzles',
-    title: 'Daily Grid Puzzles - Free Trivia Grids & Sudoku-Style Games | DailyDoku',
+    title: 'Daily Grid Puzzles - Sports, Movie & Trivia Grids | DailyDoku',
     description:
       'Free daily grid puzzles for sports, movies, music and gaming fans. Immaculate Grid, Pokedoku, HoopGrids and more trivia grids, updated every day.',
     intro:
@@ -124,19 +125,19 @@ export const CATEGORIES: CategoryConfig[] = [
     heading: 'Daily Trivia Games',
     title: 'Daily Trivia Games - Free Geography, Music & Quiz Puzzles | DailyDoku',
     description:
-      'Test yourself with free daily trivia games. Geography guessing, photo dating, box office history and more quiz games with a fresh round every day.',
+      'Discover daily trivia games for geography, music, movies, gaming and general knowledge. Compare photo puzzles, song guessing and daily quizzes.',
     intro:
-      'Every day brings a fresh set of questions the whole internet answers together. Guess countries from photos, date historic images or rebuild decades-old charts - these daily trivia games turn general knowledge into a habit.',
+      'Put your knowledge to work with a new challenge: recognise a song in Bandle, identify a film in Framed, guess a country in Worldle or tackle a general-knowledge quiz. This collection includes music, geography, movies, history and gaming trivia, not just traditional question-and-answer rounds.',
   },
   {
     path: '/puzzles',
     type: 'puzzle',
     heading: 'Daily Puzzles',
-    title: 'Daily Puzzles - Free Logic, Word & Jigsaw Games Every Day | DailyDoku',
+    title: 'Daily Logic & Visual Puzzles - Mysteries, Paths & More | DailyDoku',
     description:
-      'Solve a new free puzzle every day. Connections, Strands, Spelling Bee, Murdle, Waffle and more daily logic and word puzzles, all in one place.',
+      'Discover daily logic and visual puzzles: Murdle mysteries, arrow escape challenges, path puzzles and colour memory games. Find a new daily challenge.',
     intro:
-      'Logic grids, hidden themes, murder mysteries and jigsaws: these daily puzzles reward careful thinking over fast fingers. Like everything here, they are free, browser-based and refresh once a day so your streak stays honest.',
+      'Prefer deduction, patterns or visual challenges to trivia? Explore murder mysteries, arrow escape boards, path puzzles, colour memory tests and jigsaws. For crosswords, word searches and letter guessing, visit our daily word games collection.',
   },
 ];
 

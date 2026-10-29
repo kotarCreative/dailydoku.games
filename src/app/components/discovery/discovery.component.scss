@@ -1,0 +1,12 @@
+@use '../editorial-page';
+
+.guide-pick { padding: 28px 0; border-top: 1px solid var(--dd-line); }
+.guide-pick h2 a { color: var(--dd-primary); text-decoration: underline; text-underline-offset: 4px; }
+.best-for { margin: 0; font-size: 13px; line-height: 22px; font-weight: 800; }
+.comparison { max-width: 800px; margin: 12px 0 20px; color: #4b5262; font-size: 15px; line-height: 27px; }
+.questions { border-top: 1px solid var(--dd-line); }
+
+@media (max-width: 700px) {
+  .guide-picks { padding: 0 20px; }
+  .comparison { font-size: 14px; line-height: 25px; }
+}

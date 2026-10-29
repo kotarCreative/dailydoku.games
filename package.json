@@ -22,6 +22,8 @@
     "postbuild": "node scripts/create-404.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:seo": "node --test scripts/seo.test.js",
+    "check:seo": "node scripts/check-seo.js",
     "serve:ssr:dailydoku": "node dist/dailydoku/server/server.mjs"
   },
   "private": true,

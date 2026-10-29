@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, OnInit, Optional, signal } from '@angular/core';
+import { Component, computed, DestroyRef, inject, OnInit, Optional, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { UpperCasePipe } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
@@ -14,6 +14,7 @@ import { IconComponent } from '@components/icon/icon.component';
 import {
   SITE_NAME,
   SITE_URL,
+  CATEGORIES,
   absoluteAssetUrl,
   absoluteUrl,
   gameTypeLabel,
@@ -22,6 +23,7 @@ import {
 } from '../../site-config';
 import { CONTENT_LAST_UPDATED } from '../../content-meta';
 import { ResolvedGame } from '@resolvers/game.resolver';
+import { guidesForGame } from '../../discovery-guides';
 
 @Component({
   selector: 'app-game-detail',
@@ -38,6 +40,8 @@ export class GameDetailComponent implements OnInit {
   game = signal<IGame | null>(null);
   aboutParagraphs = signal<string[]>([]);
   relatedGames = signal<IGame[]>([]);
+  readonly category = computed(() => CATEGORIES.find(category => category.type === this.game()?.type));
+  readonly guides = computed(() => guidesForGame(this.game()?.slug ?? ''));
   isFavourite = signal(false);
   /** One-word genre hint for the badge; titles/schema use the long form. */
   typeLabel = signal('Puzzle');
@@ -68,6 +72,7 @@ export class GameDetailComponent implements OnInit {
     // Drop schema owned by other pages when arriving via client-side nav.
     this.seoService.removeJsonLd('game-item-list');
     this.seoService.removeJsonLd('category-item-list');
+    this.seoService.removeJsonLd('discovery-item-list');
 
     const typeLabel = gameTypeLabel(game.type);
     const typePlural = gameTypePlural(game.type);
@@ -75,15 +80,13 @@ export class GameDetailComponent implements OnInit {
     this.typePlural.set(typePlural);
 
     const description = game.description
-      ? `${game.description}. Play ${game.name} free on DailyDoku and track your daily streak.`
-      : `Play ${game.name}, a free daily puzzle you can play once a day. Find ${game.name} and 60+ more ${typePlural} on DailyDoku.`;
+      ? `${game.description.replace(/[.!?]+$/, '')}. Learn how ${game.name} works and discover similar daily games on DailyDoku.`
+      : `Learn how ${game.name} works, open the game on its own website and discover similar ${typePlural} on DailyDoku.`;
 
     this.seoService.setMeta({
-      title: `${game.name} - Play the ${typeLabel} Free | ${SITE_NAME}`,
+      title: `${game.name}: How to Play & Similar Games | ${SITE_NAME}`,
       description,
       url: `/games/${game.slug}`,
-      image: absoluteAssetUrl(game.logo),
-      imageAlt: `${game.name} logo`,
       keywords: [
         game.name,
         `${game.name} game`,
@@ -110,22 +113,27 @@ export class GameDetailComponent implements OnInit {
         {
           '@type': 'ListItem',
           position: 2,
+          name: this.category()?.heading ?? 'Daily Games',
+          item: absoluteUrl(this.category()?.path ?? '/')
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
           name: game.name,
           item: absoluteUrl(`/games/${game.slug}`)
         }
       ]
     });
 
-    // Game schema makes the page eligible for richer game results and states
-    // plainly that this is a free, browser-based daily puzzle.
+    // Describe the game without claiming a rich-result entitlement, a gameplay
+    // screenshot or a price that has not been verified for every publisher.
     this.seoService.setJsonLd('game', {
       '@context': 'https://schema.org',
       '@type': 'Game',
       name: game.name,
-      description: game.description || `${game.name} is a free ${typeLabel.toLowerCase()}.`,
+      description: game.description || `${game.name} is a ${typeLabel.toLowerCase()}.`,
       url: absoluteUrl(`/games/${game.slug}`),
       image: absoluteAssetUrl(game.logo),
-      screenshot: absoluteUrl('/assets/og-image.png'),
       genre: typeLabel,
       gamePlatform: 'Web Browser',
       playMode: 'SinglePlayer',
@@ -133,13 +141,7 @@ export class GameDetailComponent implements OnInit {
       inLanguage: 'en',
       dateModified: CONTENT_LAST_UPDATED,
       sameAs: game.url || undefined,
-      isPartOf: { '@id': `${SITE_URL}/#website` },
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'USD',
-        availability: 'https://schema.org/InStock'
-      }
+      isPartOf: { '@id': `${SITE_URL}/#website` }
     });
   }
 

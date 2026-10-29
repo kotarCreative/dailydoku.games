@@ -7,6 +7,10 @@
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <a routerLink="/"><app-icon name="arrow-left" /> All daily games</a>
         <span aria-hidden="true">/</span>
+        @if (category(); as category) {
+          <a [routerLink]="category.path">{{ category.heading }}</a>
+          <span aria-hidden="true">/</span>
+        }
         <span>{{ game.name }}</span>
       </nav>
 
@@ -30,18 +34,25 @@
                 {{ isFavourite() ? 'Favourited' : 'Add to favourites' }}
               </button>
             </div>
-            <p class="visit-note">Free to play in your browser. Opens in a new tab.</p>
+            <p class="visit-note">Opens the game's website in a new tab. Optional paid features may vary by publisher.</p>
           </div>
         </header>
 
         @if (aboutParagraphs().length) {
           <section class="about" aria-labelledby="about-heading">
             <p class="section-eyebrow">A LITTLE MORE BEFORE YOU PLAY</p>
-            <h2 id="about-heading">About {{ game.name }}</h2>
+            <h2 id="about-heading">How to play {{ game.name }}</h2>
             @for (paragraph of aboutParagraphs(); track $index) {
               <p class="about-copy">{{ paragraph }}</p>
             }
           </section>
+        }
+
+        @if (guides().length) {
+          <nav class="game-guides" aria-label="Related discovery guides">
+            <h2>Find your next daily challenge</h2>
+            @for (guide of guides(); track guide.path) { <a [routerLink]="guide.path">{{ guide.heading }} <app-icon name="arrow-right" /></a> }
+          </nav>
         }
 
         @if (relatedGames().length) {
@@ -49,9 +60,9 @@
             <div class="section-heading">
               <div>
                 <p class="section-eyebrow">KEEP THE GOOD GAMES GOING</p>
-                <h2 id="related-heading">More {{ typePlural() }} like {{ game.name }}</h2>
+                <h2 id="related-heading">More games like {{ game.name }}</h2>
               </div>
-              <a class="browse-link" routerLink="/">Browse all games <app-icon name="arrow-right" /></a>
+              <a class="browse-link" [routerLink]="category()?.path ?? '/'">Browse {{ typePlural() }} <app-icon name="arrow-right" /></a>
             </div>
             @for (related of relatedGames(); track related.slug) {
               <app-game-card [game]="related" [isFavourite]="isFavouriteRelated(related)" (favouriteGame)="onRelatedFavourite(related, $event)" />

@@ -41,6 +41,10 @@ h1 { margin: 12px 0; font-size: 50px; line-height: 53px; font-weight: 800; lette
   }
 }
 .play-sticker { display: none; }
+.discovery-guides { padding: 22px 0 4px; }
+.discovery-guides h2 { margin: 0; font-size: 16px; line-height: 24px; font-weight: 800; }
+.discovery-guides nav { display: flex; flex-wrap: wrap; gap: 4px 24px; margin-top: 6px; }
+.discovery-guides a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--dd-primary); font-size: 13px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 
 @media (min-width: 701px) and (max-width: 1100px) {
   .hero { padding: 26px; }
@@ -49,6 +53,7 @@ h1 { margin: 12px 0; font-size: 50px; line-height: 53px; font-weight: 800; lette
 }
 
 @media (max-width: 700px) {
+  .discovery-guides { padding: 20px 20px 0; }
   .hero { min-height: 202px; padding: 23px 20px 25px; border-radius: 0; }
   .eyebrow { font-size: 10px; letter-spacing: .075em; }
   h1 { font-size: 37px; line-height: 40px; margin: 12px 0 10px; }

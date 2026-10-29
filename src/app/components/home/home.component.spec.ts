@@ -33,11 +33,18 @@ describe('HomeComponent', () => {
   });
 
   it('renders the daily hero and category links with their configured URLs', () => {
-    expect(fixture.nativeElement.querySelector('h1').textContent).toContain('Your daily dose');
+    expect(fixture.nativeElement.querySelector('h1').textContent).toContain('Daily puzzles.');
     const links = [...fixture.nativeElement.querySelectorAll('nav[aria-label="Game filters"] a')] as HTMLAnchorElement[];
     expect(links[0].textContent.trim()).toBe('All games');
     expect(links.some(link => link.getAttribute('href') === '/word-games')).toBeTrue();
     expect(links.some(link => link.getAttribute('href') === '/grid-puzzles')).toBeTrue();
+  });
+
+  it('links to both curated guides and the About page', () => {
+    const links = [...fixture.nativeElement.querySelectorAll('a')] as HTMLAnchorElement[];
+    for (const path of ['/games-like-wordle', '/games-like-connections', '/about']) {
+      expect(links.some(link => link.getAttribute('href') === path)).toBeTrue();
+    }
   });
 
   it('sends mobile search input to GamesService and reflects its current term', () => {

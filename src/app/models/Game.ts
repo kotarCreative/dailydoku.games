@@ -4,6 +4,9 @@ const Game = z.object({
   name: z.string(),
   slug: z.string(),
   type: z.string(),
+  /** Topics and mechanics are independent of the primary navigation category. */
+  topics: z.array(z.string()).optional(),
+  mechanics: z.array(z.string()).optional(),
   url: z.string(),
   logo: z.string(),
   description: z.string(),

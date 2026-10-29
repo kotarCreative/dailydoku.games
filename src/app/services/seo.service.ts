@@ -36,7 +36,7 @@ export class SeoService {
       image = DEFAULT_OG_IMAGE,
       imageAlt = title,
       type = 'website',
-      robots = 'index, follow',
+      robots = 'index, follow, max-image-preview:large',
       keywords
     } = config;
 
@@ -47,9 +47,11 @@ export class SeoService {
     this.meta.updateTag({ name: 'description', content: description });
     this.meta.updateTag({ name: 'robots', content: robots });
 
-    // Keywords (if provided)
+    // Do not carry a previous route's keywords into a guide or the About page.
     if (keywords) {
       this.meta.updateTag({ name: 'keywords', content: keywords });
+    } else {
+      this.meta.removeTag('name="keywords"');
     }
 
     // Open Graph tags

@@ -1,6 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, provideRouter } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 import { GamesService } from '@services/games.service';
 import { SeoService } from '@services/seo.service';
 import { CategoryComponent } from './category.component';
@@ -29,15 +30,24 @@ describe('CategoryComponent', () => {
     favouriteGame: jasmine.createSpy('favouriteGame') };
   const seo = { setMeta: jasmine.createSpy('setMeta'), setJsonLd: jasmine.createSpy('setJsonLd'), removeJsonLd: jasmine.createSpy('removeJsonLd') };
   let component: CategoryComponent;
+  const routeData = new BehaviorSubject({ resolved: { category: CATEGORIES[0], games: [word, grid] } });
 
   beforeEach(() => {
     term = ''; favourites = false;
+    routeData.next({ resolved: { category: CATEGORIES[0], games: [word, grid] } });
     TestBed.configureTestingModule({ imports: [CategoryComponent], providers: [provideRouter([]),
-      { provide: ActivatedRoute, useValue: { snapshot: { data: { resolved: { category: CATEGORIES[0], games: [word, grid] } } } } },
+      { provide: ActivatedRoute, useValue: { data: routeData } },
       { provide: GamesService, useValue: games }, { provide: SeoService, useValue: seo }
     ] }).overrideComponent(CategoryComponent, { remove: { imports: [HeaderComponent, DailyBannerComponent, GameCardComponent] }, add: { imports: [HeaderStub, BannerStub, GameCardStub] } });
     component = TestBed.createComponent(CategoryComponent).componentInstance;
     component.ngOnInit();
+  });
+
+  it('updates content and metadata between category routes without recreating the component', () => {
+    routeData.next({ resolved: { category: CATEGORIES[1], games: [grid] } });
+    expect(component.resolved()?.category).toBe(CATEGORIES[1]);
+    expect(component.visibleGames()).toEqual([grid]);
+    expect(seo.setMeta).toHaveBeenCalledWith(jasmine.objectContaining({ url: CATEGORIES[1].path }));
   });
 
   it('maps the resolved category and retains its SEO metadata/schema', () => {

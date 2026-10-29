@@ -1,0 +1,111 @@
+[
+  {
+    "path": "/games-like-wordle",
+    "sourceSlug": "wordle",
+    "heading": "Games Like Wordle",
+    "title": "Games Like Wordle: Daily Word Puzzles & Alternatives | DailyDoku",
+    "description": "Find your next daily word game after Wordle. Compare Quordle, Canuckle, Phoodle, Waffle, Contexto and Semantle by what changes and how they play.",
+    "intro": "Finished today's Wordle? The right alternative depends on which part you enjoy: eliminating letters, juggling several answers, or chasing a word's meaning. These daily word games keep the small-puzzle ritual but give you different problems to solve.",
+    "selectionNote": "This is a comparison of games in the DailyDoku catalogue, not a popularity ranking. The first picks preserve Wordle's letter feedback; the later ones change the way you find the answer. Games open on their own sites.",
+    "chooseHeading": "Which Wordle alternative should you try?",
+    "chooseText": "For a familiar first step, choose Canuckle or Phoodle: their themes narrow the vocabulary without replacing the letter-guessing idea. Quordle adds several answers to manage at once. Waffle is for rearranging letters you already have, while Contexto and Semantle replace spelling clues with clues about meaning.",
+    "picks": [
+      {
+        "slug": "quordle",
+        "bestFor": "Several Wordles at once",
+        "comparison": "One guess gives feedback on four words, and you have nine guesses to finish all four. Compared with Wordle, the extra challenge is deciding when a useful information-gathering guess is worth more than solving a board immediately."
+      },
+      {
+        "slug": "canuckle",
+        "bestFor": "Familiar rules with a Canadian theme",
+        "comparison": "Canuckle keeps the five-letter, six-guess format and colour feedback, but every answer has a Canadian connection. Choose it if you want a close Wordle alternative rather than a completely different mechanic."
+      },
+      {
+        "slug": "phoodle",
+        "bestFor": "Food-themed letter guessing",
+        "comparison": "Phoodle puts food vocabulary at the centre of a Wordle-style puzzle. The theme can help narrow your next guess, making it a good fit if ingredients and kitchen terms are more appealing than an unrestricted word list."
+      },
+      {
+        "slug": "waffle",
+        "bestFor": "Swapping letters instead of typing guesses",
+        "comparison": "The letters are already on the board: swap them to repair six intersecting words within fifteen moves. Letter colours still guide your deductions, but the decision is where to move a tile rather than which new word to enter."
+      },
+      {
+        "slug": "contexto",
+        "bestFor": "Following a trail of related meanings",
+        "comparison": "Contexto ranks guesses by how close their meanings are to a secret word. There are no green letter positions to fill. Try it when you would rather explore related ideas than eliminate vowels and consonants."
+      },
+      {
+        "slug": "semantle",
+        "bestFor": "An open-ended semantic hunt",
+        "comparison": "Like Contexto, Semantle asks you to find a word through meaning rather than spelling. It reports similarity scores, so the puzzle is about testing a line of thought and noticing which associations make you warmer."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Which games are most similar to Wordle?",
+        "answer": "Canuckle and Phoodle keep the familiar themed five-letter guessing approach. Quordle is the closest pick here if you want the same kind of feedback but several words to solve together."
+      },
+      {
+        "question": "What can I play after finishing today's Wordle?",
+        "answer": "Choose a second daily challenge from the list, or save several to your DailyDoku favourites to build a routine. DailyDoku tracks visits to your chosen games on this device; it does not import your scores from their sites."
+      },
+      {
+        "question": "Are these games played on DailyDoku?",
+        "answer": "No. DailyDoku is a directory: each Play link opens the game's own website. Features, archives and any optional paid extras are controlled by the game's publisher."
+      }
+    ]
+  },
+  {
+    "path": "/games-like-connections",
+    "sourceSlug": "connections",
+    "heading": "Games Like Connections",
+    "title": "Games Like Connections: Grouping & Daily Word Puzzles | DailyDoku",
+    "description": "Looking for games like NYT Connections? Compare Cluster's word groups with Strands, Word Bridge, Contexto and Murdle, with clear differences for each pick.",
+    "intro": "Connections is about spotting a relationship that is hiding in plain sight. If you want another round of that feeling, start with a word-grouping puzzle. If you enjoy the deduction more than the exact format, try a hidden theme, a shared phrase or a logic mystery instead.",
+    "selectionNote": "Cluster is the direct word-grouping alternative in this selection. The other picks are adjacent recommendations, not Connections clones: each keeps a different part of the association or deduction challenge.",
+    "chooseHeading": "Choose grouping, word associations or pure deduction",
+    "chooseText": "Start with Cluster if four hidden groups are what you want. Choose Strands for a common theme spread through a letter grid, or Word Bridge for one word linking two phrases. Contexto turns associations into an open search; Murdle replaces wordplay with explicit clues you can reason through.",
+    "picks": [
+      {
+        "slug": "cluster",
+        "bestFor": "The closest word-grouping match",
+        "comparison": "Cluster gives you sixteen words to split into four connected groups, with four mistakes available. That makes it the most direct alternative here for players who want another daily grouping puzzle rather than a change of genre."
+      },
+      {
+        "slug": "strands",
+        "bestFor": "Finding a shared theme in a letter grid",
+        "comparison": "Instead of sorting a supplied list of words, trace hidden theme words through a grid and find the spangram. It shares Connections' search for an organising idea, but adds the task of discovering the words themselves."
+      },
+      {
+        "slug": "word-bridge",
+        "bestFor": "A compact word-association puzzle",
+        "comparison": "Find one word that completes two familiar phrases. The link between meanings is still the point, but you are building a bridge between two clues rather than dividing sixteen words into categories."
+      },
+      {
+        "slug": "contexto",
+        "bestFor": "Testing associations without a fixed word list",
+        "comparison": "Type guesses and follow their semantic closeness ranks toward a hidden word. Unlike Connections, you supply the words yourself, so it suits players who enjoy exploring why ideas belong near one another."
+      },
+      {
+        "slug": "murdle",
+        "bestFor": "Deduction without word categories",
+        "comparison": "Use logic-grid clues to identify a culprit, weapon and location. This is not a word-grouping game: it is an alternative for players who especially enjoy ruling out possibilities until one consistent solution remains."
+      }
+    ],
+    "questions": [
+      {
+        "question": "What is the closest game to NYT Connections here?",
+        "answer": "Cluster is the closest format match in this guide: sixteen words, four hidden groups and a limited number of mistakes. The remaining recommendations use different rules and are included for their themes, associations or deduction."
+      },
+      {
+        "question": "Is Strands the same kind of game as Connections?",
+        "answer": "No. Both involve a hidden relationship between words, but Strands asks you to find theme words inside a letter grid. Connections gives you the words and asks you to sort them into groups."
+      },
+      {
+        "question": "Does this guide contain today's Connections answers?",
+        "answer": "No. This is a spoiler-free discovery guide to other games, not a daily hints or answers page. Follow the Connections listing if you want to open the original game."
+      }
+    ]
+  }
+]

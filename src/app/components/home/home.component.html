@@ -6,13 +6,22 @@
     <section class="hero" aria-labelledby="home-heading">
       <div>
         <p class="eyebrow">SMALL GAMES. BIG BRAIN ENERGY.</p>
-        <h1 id="home-heading">Your daily dose<br />of “one more”.<span class="sr-only"> Daily puzzles and games.</span></h1>
-        <p class="hero-description">Great daily puzzles and games from all over the web.<span class="desktop-only"> Find your next favourite.</span></p>
+        <h1 id="home-heading">Daily puzzles.<br />Your next favourite.</h1>
+        <p class="hero-description">Discover {{ gameCount }} daily games from across the web.<span class="desktop-only"> Save your favourites. Make it a daily ritual.</span></p>
       </div>
       <div class="play-tiles" aria-hidden="true">
         <span>P</span><span>L</span><span>A</span><span>Y</span>
       </div>
       <span class="play-sticker" aria-hidden="true">LET'S PLAY</span>
+    </section>
+
+    <section class="discovery-guides" aria-labelledby="discovery-heading">
+      <h2 id="discovery-heading">Finished today's favourite? Try something new.</h2>
+      <nav aria-label="Puzzle discovery guides">
+        @for (guide of guides; track guide.path) {
+          <a [routerLink]="guide.path">{{ guide.heading }} <app-icon name="arrow-right" /></a>
+        }
+      </nav>
     </section>
 
     <label class="dd-mobile-search">
@@ -29,6 +38,7 @@
     <footer class="dd-footer">
       <p>A good kind of screen time.</p>
       <nav aria-label="Community">
+        <a routerLink="/about">About DailyDoku</a>
         <button type="button" (click)="siteHeader.openSuggestDialog()">Know a great game? Tell us</button>
         <a href="https://www.buymeacoffee.com/kotarcreative" target="_blank" rel="noopener noreferrer">Support DailyDoku <app-icon name="external" /></a>
       </nav>
