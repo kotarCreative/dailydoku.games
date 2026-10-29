@@ -47,11 +47,20 @@
   {
     "name": "Bandle",
     "slug": "bandle",
-    "type": "trivia",
+    "type": "oodle",
     "url": "https://bandle.app/",
     "logo": "/assets/logos/bandle.webp",
     "description": "Guess the song with the least musicians playing",
     "about": "Bandle peels a song apart layer by layer and dares you to name it from as little as possible. You start hearing just the bass line; if that is not enough, each wrong guess brings in another musician until drums, keys, guitar and vocals have all joined in.\n\nThe scoring rewards musical memory over luck - naming the track on the first bass-only listen feels far better than waiting for the full band. Song choices lean heavily on well-loved classics, so even casual listeners have a fighting chance. There is a new song to dissect every day."
+  },
+  {
+    "name": "Bimble",
+    "slug": "bimble",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/bimble/?ref=daily-doku",
+    "logo": "/assets/logos/bimble.webp",
+    "description": "Draw one continuous walk through every square, passing the numbered stones in order",
+    "about": "Bimble is a path puzzle. You draw a single unbroken walk that crosses every square of the field exactly once, arriving at the numbered stones in ascending order along the way.\n\nBecause the route can never branch or revisit a square, the board closes in on itself as you draw, and the numbered stones break the field into shorter stretches you can reason about one at a time. A new field is laid out every day, with endless fields for when one is not enough."
   },
   {
     "name": "Blossom",
@@ -225,6 +234,15 @@
     "about": "Daisy is a daily word chain game against the clock. Everyone starts from the same word, and you have sixty seconds to build the longest chain you can, where each new word must begin with the last letter of the one before it - daisy to yellow to wander to rope, and on as far as your vocabulary holds.\n\nThe twist is in the scoring: the words nobody else thought of are worth the most, so reaching for a safe answer is rarely the winning move. Your chain is timed and scored, then compared with the day's other players. A new starting word arrives every day."
   },
   {
+    "name": "Dead Centre",
+    "slug": "dead-centre",
+    "type": "puzzle",
+    "url": "https://bludle.com/deadcentre/?ref=daily-doku",
+    "logo": "/assets/logos/dead-centre.webp",
+    "description": "Memorise where a target sits, then place its centre again once it vanishes",
+    "about": "Dead Centre is a spatial memory test across eight rounds. A target appears and you study it while the canvas is passive, then it disappears and you place a single marker where you remember its centre being.\n\nAccuracy is scored on the distance from the true centre, normalised for screen size so a phone and a desktop can be compared fairly. The targets get smaller and the blank pause gets longer as the rounds go on. Eight rounds make up each day's set."
+  },
+  {
     "name": "Does Monday Work?",
     "slug": "does-monday-work",
     "type": "puzzle",
@@ -281,7 +299,7 @@
   {
     "name": "FoodGuessr",
     "slug": "foodguessr",
-    "type": "oodle",
+    "type": "trivia",
     "url": "https://www.foodguessr.com/daily",
     "logo": "/assets/logos/foodguessr.webp",
     "description": "Guess what country the food comes from",
@@ -326,7 +344,7 @@
   {
     "name": "Globle",
     "slug": "globle",
-    "type": "trivia",
+    "type": "oodle",
     "url": "https://globle-game.com/game",
     "logo": "/assets/logos/globle.webp",
     "description": "Guess the country from a picture of its silhouette",
@@ -349,6 +367,15 @@
     "logo": "/assets/logos/gridirongrids.webp",
     "description": "Name the NFL players that match both the row and column clues in the grid",
     "about": "GridironGrids is fantasy-football trivia boiled down to nine squares. Rows and columns describe NFL criteria - teams played for, statistical milestones, awards - and each cell demands one player who satisfies both intersecting conditions.\n\nEvery athlete may be used only once, so drafting becomes resource management: save your dual-threat legends for the tightest intersections. Rarity scoring rewards obscure role players over household names if you fancy chasing style points. A clean sweep of all nine cells is the daily dream."
+  },
+  {
+    "name": "guessNow",
+    "slug": "guessnow",
+    "type": "trivia",
+    "url": "https://guessnow.fun/?ref=daily-doku",
+    "logo": "/assets/logos/guessnow.webp",
+    "description": "Study a real historical photograph and slide to the year it was taken",
+    "about": "guessNow shows you a real historical photograph and asks you to place the year it was taken. Every frame is full of clues - clothing, signage, vehicles, the state of the street - and the reveal comes slowly enough that a confident guess still has time to unravel.\n\nYou start with 300 HP and the timeline chips away at what you have left, with an adaptive climb and a streak to protect. A daily challenge of five shared moments appears every day."
   },
   {
     "name": "Handful",
@@ -540,13 +567,31 @@
     "about": "Narutodle is a daily guessing game for fans of the Hidden Leaf. Name any character and receive progressive hints - affiliation, village, jutsu type, era - until today's shinobi is unmasked.\n\nFiller-character knowledge occasionally steals the show, which is precisely the fun. Treat each clue as an elimination round across the massive cast, and savour the moment a vague hint clicks into a name. A new ninja graduates to puzzle status daily."
   },
   {
+    "name": "Nibble",
+    "slug": "nibble",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/nibble/?ref=daily-doku",
+    "logo": "/assets/logos/nibble.webp",
+    "description": "A five-by-five British crossword, with a seven-by-seven Big Nibble on Sundays",
+    "about": "Nibble is a small daily crossword with British spelling and clues that stay fair, so there is no dictionary-diving and no relying on obscure abbreviations. Monday to Saturday gives you a compact 5x5 grid; Sunday brings the Big Nibble at 7x7 for a little more to chew on.\n\nIt is free and needs no account, and the whole thing is built to fit into a tea break. A new grid is published at midnight UK time."
+  },
+  {
     "name": "Noillirk",
     "slug": "noillirk",
-    "type": "trivia",
+    "type": "oodle",
     "url": "https://noillirk.app/?ref=daily-doku",
     "logo": "/assets/logos/noillirk.webp",
     "description": "Guess the most common answers to seven shared questions",
     "about": "Noillirk is a daily common-answer game - the kind of challenge where the winning move is to think like everyone else. Seven questions are shared with all players each day, and you score by guessing the answers a crowd would give rather than the cleverest one.\n\nYou climb from the forest to the sky as your guesses land, and a leaderboard shows how your flight compares with everyone else's. There is no sign-up, and an unlimited practice mode is there once the daily run is over. Seven fresh questions are set every day, resetting at midnight Beijing time."
+  },
+  {
+    "name": "Nosy",
+    "slug": "nosy",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/nosy/?ref=daily-doku",
+    "logo": "/assets/logos/nosy.webp",
+    "description": "Follow a handful of clues to work out what went missing in the village",
+    "about": "Nosy is a cosy village whodunnit boiled down to a logic puzzle. Something has gone missing, and you have a handful of short clues about suspects, places and items to sift through before naming the answer.\n\nThe deduction is deliberately small - a five-minute solve rather than an afternoon - but the clues are written to tempt you towards the wrong match, so matching suspects, places and items carefully is the whole game. A fresh mystery is posted every day."
   },
   {
     "name": "Otaku Trivia",
@@ -567,6 +612,15 @@
     "about": "Phoodle seasons the classic word-guessing loop with culinary flavour. Every answer is food-related - dishes, ingredients, techniques, kitchen slang - and you get the usual green-yellow-grey guidance across six tries.\n\nCulinary vocabulary runs deeper than menu items, so consider knife cuts, pastry terms and wine words when brainstorming. After solving, Phoodle serves up a curated fact about the day's term, which is half the delight. Dinner is served daily."
   },
   {
+    "name": "Pitwick",
+    "slug": "pitwick",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/pitwick/?ref=daily-doku",
+    "logo": "/assets/logos/pitwick.webp",
+    "description": "Take a lamp down a new mine each day, fighting and banking ore before the Lode Warden",
+    "about": "Pitwick is a daily deck-building roguelite. Everyone gets the same mine: three strata of chambers with fights, elites, ore seams, carts and lamp-rooms to choose between, and the Lode Warden waiting at the bottom. Each turn you get three energy and four cards to hit, guard and dig with, and every foe shows its next move - though your lamp only lights one of them fully, and every turn burns a little oil.\n\nClearing chambers and banking ore scores points, but carried ore is lost if you fall, so there is a real decision in pressing on. One run counts each day, your best five runs make your weekly league score, and an endless mine keeps going once the daily is done."
+  },
+  {
     "name": "Pixeal",
     "slug": "pixeal",
     "type": "puzzle",
@@ -585,15 +639,6 @@
     "about": "Pokedle is a daily Pokédex exam in disguise. Guess any Pokémon and the game grades you on everything at once - type, generation, height, weight, evolution stage and more - with each attribute colour-coding how close your pick came.\n\nThe multi-attribute feedback makes every wrong answer a genuine clue: a matching generation but mismatched type tells you exactly which branch of the family tree to explore. Veterans can solve from silhouette mode alone, while everyone else deduces happily. A new Pokémon is caught daily."
   },
   {
-    "name": "Pokédleplus",
-    "slug": "pokedleplus",
-    "type": "oodle",
-    "url": "https://pokedleplus.com/?ref=daily-doku",
-    "logo": "/assets/logos/pokedleplus.webp",
-    "description": "Guess today's Pokémon from clues, emojis, silhouettes or moves",
-    "about": "Pokédleplus is a daily Pokémon guessing game with several ways in. The Classic mode plays like Wordle for Pokémon, feeding you hints as you guess, while other daily modes hide the answer behind emojis, a zoomed-in image or the stats of the day's move.\n\nBeyond the daily set there are unlimited modes - guessing a Pokémon from its cry, or choosing which of two has the higher stat - so a strong run does not have to end at midnight. It draws on every generation, so a broad Pokédex memory pays off. New daily puzzles appear every day."
-  },
-  {
     "name": "Pokedoku",
     "slug": "pokedoku",
     "type": "doku",
@@ -603,9 +648,18 @@
     "about": "Pokedoku fuses sudoku structure with Pokédex obsession. Each three-by-three grid intersects row and column categories - types, generations, evolution lines, colours - and you must fill all nine cells with distinct Pokémon matching both criteria.\n\nNo duplicates allowed anywhere on the card, so saving versatile species for tricky intersections is essential. Completionists chase the perfect grid; everyone else enjoys the excuse to open the Pokédex. A fresh set of constraints hatches daily."
   },
   {
+    "name": "Pokédleplus",
+    "slug": "pokedleplus",
+    "type": "oodle",
+    "url": "https://pokedleplus.com/?ref=daily-doku",
+    "logo": "/assets/logos/pokedleplus.webp",
+    "description": "Guess today's Pokémon from clues, emojis, silhouettes or moves",
+    "about": "Pokédleplus is a daily Pokémon guessing game with several ways in. The Classic mode plays like Wordle for Pokémon, feeding you hints as you guess, while other daily modes hide the answer behind emojis, a zoomed-in image or the stats of the day's move.\n\nBeyond the daily set there are unlimited modes - guessing a Pokémon from its cry, or choosing which of two has the higher stat - so a strong run does not have to end at midnight. It draws on every generation, so a broad Pokédex memory pays off. New daily puzzles appear every day."
+  },
+  {
     "name": "Prompter",
     "slug": "prompter",
-    "type": "trivia",
+    "type": "puzzle",
     "url": "https://games.cyber-jack.uk/prompter/?ref=daily-doku",
     "logo": "/assets/logos/prompter.webp",
     "description": "Fill in the missing words from a famous line in six tries",
@@ -619,6 +673,15 @@
     "logo": "/assets/logos/puckdoku.webp",
     "description": "Fill the doku with hockey players that match teams and other stats",
     "about": "Puckdoku puts hockey history on a three-by-three grill. Team stints, trophy wins, draft classes and milestone clubs form the intersecting criteria, and every square demands one NHL player who satisfies the pair.\n\nRemembering which journeyman briefly wore which sweater is a genuine competitive skill here, and low-rarity answers earn bragging rights on the rarity meter. Guard your legends - no skater may appear twice. The zamboni resurfaces a fresh grid nightly."
+  },
+  {
+    "name": "Quizpen Daily Quiz Challenge",
+    "slug": "quizpen-daily-quiz",
+    "type": "trivia",
+    "url": "https://quizpen.com/daily-challenge/",
+    "logo": "/assets/logos/quizpen-daily-quiz.webp",
+    "description": "Ten shared questions a day, with a browser streak to keep alive",
+    "about": "Quizpen's daily challenge is ten questions, the same ten and the same answer choices for everyone on a given UTC day. A round takes a couple of minutes and covers whatever mix of subjects the day happens to bring.\n\nYour streak lives in the browser, so there is no account to create and nothing to sign into, and a share button lets you compare results without spoiling the answers. A new quiz drops at midnight UTC."
   },
   {
     "name": "Quordle",
@@ -675,6 +738,15 @@
     "about": "Royaedly is a daily guessing game for Clash Royale players. Rather than one puzzle, it offers eight mini-games - the card hidden behind word clues, a pixelated sprite, a written description, an emoji riddle, a sound, and more - all built around identifying the right card.\n\nThe daily rounds reset at midnight UTC and share their answers with everyone, so comparing results is half the fun, while the endless modes let you keep guessing once the daily set is done. If you play Brawl Stars too, the same team runs its companion, Brawldly. Eight fresh challenges arrive every day."
   },
   {
+    "name": "Rulebreaker",
+    "slug": "rulebreaker",
+    "type": "puzzle",
+    "url": "https://bludle.com/rulebreaker/?ref=daily-doku",
+    "logo": "/assets/logos/rulebreaker.webp",
+    "description": "Build a chain of cipher rules until today's scrambled transmission reads as plain English",
+    "about": "Rulebreaker hands you an encrypted transmission and a workbench of live cipher rules. Add, tune and reorder modules - shifts, reversals, neighbour swaps - and the output re-renders instantly, so you can watch noise resolve into readable language.\n\nSome modules are decoys, and order matters as much as choice, so it pays to change one thing at a time and read what the output tells you. Three hints become more specific each time you use one. A new transmission arrives every day."
+  },
+  {
     "name": "Second Sight",
     "slug": "second-sight",
     "type": "puzzle",
@@ -693,6 +765,15 @@
     "about": "Semantle measures meaning, not spelling. Guess any word and receive a numeric similarity score describing how semantically close it sits to the secret word, with a percentile ranking showing how many candidate words you just beat.\n\nCold-start rounds reward brainstorming themes: if 'teacher' scores warmly, try classroom, lesson and homework to map the concept space. The final answer is often mundane, which is exactly why it stays hidden so long. Patience wins; a new concept awaits daily."
   },
   {
+    "name": "Shires",
+    "slug": "shires",
+    "type": "trivia",
+    "url": "https://games.cyber-jack.uk/shires/?ref=daily-doku",
+    "logo": "/assets/logos/shires.webp",
+    "description": "Name the UK county, council area or district from its outline",
+    "about": "Shires shows you the outline of a UK county, council area or district and asks you to name it in six guesses. Each wrong answer comes back with miles and compass bearings, nudging you across the map until the shape snaps into place.\n\nEvery guess is charted on a UK map, so a run reads as a short journey between answers rather than a list of misses. One outline is chosen each day and it is the same for everyone, so the shape is worth a second look before you commit."
+  },
+  {
     "name": "Smashdle",
     "slug": "smashdle",
     "type": "oodle",
@@ -700,6 +781,15 @@
     "logo": "/assets/logos/smashdle.webp",
     "description": "Guess the Super Smash Bros champion when guessing other champions",
     "about": "Smashdle quizzes Super Smash Bros. mastery across multiple daily modes. Identify fighters from silhouette, series emblem, debut year, weight class or victory quotes, with instant feedback narrowing the roster after every swing.\n\nCasual fans do fine on the headliners, but the extended cast - echo fighters and DLC surprises included - separates mains from passengers. Rotating modes keep mornings fresh even when yesterday's guess went sideways. Today's challenger approaches."
+  },
+  {
+    "name": "Sown",
+    "slug": "sown",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/sown/?ref=daily-doku",
+    "logo": "/assets/logos/sown.webp",
+    "description": "Sow one seed in every row, column and plot without any two touching",
+    "about": "Sown is a Star Battle-style logic puzzle set in a garden. Each row, each column and each coloured plot needs exactly one seed, and no two seeds may sit next to each other - not even diagonally.\n\nThe grid is always solvable by pure deduction, so a stuck board means a rule has been overlooked rather than a guess being due. A new garden is planted every day, with endless puzzles for when one is not enough."
   },
   {
     "name": "Spelling Bee",
@@ -819,6 +909,15 @@
     "about": "Trellis is a daily word hunt on a 5x5 grid of letters shared by everyone. Spell words by tracing through touching squares - up, down or sideways, never diagonally - and no square can be used twice in one word.\n\nLonger words are worth much more, from a single point for three letters up to twelve for seven, and every grid hides exactly one eight-letter word worth forty points on its own, with a hint available to mark its next letter. There is no clock and your words are saved, so you can return to the grid through the day and climb from Seedling towards Full bloom before locking in your score. A new grid appears at midnight UK time."
   },
   {
+    "name": "Twill",
+    "slug": "twill",
+    "type": "puzzle",
+    "url": "https://games.cyber-jack.uk/twill/?ref=daily-doku",
+    "logo": "/assets/logos/twill.webp",
+    "description": "Weave light and dark threads so every row and column comes out half and half",
+    "about": "Twill is a binary logic puzzle dressed as weaving. You fill a swatch of light and dark threads so that every row and column holds an equal number of each and no three threads of the same shade run together.\n\nTies and crosses mark the cells you have proved, so the weave fills in like a pattern on a loom and the finished swatch is its own reward. There is no guessing required. A new swatch is set each day, with endless puzzles beyond the daily."
+  },
+  {
     "name": "Unquote",
     "slug": "unquote",
     "type": "puzzle",
@@ -837,6 +936,15 @@
     "about": "Waffle scrambles six interlocking words into a waffle-shaped grid and grants fifteen swaps to restore order. Drag any two letters to exchange them - every move counts, so efficiency determines your score tier.\n\nGreen letters are already home; yellow ones exist somewhere in their word; greys need relocation entirely. Reading the whole waffle before touching anything prevents the classic cascade mistake. Six golden-brown puzzles bake fresh daily."
   },
   {
+    "name": "Warmer",
+    "slug": "warmer",
+    "type": "oodle",
+    "url": "https://games.cyber-jack.uk/warmer/?ref=daily-doku",
+    "logo": "/assets/logos/warmer.webp",
+    "description": "Guess the secret word and let the meaning thermometer tell you how close you are",
+    "about": "Warmer is a word game where the answer hides behind meaning rather than letters. Type any word and a thermometer tells you how close it sits to the secret one, so a cold guess pushes you to rethink the whole semantic neighbourhood.\n\nFour gentle hints are there if you stall, and each guess is plotted so you can watch yourself closing in. A single shared word is set each day, with a new one at midnight UK time."
+  },
+  {
     "name": "Werdle",
     "slug": "werdle",
     "type": "oodle",
@@ -853,6 +961,24 @@
     "logo": "/assets/logos/whentaken.webp",
     "description": "Pin where each photo was taken and guess the year it was shot",
     "about": "Whentaken presents a photograph stripped of its metadata and asks the two questions archivists dread: where was this shot, and when? Drop a pin, pick a year, and refine based on how far off both answers were.\n\nVegetation, road markings, architecture and photo quality each whisper decade and continent if you listen. It scratches the same itch as travel trivia but with a forensic twist. A new snapshot enters the darkroom daily."
+  },
+  {
+    "name": "Word Bridge",
+    "slug": "word-bridge",
+    "type": "oodle",
+    "url": "https://bludle.com/wordbridge/?ref=daily-doku",
+    "logo": "/assets/logos/word-bridge.webp",
+    "description": "Find the one word that completes two familiar phrases",
+    "about": "Word Bridge gives you two outer words and asks for the middle one that forms a familiar compound word or phrase with both. RAIN and TIE meet at BOW, for RAINBOW and BOW TIE.\n\nYou get three attempts, and a clue appears after the first miss if the crossing is not coming to you. The animated bridge fills in as you commit, which makes a plausible-sounding guess easy to check at a glance. One bridge is set each day."
+  },
+  {
+    "name": "Word Mash",
+    "slug": "word-mash",
+    "type": "oodle",
+    "url": "https://bludle.com/wordmash/?ref=daily-doku",
+    "logo": "/assets/logos/word-mash.webp",
+    "description": "Solve two clues, then fuse the answers where their letters overlap",
+    "about": "Word Mash gives you two clues and six guesses. Work out both answers, then combine them into a single word by writing the shared letters once, where the end of the first answer becomes the start of the second - STAR and ARTIST make STARTIST.\n\nA likely answer only helps if it also supports its neighbour, so every guess is a small act of both clue-solving and structure-fitting. There is one puzzle per day and your progress is saved in the browser."
   },
   {
     "name": "Wordle",

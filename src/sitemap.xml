@@ -67,6 +67,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/bimble</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/blossom</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
@@ -181,6 +187,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/dead-centre</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/does-monday-work</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
@@ -260,6 +272,12 @@
   </url>
   <url>
     <loc>https://www.daily-doku.com/games/gridirongrids</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/guessnow</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -391,7 +409,19 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/nibble</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/noillirk</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/nosy</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -409,6 +439,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/pitwick</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/pixeal</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
@@ -421,13 +457,13 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.daily-doku.com/games/pokedleplus</loc>
+    <loc>https://www.daily-doku.com/games/pokedoku</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.daily-doku.com/games/pokedoku</loc>
+    <loc>https://www.daily-doku.com/games/pokedleplus</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -440,6 +476,12 @@
   </url>
   <url>
     <loc>https://www.daily-doku.com/games/puckdoku</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/quizpen-daily-quiz</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -481,6 +523,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/rulebreaker</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/second-sight</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
@@ -493,7 +541,19 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/shires</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/smashdle</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/sown</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
@@ -577,6 +637,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/twill</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/unquote</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
@@ -589,6 +655,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.daily-doku.com/games/warmer</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.daily-doku.com/games/werdle</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
@@ -596,6 +668,18 @@
   </url>
   <url>
     <loc>https://www.daily-doku.com/games/whentaken</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/word-bridge</loc>
+    <lastmod>2026-10-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.daily-doku.com/games/word-mash</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>

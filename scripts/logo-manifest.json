@@ -29,6 +29,11 @@
     "file": "bandle.webp",
     "bytes": 7332
   },
+  "bimble": {
+    "source": "https://games.cyber-jack.uk/og/bimble.png",
+    "file": "bimble.webp",
+    "bytes": 3698
+  },
   "blossom": {
     "source": "https://blossomword.com/apple-touch-icon.png",
     "file": "blossom.webp",
@@ -124,6 +129,11 @@
     "file": "daisy.webp",
     "bytes": 3686
   },
+  "dead-centre": {
+    "source": "https://bludle.com/images/social/deadcentre.jpg",
+    "file": "dead-centre.webp",
+    "bytes": 3716
+  },
   "does-monday-work": {
     "source": "https://www.doesmondaywork.com/_next/static/immutable/media/logo.3dpbfxc6tk1a_.png",
     "file": "does-monday-work.webp",
@@ -193,6 +203,11 @@
     "source": "https://gridirongrids.com/favicon.ico",
     "file": "gridirongrids.webp",
     "bytes": 1036
+  },
+  "guessnow": {
+    "source": "https://guessnow.fun/og-image.png",
+    "file": "guessnow.webp",
+    "bytes": 5610
   },
   "handful": {
     "source": "https://games.cyber-jack.uk/og/handful.png",
@@ -284,6 +299,11 @@
     "file": "marquee.webp",
     "bytes": 6118
   },
+  "mini-crossword": {
+    "source": "https://www.nytimes.com/games-assets/v2/assets/icons/mini.svg",
+    "file": "mini-crossword.svg",
+    "bytes": 1005
+  },
   "movie-grid": {
     "source": "https://moviegrid.io/favicon.ico",
     "file": "movie-grid.webp",
@@ -299,10 +319,20 @@
     "file": "narutodle.webp",
     "bytes": 1618
   },
+  "nibble": {
+    "source": "https://games.cyber-jack.uk/og/nibble.png",
+    "file": "nibble.webp",
+    "bytes": 3420
+  },
   "noillirk": {
     "source": "https://noillirk.app/blog/noillirk/noillirk-forest.webp",
     "file": "noillirk.webp",
     "bytes": 11636
+  },
+  "nosy": {
+    "source": "https://games.cyber-jack.uk/og/nosy.png",
+    "file": "nosy.webp",
+    "bytes": 2894
   },
   "otaku-trivia": {
     "source": "https://otakutrivia.com/favicon.svg",
@@ -313,6 +343,11 @@
     "source": "https://www.phoodle.net/favicon.ico",
     "file": "phoodle.webp",
     "bytes": 764
+  },
+  "pitwick": {
+    "source": "https://games.cyber-jack.uk/og/pitwick.png",
+    "file": "pitwick.webp",
+    "bytes": 3490
   },
   "pixeal": {
     "source": "https://pixeal.gg/og.png",
@@ -344,6 +379,11 @@
     "file": "puckdoku.webp",
     "bytes": 988
   },
+  "quizpen-daily-quiz": {
+    "source": "https://quizpen.com/og/v36/daily-challenge.jpg",
+    "file": "quizpen-daily-quiz.webp",
+    "bytes": 3156
+  },
   "quordle": {
     "source": "https://www.merriam-webster.com/games/quordle/assets/icon-quordle.webp",
     "file": "quordle.webp",
@@ -374,6 +414,11 @@
     "file": "royaedly.webp",
     "bytes": 8338
   },
+  "rulebreaker": {
+    "source": "https://bludle.com/images/social/rulebreaker.png",
+    "file": "rulebreaker.webp",
+    "bytes": 4258
+  },
   "second-sight": {
     "source": "https://bludle.com/images/social/secondsight.jpg",
     "file": "second-sight.webp",
@@ -384,10 +429,20 @@
     "file": "semantle.webp",
     "bytes": 1986
   },
+  "shires": {
+    "source": "https://games.cyber-jack.uk/og/shires.png",
+    "file": "shires.webp",
+    "bytes": 5058
+  },
   "smashdle": {
     "source": "https://smashdle.net/img/Logo.d1a12095.png",
     "file": "smashdle.webp",
     "bytes": 9814
+  },
+  "sown": {
+    "source": "https://games.cyber-jack.uk/og/sown.png",
+    "file": "sown.webp",
+    "bytes": 3452
   },
   "spelling-bee": {
     "source": "https://www.nytimes.com/games-assets/v2/metadata/sb-apple-touch-icon.png?v=",
@@ -429,11 +484,6 @@
     "file": "the-dozen.webp",
     "bytes": 10898
   },
-  "mini-crossword": {
-    "source": "https://www.nytimes.com/games-assets/v2/assets/icons/mini.svg",
-    "file": "mini-crossword.svg",
-    "bytes": 1005
-  },
   "time-guessr": {
     "source": "https://timeguessr.com/favicon-32x32.png",
     "file": "time-guessr.webp",
@@ -454,6 +504,11 @@
     "file": "trellis.webp",
     "bytes": 4222
   },
+  "twill": {
+    "source": "https://games.cyber-jack.uk/og/twill.png",
+    "file": "twill.webp",
+    "bytes": 4732
+  },
   "unquote": {
     "source": "https://games.cyber-jack.uk/og/unquote.png",
     "file": "unquote.webp",
@@ -464,6 +519,11 @@
     "file": "waffle.webp",
     "bytes": 1714
   },
+  "warmer": {
+    "source": "https://games.cyber-jack.uk/og/warmer.png",
+    "file": "warmer.webp",
+    "bytes": 3584
+  },
   "werdle": {
     "source": "https://bludle.com/images/social/werdle.jpg",
     "file": "werdle.webp",
@@ -473,6 +533,16 @@
     "source": "https://whentaken.com/android-chrome-192x192.png",
     "file": "whentaken.webp",
     "bytes": 3804
+  },
+  "word-bridge": {
+    "source": "https://bludle.com/images/social/wordbridge.jpg",
+    "file": "word-bridge.webp",
+    "bytes": 3754
+  },
+  "word-mash": {
+    "source": "https://bludle.com/images/social/wordmash.jpg",
+    "file": "word-mash.webp",
+    "bytes": 3896
   },
   "wordle": {
     "source": "https://www.nytimes.com/games-assets/v2/assets/wordle/page-icons/wordle-icon.svg",
